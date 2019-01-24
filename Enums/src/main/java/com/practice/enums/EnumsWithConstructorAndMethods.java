@@ -15,8 +15,9 @@ enum MyHobbies {
     SINGING, GUITAR, CODING, MOVIES;
 
     // enum constructor called separately for each constant
-    // constructors in enums, if declared explicitly, must be private
-    private MyHobbies() {
+    // constructors in enums, if declared explicitly, must not be public or protected
+    // Using private keyword will be redundant here but we can do that
+    MyHobbies() {
 
         System.out.println("Enum constructor was called for: " + this.toString());
     }

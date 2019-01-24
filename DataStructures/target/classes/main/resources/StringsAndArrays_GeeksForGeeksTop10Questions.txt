@@ -1,0 +1,83 @@
+https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
+
+*****String / Array*****
+------------------------
+1. Reverse an array without affecting special characters
+Given a string, that contains special character together with alphabets (‘a’ to ‘z’ and ‘A’ to ‘Z’),
+reverse the string in a way that special characters are not affected.
+https://www.geeksforgeeks.org/reverse-an-array-without-affecting-special-characters/
+
+Examples:
+Input:   str = "a,b$c"
+Output:  str = "c,b$a"
+Note that $ and , are not moved anywhere.
+Only subsequence "abc" is reversed
+Input:   str = "Ab,c,de!$"
+Output:  str = "ed,c,bA!$"
+
+2. All Possible Palindromic Partitions
+Given a string, print all possible palindromic partitions.
+https://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/
+
+Example:
+Input: nitin
+Output: n i t i n, n iti n, nitin
+Input: geeks
+Output: g e e k s, g ee k s
+
+
+3. Count triplets with sum smaller than a given value
+Given an array of distinct integers and a sum value. Find count of triplets with sum smaller than given sum value.
+Expected Time Complexity is O(n2).
+https://www.geeksforgeeks.org/count-triplets-with-sum-smaller-that-a-given-value/
+
+Example:
+Input : arr[] = {-2, 0, 1, 3}, sum = 2.
+Output : 2
+Explanation :  Below are triplets with sum less than 2
+               (-2, 0, 1) and (-2, 0, 3)
+
+Input : arr[] = {5, 1, 3, 4, 7}, sum = 12.
+Output : 4
+Explanation :  Below are triplets with sum less than 12
+               (1, 3, 4), (1, 3, 5), (1, 3, 7) and
+               (1, 4, 5)
+
+4. Convert array into Zig-Zag fashion
+Given an array of DISTINCT elements, rearrange the elements of array in zig-zag fashion in O(n) time. The converted
+array should be in form a < b > c < d > e < f.
+https://www.geeksforgeeks.org/convert-array-into-zig-zag-fashion/
+
+Example:
+Example:
+Input:  arr[] = {4, 3, 7, 8, 6, 2, 1}
+Output: arr[] = {3, 7, 4, 8, 2, 6, 1}
+
+Input:  arr[] =  {1, 4, 3, 2}
+Output: arr[] =  {1, 4, 2, 3}
+
+
+5. Generate all possible sorted arrays from alternate elements of two given sorted arrays
+Given two sorted arrays A and B, generate all possible arrays such that first element is taken from A then from B
+then from A and so on in increasing order till the arrays exhausted. The generated arrays should end with an element from B.
+https://www.geeksforgeeks.org/generate-all-possible-sorted-arrays-from-alternate-elements-of-two-given-arrays/
+
+Example:
+A = {10, 15, 25}
+B = {1, 5, 20, 30}
+
+The resulting arrays are:
+  10 20
+  10 20 25 30
+  10 30
+  15 20
+  15 20 25 30
+  15 30
+  25 30
+
+6. Pythagorean Triplet in an array
+7. Length of the largest subarray with contiguous elements
+8. Find the smallest positive integer value that cannot be represented as sum of any subset of a given array
+9. Smallest subarray with sum greater than a given value
+10. Stock Buy Sell to Maximize Profit
+

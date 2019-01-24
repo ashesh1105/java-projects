@@ -1,7 +1,5 @@
 package com.algorithms.string;
 
-import java.util.Arrays;
-
 public class Anagram1 {
 
 	/**
@@ -9,9 +7,10 @@ public class Anagram1 {
 	 * time and check if both the strings are equal (easy)
 	 * BUT IN THIS METHOD we will consider that characters of the
 	 * string are all ASCII.
-	 * @param str1
-	 * @param str2
-	 * @return
+	 *
+	 * The implementation in this class uses an int array of size 128 / 256 to find get all the characters of first
+	 * string with number of occurrences and then compares that with second string. int arrays get initialized to
+	 * zero for all its elements.
 	 */
 	public boolean isAnagram(String str1, String str2) {
 		// if the lengths are not equal, they definitely cannot be anagrams
