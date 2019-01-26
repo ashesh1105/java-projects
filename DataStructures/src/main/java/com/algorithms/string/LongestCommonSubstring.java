@@ -15,7 +15,7 @@ public class LongestCommonSubstring {
 		String str2 = "Iworkinyahoo";
 
 		System.out
-				.println("Length of largest common substrings of \"inyahooisthebest\" and \"Iworkinyahoo\" is: "
+				.println("Largest common substrings of \"inyahooisthebest\" and \"Iworkinyahoo\" is: "
 						+ new LongestCommonSubstring()
 								.largestCommonSubstringOptimized1(str1, str2));
 	}
@@ -63,8 +63,7 @@ public class LongestCommonSubstring {
 	 * characters but that should not be the big deal
 	 * Solution: 
 	 * a) Define an int array of size 256. It can be 128 if pure ascii is contained by strings 
-	 * b) Initialize array by -1 for each elements. You can avoid this step if can come with
-	 *    special index for index 0 for str1 
+	 * b) Add -1 to index 0 of this array, so anything less than 0 will mean no character matches that element
 	 * c) loop through each chars of str1 and store their indices in array. Index of array will
 	 *    be ascii values of str1 chars 
 	 * d) Loop through str2 chars, check if a char is present in str1, if not continue checking
@@ -80,9 +79,11 @@ public class LongestCommonSubstring {
 		int lenSubstring = 0;
 
 		int[] arr = new int[256];
-		for (int elem : arr) {
-			elem = -1;
-		}
+//		for (int elem : arr) {
+//			elem = -1;
+//		}
+		// Add a special element at index 0 so we can tell if a string char matches this index or not
+		arr[0] = -1;
 
 		for (int i = 0; i < len1; i++) {
 			arr[str1.charAt(i)] = i;
@@ -90,7 +91,7 @@ public class LongestCommonSubstring {
 
 		for (int j = 0; j < len2; j++) {
 			int beginIndex = -1;
-			if (arr[str2.charAt(j)] == -1) {
+			if (arr[str2.charAt(j)] <= 0) {	// empty elements will be either -1 (at index 0) or 0 (default)
 				continue;
 			} else {
 				beginIndex = j;
