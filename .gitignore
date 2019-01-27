@@ -1,5 +1,3 @@
 .idea/uiDesigner.xml
-DataStructures/target/classes/PracticedAlgorithms.xlsx
-DataStructures/target/classes/StringsAndArrays_GeeksForGeeksTop10Questions.txt
-DataStructures/target/classes/com/datastructures/heaps/
-DataStructures/target/classes/com/practice/systemDesign/
+.idea/workspace.xml
+*/target/**
