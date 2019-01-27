@@ -112,7 +112,7 @@ public class Node {
 			left = this.leftNode.height();
 		if (this.rightNode != null)
 			right = this.rightNode.height();
-		return (left > right) ? (left + 1) : (right + 1);
+		return Math.max(left, right) + 1;	// + 1 is for height due to root node
 	}
 	
 	// Create binary sort tree with a sorted array

@@ -2,7 +2,11 @@ package com.datastructures.tree.binarytree.binarysearchtree;
 
 import lombok.Getter;
 
+import java.util.logging.Logger;
+
 public class BinarySearchTree {
+
+	Logger logger = Logger.getLogger(BinarySearchTree.class.getName());
 
 	@Getter
 	private Node root;
@@ -17,6 +21,10 @@ public class BinarySearchTree {
 
 	// Find data
 	public Node find(int data) {
+		if (root == null) {
+			logger.warning("Root of this BST is null. find() will return null.");
+			return null;
+		}
 		return root.find(data);
 	}
 
@@ -43,15 +51,6 @@ public class BinarySearchTree {
 					}
 				}
 			}
-		}
-	}
-
-	// Insert Data if it is defined inside Node class itself
-	public void insertData(int data) {
-		if (root == null) {
-			root = new Node(data);
-		} else {
-			root.insertData(data);
 		}
 	}
 
@@ -87,7 +86,7 @@ public class BinarySearchTree {
 	}
 
 	/**
-	 * Delete a Root Node. Remember, if left child of the root is not null, the new root will be the as right most leaf
+	 * Delete a Root Node. Remember, if left child of the root is not null, the new root will be the right most leaf
 	 * node at left sub tree (to root), else it has to be the left most node at right sub tree.
 	 */
 	public void deleteRootNode() {
@@ -176,7 +175,7 @@ public class BinarySearchTree {
 			return false;
 		}
 		if (root.getData() == data) {
-			if (root.getLeftNode() == null && root.getRightNode() == null) {
+			if (isLeafNode(root)) {
 				return true;
 			} else {
 				return false;
@@ -201,11 +200,15 @@ public class BinarySearchTree {
 			}
 		}
 		if (dataNode != null) {
-			if (dataNode.getLeftNode() == null && dataNode.getRightNode() == null) {
+			if (isLeafNode(dataNode)) {
 				return true;
 			}
 		}
 		return false;
+	}
+
+	private boolean isLeafNode(Node n) {
+		return n.getLeftNode() == null && n.getRightNode() == null;
 	}
 
 	// Uses Raghavendra Dixit (Udemy) method
@@ -214,6 +217,9 @@ public class BinarySearchTree {
 	}
 
 	// My own method. Equivalent to Raghavendra Dixit method
+	// By definition, in n node BST, max number of leaf nodes possible is (n + 1)/2.
+	// Above will be the case if BST is Complete (meaning all levels are full and last level has all nodes
+	// to its left) and also Full (meaning all nodes either have exactly 2 children, else are a leaf node.
 	public long countLeafNodes() {
 		if (root == null) {
 			// log and return zero
@@ -226,24 +232,24 @@ public class BinarySearchTree {
 	private long countLeaves(Node n) {
 
 		// if this is a leaf node, return the count as 1
-		if (n.getLeftNode() == null && n.getRightNode() == null)
+		if (isLeafNode(n))
 			return 1;
 		// number of nodes for left subtree
-		long numLeftNodes = 0;
+		long numLeftLeafNodes = 0;
 
 		// number of nodes for right subtree
-		long numRightNodes = 0;
+		long numRightLeafNodes = 0;
 
 		// Traverse through left sub tree and count leaf nodes
 		if (n != null && n.getLeftNode() != null) {
-			numLeftNodes = countLeaves(n.getLeftNode());
+			numLeftLeafNodes = countLeaves(n.getLeftNode());
 		}
 
 		// Traverse through right sub tree and count leaf nodes
 		if (n != null && n.getRightNode() != null) {
-			numRightNodes = countLeaves(n.getRightNode());
+			numRightLeafNodes = countLeaves(n.getRightNode());
 		}
-		return numLeftNodes + numRightNodes;
+		return numLeftLeafNodes + numRightLeafNodes;
 	}
 
 	// Height of binary sort tree

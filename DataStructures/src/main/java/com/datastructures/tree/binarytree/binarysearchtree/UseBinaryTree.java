@@ -38,9 +38,8 @@ public class UseBinaryTree {
 		btree.insert(64);
 		btree.insert(72);
 		btree.insert(85);
-		
-		
-		// Use insertData which uses recursion to add data
+
+		// You can also use insertData which uses recursion to add data
 		//btree.insertData(5);
 
 		System.out.println("Let's print the tree:");
@@ -59,12 +58,12 @@ public class UseBinaryTree {
 		
 		System.out.println("Tried to find 3 in btree: " + (node == null ? null : node.getData()));
 		
-		System.out.println("Delete the Root Node and Print the Tree again.");
+		System.out.println("Delete the Root Node " + btree.getRoot().getData() + ", and Print the Tree again.");
 		btree.deleteRootNode();
 		btree.printInOrder();
 		System.out.println("New Root Node is: " + btree.getRoot().getData());
 		System.out.println("Is 29 a leaf node? " + btree.isLeafNode(29));
-		System.out.println(btree.countLeafNodes());
+		System.out.println("Count of Leaf Nodes: " + btree.countLeafNodes());
 		System.out.println("Height of tree: " + btree.height());
 		
 		// Add a sorted array to new BST
@@ -73,7 +72,7 @@ public class UseBinaryTree {
 		
 		Node root = Node.addSorted(data, 0, data.length-1);
 		
-		print (root);
+		print(root);
 		
 		BinarySearchTree bst = new BinarySearchTree(10);
 		
@@ -103,6 +102,9 @@ public class UseBinaryTree {
 		System.out.println("Print BST again:");
 		print(bst.getRoot());
 		System.out.println("New Root: " + bst.getRoot().getData());
+
+		BinarySearchTree myBST = new BinarySearchTree();
+		System.out.println("Find on myBST with root as null returns: " + myBST.find(5));
 		
 	}
 
