@@ -94,19 +94,19 @@ public class MinHeap {
         int index = 0;
 
         while (hasLeftChild(index)) {
-            int smallerParentIndex = leftChildIndex(index);
+            int smallerChildIndex = leftChildIndex(index);
 
             if (hasRightChild(index) && rightChild(index) < leftChild(index)) {
-                smallerParentIndex = rightChildIndex(index);
+                smallerChildIndex = rightChildIndex(index);
             }
 
             //Finally swap, if item is more than it's smaller parent
-            if (items[index] < items[smallerParentIndex]) {
+            if (items[index] < items[smallerChildIndex]) {
                 break;  // This is important to avoid infinite loop
             } else {
-                swap(index, smallerParentIndex);
+                swap(index, smallerChildIndex);
             }
-            index = smallerParentIndex;
+            index = smallerChildIndex;
         }
     }
 
