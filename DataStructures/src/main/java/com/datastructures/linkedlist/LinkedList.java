@@ -26,7 +26,7 @@ public class LinkedList<T> {
 			head = new Node<T>(data);
 			return;
 		}
-		Node<T> end = new Node<T>(data);
+		Node<T> end = new Node<>(data);
 
 		while (current.getNextNode() != null) {
 			current = current.getNextNode();
@@ -88,7 +88,7 @@ public class LinkedList<T> {
 					Node<T> temp = current.getNextNode();
 					previous.setNextNode(temp);
 					current = temp;
-					break;
+					break;	// You want to restart the
 				}
 				runner = runner.getNextNode();
 			}

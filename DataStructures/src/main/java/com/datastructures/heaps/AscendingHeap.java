@@ -1,4 +1,4 @@
-package com.datastructures.tree.binarytree.heap;
+package com.datastructures.heaps;
 
 import java.util.Arrays;
 
