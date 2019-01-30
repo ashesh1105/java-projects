@@ -1,6 +1,5 @@
 package com.practice.systemDesign.urlShortening;
 
-import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,57 +17,50 @@ public class Base64Hashing {
 
     public static void main(String[] args) {
 
-        // Do this outside of Hash Generator, so you get unique results each time
-        String baseNumStr = "2000000000";
-        BigInteger decimal = new BigInteger(baseNumStr);
-
-        // Add one to this number inside of this program to return unique result
-        decimal = decimal.add(BigInteger.ONE);
-
-        // long decimal = 2045648798;
+        // Start with a large number 10 digits in size and increment this for each new URL to be shortened
+        long decimal = 2000000001L;
         long base = 64;
 
         Base64Hashing base64Hashing = new Base64Hashing();
 
-        String encodedString = base64Hashing.encodeBase62(decimal, base);
+        String encodedString = base64Hashing.encodeBase64(decimal, base);
 
         // Test the encoding
         System.out.println("Decimal was: " + decimal);
         System.out.println("Base " + base + " encoded string is: " + encodedString);
 
-        BigInteger decodedDecimal = base64Hashing.decodeBase62ToDecimal(encodedString, base);
+        long decodedDecimal = base64Hashing.decodeBase64ToDecimal(encodedString, base);
 
         // Test the decoding
         System.out.println("\nBase " + base + " encoded chars were: " + encodedString);
         System.out.println("Decoded decimal is: " + decodedDecimal);
     }
 
-    public String encodeBase62(BigInteger decimal, long base) {
+    public String encodeBase64(long decimal, long base) {
 
-        Map<Long, Character> map = getCharSetMap();
-        BigInteger baseInBigInt = BigInteger.valueOf(base);
+        Map<Long, Character> charSetMap = getCharSetMap();
+//        BigInteger baseInBigInt = BigInteger.valueOf(base);
         String result = "";
 
-        while (decimal.compareTo(BigInteger.valueOf(0)) != 0) {
-            result = map.get(decimal.remainder(baseInBigInt).longValue()) + result;
-            decimal = decimal.divide(baseInBigInt);
+        while (decimal != 0) {
+            result = charSetMap.get(decimal % base) + result;
+            decimal = decimal / base;
         }
         return result;
     }
 
-    public BigInteger decodeBase62ToDecimal(String base62Digits, long base) {
+    public long decodeBase64ToDecimal(String base64String, long base) {
 
-        Map<Character, Long> map = getReverseCharSetMap();
+        Map<Character, Long> reverseCharSetMap = getReverseCharSetMap();
 
-        int len = base62Digits.length();
-        BigInteger decodedDecimal = BigInteger.ZERO;
+        int len = base64String.length();
+        long decodedDecimal = 0L;
         int index = 0;
 
         for (int i = len - 1; i >= 0; i--) {
-
-            char ch = base62Digits.charAt(i);
-            long value = map.get(ch);
-            decodedDecimal = decodedDecimal.add(BigInteger.valueOf(value * (long) Math.pow(base, index)));
+            char ch = base64String.charAt(i);
+            long value = reverseCharSetMap.get(ch);
+            decodedDecimal += value * (long) Math.pow(base, index);
             index++;
         }
         return decodedDecimal;

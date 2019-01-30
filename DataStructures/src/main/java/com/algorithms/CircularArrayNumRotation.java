@@ -57,10 +57,10 @@ public class CircularArrayNumRotation {
 			if (array[low] <= array[mid]) {
 				// This means left array is sorted, pivot can't be here, check
 				// right array
-				low = mid + 1;
+				low = next;
 			} else if (array[mid] <= array[high]) {
 				// right part is sorted, check on left
-				high = mid - 1;
+				high = prev;
 			}
 		}
 

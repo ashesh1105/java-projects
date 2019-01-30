@@ -13,6 +13,8 @@ public class DecimalToBinary {
 		
 		System.out.println("a (" + a + ") in binary = " + dtb.toBinary(a));
 		System.out.println("b (" + b + ") in binary = " + dtb.toBinary(b));
+
+
 		System.out.println("a & (bitwise And) b = " + (a & b));
 		
 		/**
@@ -23,8 +25,6 @@ public class DecimalToBinary {
 		 * of an even number will always have a 0 and for odd number, a 1 at right most digit.
 		 * e.g., 17 & 1 = 1 (in binary) and 322 & 1 = 0 (in binary)
 		 */
-		
-		System.out.println(199 % 200);
 
 	}
 

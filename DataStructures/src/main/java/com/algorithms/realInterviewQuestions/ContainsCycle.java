@@ -1,4 +1,4 @@
-package com.algorithms.qaigeninterview;
+package com.algorithms.realInterviewQuestions;
 public class ContainsCycle {
 
     interface Link {

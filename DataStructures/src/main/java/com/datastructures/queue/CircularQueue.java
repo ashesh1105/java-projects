@@ -1,91 +1,113 @@
 package com.datastructures.queue;
 
+import static java.lang.System.exit;
+
 public class CircularQueue {
 
-	private int head;
-	private int tail;
-	private int maxCapacity;
-	private int[] array;
+    private int head;
+    private int tail;
+    private int capacity;
+    private int[] array;
 
-	public CircularQueue(int maxCapacity) {
+    public CircularQueue(int capacity) {
 
-		this.maxCapacity = maxCapacity;
-		array = new int[maxCapacity];
-		head = 0;
-		tail = 0;
-	}
+        this.capacity = capacity;
+        array = new int[capacity];
+        head = 0;
+        tail = 0;
+    }
 
-	public boolean isEmpty() {
-		return head == tail;
-	}
+    public boolean isEmpty() {
+        return head == tail;
+    }
 
-	public int size() {
-		return (maxCapacity - head + tail) % maxCapacity;
-	}
+    public int size() {
+        return (capacity - head + tail) % capacity;
+    }
 
-	public void enqueue(int element) {
+    public void enqueue(int element) {
 
-		if ((tail + 1) % maxCapacity == head) {
-			resize();
-		}
-		array[tail] = element;
-		tail = (tail + 1) % maxCapacity;
+        if ((tail + 1) % capacity == head) {
+            resize();
+        }
+        array[tail] = element;
+        tail = (tail + 1) % capacity;
 
-	}
+    }
 
-	public int dequeue() {
-		int removedCandidate = array[head];
-		head = (head + 1) % maxCapacity;
-		return removedCandidate;
-	}
+    public int dequeue() {
 
-	private void resize() {
+        // If size is zero, log and return
+        if (size() == 0) {
+            throw new IllegalStateException("Queue is empty, can't dequeue at this stage!");
+        }
+        int removedCandidate = array[head];
+        head = (head + 1) % capacity;
+        return removedCandidate;
+    }
 
-		int newMaxCapacity = 2 * maxCapacity;
-		int[] arr = new int[newMaxCapacity];
-		int pos = 0;
-		while (!(head == tail)) {
-			arr[pos++] = array[head];
-			head = (head + 1) % maxCapacity;
-		}
-		maxCapacity = newMaxCapacity;
-		array = arr;
-		head = 0;
-		tail = pos;
-	}
+    private void resize() {
 
-	@Override
-	public String toString() {
+        int newMaxCapacity = 2 * capacity;
+        int[] arr = new int[newMaxCapacity];
+        int pos = 0;
+        while (!(head == tail)) {
+            arr[pos++] = array[head];
+            head = (head + 1) % capacity;
+        }
+        capacity = newMaxCapacity;
+        array = arr;
+        head = 0;
+        tail = pos;
+    }
 
-		StringBuilder sb = new StringBuilder();
-		sb.append("CircularQueue [head=" + head + ", tail=" + tail
-				+ ", maxCapacity=" + maxCapacity + ", elements=[");
-		int i = head;
-		while (i != tail) {
+    @Override
+    public String toString() {
 
-			if ((i + 1 != tail)) {
-				sb.append(array[i] + ", ");
-			} else {
-				sb.append(array[i] + "]]");
-			}
-			i = (i + 1) % maxCapacity;
-		}
-		return sb.toString();
-	}
+        StringBuilder sb = new StringBuilder();
+        sb.append("CircularQueue [head=" + head + ", tail=" + tail
+                + ", capacity=" + capacity + ", elements=[");
+        int i = head;
+        while (i != tail) {
 
-	public static void main(String[] args) {
+            if ((i + 1 != tail)) {
+                sb.append(array[i] + ", ");
+            } else {
+                sb.append(array[i] + "]]");
+            }
+            i = (i + 1) % capacity;
+        }
+        return sb.toString();
+    }
 
-		CircularQueue cq = new CircularQueue(5);
-		cq.enqueue(1);
-		cq.enqueue(2);
-		cq.enqueue(3);
-		cq.enqueue(4);
-		cq.enqueue(5);
-		System.out.println(cq.toString());
-		System.out.println("Dequeue " + cq.dequeue() + ":");
-		System.out.println(cq.toString());
-		System.out.println("Queue size: " + cq.size());
+    public static void main(String[] args) {
 
-	}
+        CircularQueue cq = new CircularQueue(5);
+        cq.enqueue(1);
+        cq.enqueue(2);
+        cq.enqueue(3);
+        cq.enqueue(4);
+        System.out.println(cq.toString());
+        System.out.println("Dequeue " + cq.dequeue() + ":");
+        System.out.println(cq.toString());
+        System.out.println("Queue size: " + cq.size());
+
+        System.out.println("Add couple of more elements to this queue.");
+        cq.enqueue(5);
+        cq.enqueue(6);
+        System.out.println("Print the queue again: " + cq.toString());
+        System.out.println("Queue size now: " + cq.size());
+
+        System.out.println("\nLet's dequeue all elements now.");
+        System.out.println("Dequeue: " + cq.dequeue());
+        System.out.println("Dequeue: " + cq.dequeue());
+        System.out.println("Dequeue: " + cq.dequeue());
+        System.out.println("Dequeue: " + cq.dequeue());
+        System.out.println("Dequeue: " + cq.dequeue());
+        System.out.println("Size of the queue now: " + cq.size());
+        System.out.println("What will happen if we try to Dequeue now? It should cause an error, right?");
+        cq.dequeue();
+
+    }
 
 }

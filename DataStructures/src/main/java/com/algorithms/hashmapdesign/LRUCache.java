@@ -21,7 +21,7 @@ public class LRUCache {
 	public LRUCache(int cacheSize) {
 		this.cacheSize = cacheSize;
 		currentCacheSize = 0;
-		cache = new HashMap<Integer, CacheNode>();
+		cache = new HashMap<>();
 		cacheStart = null;
 		cacheEnd = null;
 	}

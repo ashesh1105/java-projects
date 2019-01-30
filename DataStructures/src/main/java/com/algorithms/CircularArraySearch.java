@@ -38,7 +38,7 @@ public class CircularArraySearch {
 
 			/**
 			 * We have following cases now: 
-			 * Case 1: If array between low and high indexes is not circular a this point, i.e., everything is sorted,
+			 * Case 1: If array between low and high indexes is not circular at this point, i.e., everything is sorted,
 			 * Case 1.a: Move high to right before mid or low to right after mid depending on how num compares with A[mid].
 			 * 
 			 * Case 2: if left array is sorted. This will allow us to check if num lies in that sub array. 
