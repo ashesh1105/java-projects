@@ -9,24 +9,22 @@ public class InterruptedExceptionDemo {
 		System.out.println("Starting thread ..");
 		long start = System.currentTimeMillis();
 
-		Thread t1 = new Thread(new Runnable() {
-			public void run() {
-				Random random = new Random();
-				for (int i = 0; i < 1E8; i++) {
+		Thread t1 = new Thread(() -> {
+			Random random = new Random();
+			for (int i = 0; i < 1E8; i++) {
 
-					// Interrupt just causes a flag on running threads and do
-					// not cause the thread to stop. You can get the interrupted
-					// status of a thread either below way or make the thread
-					// sleep for small duration and catch InterruptedException,
-					// print or log the message.
-					if (Thread.currentThread().isInterrupted()) {
-						System.out.println("Thread interrupted!");
-						break;
-					}
-
-					Double angle = random.nextDouble();
-					Math.sin(angle);
+				// Interrupt just causes a flag on running threads and do
+				// not cause the thread to stop. You can get the interrupted
+				// status of a thread either below way or make the thread
+				// sleep for small duration and catch InterruptedException,
+				// print or log the message.
+				if (Thread.currentThread().isInterrupted()) {
+					System.out.println("Thread interrupted!");
+					break;
 				}
+
+				Double angle = random.nextDouble();
+				Math.sin(angle);
 			}
 		});
 

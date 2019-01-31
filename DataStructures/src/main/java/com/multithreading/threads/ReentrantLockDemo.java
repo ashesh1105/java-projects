@@ -24,23 +24,21 @@ public class ReentrantLockDemo {
 		final Account acc2 = new Account(10000);
 		// acc1.transfer(acc1, acc2, 1000);
 
-		Thread t1 = new Thread(new Runnable() {
-			public void run() {
-				for (int i = 0; i < 1000; i++) {
-					// synchronized(lock) {
-					// acc1.transfer(acc1, acc2, 10);
-					// }
-					try {
-						boolean tryLock = lock
-								.tryLock(1, TimeUnit.MILLISECONDS);
-						if (tryLock == true) {
-							acc1.transfer(acc1, acc2, 10);
-						}
-					} catch (Exception e) {
-						e.printStackTrace();
-					} finally {
-						lock.unlock();
+		Thread t1 = new Thread(() -> {
+			for (int i = 0; i < 1000; i++) {
+				// synchronized(lock) {
+				// acc1.transfer(acc1, acc2, 10);
+				// }
+				try {
+					boolean tryLock = lock
+							.tryLock(1, TimeUnit.MILLISECONDS);
+					if (tryLock == true) {
+						acc1.transfer(acc1, acc2, 10);
 					}
+				} catch (Exception e) {
+					e.printStackTrace();
+				} finally {
+					lock.unlock();
 				}
 			}
 		});

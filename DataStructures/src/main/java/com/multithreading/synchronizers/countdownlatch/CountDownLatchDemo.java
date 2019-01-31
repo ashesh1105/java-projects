@@ -34,8 +34,8 @@ public class CountDownLatchDemo {
 	public void bootStrapSystem() {
 
 		Thread t1 = new Thread(new Service("CacheService", 1000, latch));
-		Thread t2 = new Thread(new Service("AlertService", 1000, latch));
-		Thread t3 = new Thread(new Service("ValidationService", 1000, latch));
+		Thread t2 = new Thread(new Service("AlertService", 100, latch));
+		Thread t3 = new Thread(new Service("ValidationService", 1500, latch));
 		
 		t1.start();
 		t2.start();

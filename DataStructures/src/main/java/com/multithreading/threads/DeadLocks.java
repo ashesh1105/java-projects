@@ -23,7 +23,6 @@ public class DeadLocks {
 				System.out.println("Thread 1 aquired lock1...");
 
 				System.out.println("Thread 2 will now wait for lock2 before it can release lock1...");
-
 				synchronized (lock2) {
 					System.out.println("Thread 1 got lock2 now! Soon it can release lock1 as well!");
 				}
@@ -39,9 +38,8 @@ public class DeadLocks {
 				System.out.println("Thread 2 aquired lock2...");
 
 				System.out.println("Thread 2 will now wait for lock1 before it can release lock2...");
-				
 				// Fix deadlock by changing below to synchronized(lock2)
-				// Basically, both the thread should aquire and release the locks in same order!
+				// Basically, both the thread should acquire and release the locks in same order!
 				synchronized (lock1) {
 					System.out.println("Thread 2 got lock1 now! Soon it can release lock2 as well!");
 				}

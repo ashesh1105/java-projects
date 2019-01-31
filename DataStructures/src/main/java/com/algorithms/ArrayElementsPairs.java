@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.algorithms.recursion.mergesort.MergeSort;
+import com.algorithms.sorting.mergesort.MergeSort;
 
 public class ArrayElementsPairs {
 

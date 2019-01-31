@@ -74,7 +74,7 @@ public class HourGlass {
 		2 h h x
 
 	* Here the 'h' are the positions of the hourglass we want to get, 'a' the positions in the matrix actually not 
-	* interesting us, and 'x' the actual position we just filled (our new 'h' from where we are seeing this hour glass)
+	* interesting to us, and 'x' the actual position we just filled (our new 'h' from where we are seeing this hour glass)
 	* As you can see, the actual values of our i (the number of the row we are actually filling) and j (the number of the column)
 	* is 2,2. So, knowing this, getting the position of the other 'h' relative to the actual position is straightforward.
 		  0 1 2 3 4 5
@@ -82,7 +82,7 @@ public class HourGlass {
 		1 a h a a a a
 		2 h y x
 
-	* y here is the same row than x (so same i) but one column less (so j - 1). And that's how we obtain the first value 
+	* y here is the same row as x (so same i) but one column less (so j - 1). And that's how we obtain the first value
 	* from the actual x : a[i][j-1]. Another example:
 		  0 1 2 3 4 5
 		0 z h h a a a
@@ -104,7 +104,7 @@ public class HourGlass {
 
 	* Do you see the pattern ? We can repeat the same calculation we did precendently to get the value of the hour glass, 
 	* and from now on, we just keep the greatest result.
-	* The trick is to not perform the calculations when doing the calculation would lead us outside the bound of the matrix. 
+	* The trick is to not allow ArrayOutOfBounds in the matrix.
 	* Example:
 		  0 1 2 3 4 5
 		0 a a a a a a
@@ -113,7 +113,7 @@ public class HourGlass {
 		3 a x
 
 	* Here, i = 3 and j = 1. Trying to calculate an hour glass using the precedent pattern would result in doing 
-	* something like ...+a[1-2]+..., therefore going outside the boundary of the matrix and crashing the program. 
+	* something like ...+a[j-2]+..., therefore going outside the boundary of the matrix and crashing the program.
 	* Hence the condition we set before doing each calculation :
 
 	* if (i > 1 && j > 1){...

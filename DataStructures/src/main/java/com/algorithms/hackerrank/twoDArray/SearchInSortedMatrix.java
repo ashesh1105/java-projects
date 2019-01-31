@@ -26,7 +26,7 @@ public class SearchInSortedMatrix {
 				{ 78, 83, 91, 99 } 
 		};
 		
-		int num = 91;
+		int num = 34;
 		// m x n array
 		boolean found = searchNumberIn2DArray(A, 4, 4, num);
 		
@@ -40,7 +40,7 @@ public class SearchInSortedMatrix {
 		int row = 0;
 		int col = n-1;
 		
-		while (row < m && col < n) {
+		while (row < m && col >= 0) {
 			int elem = A[row][col];
 			if (elem == num) {
 				return true;

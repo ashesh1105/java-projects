@@ -14,14 +14,9 @@ public class SemaphoreDemo {
 		ExecutorService executors = Executors.newCachedThreadPool();
 
 		for (int i = 0; i < 100; i++) {
-			executors.execute(new Runnable() {
-
-				@Override
-				public void run() {
-					Connection conn = Connection.getConnection();
-					conn.connect();
-				}
-
+			executors.execute(() -> {
+				Connection conn = Connection.getConnection();
+				conn.connect();
 			});
 		}
 
@@ -72,7 +67,7 @@ class Connection {
 			count++;
 			System.out.println("Connections increased to " + count);
 			
-			// Sleep the thread for 2 sec before calling semaphore release
+			// Sleep the thread for some time before calling semaphore release
 			Thread.sleep(100);
 			
 		} catch (InterruptedException e1) {
