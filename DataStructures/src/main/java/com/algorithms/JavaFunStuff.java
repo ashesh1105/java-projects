@@ -19,6 +19,8 @@ public class JavaFunStuff {
 		System.out.println("JVM Free Memory from Runtime: " + runtime.freeMemory());
 		System.out.println("JVM Total Memory from Runtime: " + runtime.totalMemory());
 		System.out.println("JVM Max Memory from Runtime: " + runtime.maxMemory());
+
+		System.out.println("100L == 100 ? " + (100L == 100));
 		
 		
 
