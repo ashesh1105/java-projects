@@ -57,7 +57,7 @@ public class ReverseStringButSpecialChars {
 			while (!Character.isAlphabetic(arr[j])) {
 				j--;
 			}
-			// Now you can swap if i still less than j
+			// Now you can swap if i still is less than j
 			if (i<j) {
 				char temp = arr[i];
 				arr[i] = arr[j];
