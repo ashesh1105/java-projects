@@ -1,4 +1,4 @@
-package com.algorithms.dynamicconnectivityproblem;
+package main.java.com.algorithms.dynamicconnectivityproblem;
 
 import java.util.HashMap;
 import java.util.Map;

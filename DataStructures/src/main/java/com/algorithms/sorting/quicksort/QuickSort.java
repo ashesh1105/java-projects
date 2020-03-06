@@ -1,4 +1,4 @@
-package com.algorithms.sorting.quicksort;
+package main.java.com.algorithms.sorting.quicksort;
 
 public class QuickSort {
 

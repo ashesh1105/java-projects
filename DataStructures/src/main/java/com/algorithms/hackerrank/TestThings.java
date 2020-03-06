@@ -1,4 +1,4 @@
-package com.algorithms.hackerrank;
+package main.java.com.algorithms.hackerrank;
 
 import java.text.NumberFormat;
 

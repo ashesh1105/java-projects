@@ -1,7 +1,4 @@
-package com.algorithms.dynamicprogramming;
-
-import java.util.HashMap;
-import java.util.Map;
+package main.java.com.algorithms.dynamicprogramming;
 
 import lombok.Getter;
 

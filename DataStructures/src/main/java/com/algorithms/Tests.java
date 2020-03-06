@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.algorithms;
+package main.java.com.algorithms;
 
 import static org.junit.Assert.assertEquals;
 

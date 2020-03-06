@@ -1,10 +1,8 @@
-package com.algorithms;
+package main.java.com.algorithms;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-
-import com.algorithms.sorting.mergesort.MergeSort;
 
 public class ArrayElementsPairs {
 

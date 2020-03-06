@@ -1,4 +1,4 @@
-package com.algorithms;
+package main.java.com.algorithms;
 
 /**
  * Search a specific number in a sorted circular array.

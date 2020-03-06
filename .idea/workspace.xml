@@ -2,80 +2,231 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940937f1-3789-45b4-ab83-19260043c3e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/PalindromicPartitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ArrayCommonElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ArrayCommonElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ArrayElementsPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ArrayElementsPairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ArrayElementsTripletsSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ArrayElementsTripletsSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ArrrayDuplicateElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ArrrayDuplicateElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/BalancedParantheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/BalancedParantheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/CircularArrayNumRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/CircularArrayNumRotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/CircularArraySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/CircularArraySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/CommonElementsFromSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/CommonElementsFromSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/DictionaryWithLinkedListAlone.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/DictionaryWithLinkedListAlone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/FindDips.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/FindDips.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/FirstOccurrence.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/FirstOccurrence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/Incompatibility.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/Incompatibility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/JavaFunStuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/JavaFunStuff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/LargestSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/LargestSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/LastOccurrence.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/LastOccurrence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/LongestConsecutiveSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/LongestConsecutiveSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/MergeNSortedLinkedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/MergeNSortedLinkedLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/NextGreaterNumberToTheRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/NextGreaterNumberToTheRight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/Occurrences.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/Occurrences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ParanthesesCombinationsByReplacingAstrisks.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ParanthesesCombinationsByReplacingAstrisks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ParenthesesCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ParenthesesCombinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/PerfectSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/PerfectSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/PracticeAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/PracticeAlgorithms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/PracticeDataStructures.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/PracticeDataStructures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/PrimeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/PrimeNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/RemoveDuplicatesIntArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/RemoveDuplicatesIntArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ReverseIntegerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ReverseIntegerClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/StringToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/StringToInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/SwapTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/SwapTwoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ThreeArrayElementCombinationsAsTargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ThreeArrayElementCombinationsAsTargetSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/TopKCommonElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/TopKCommonElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/TopKLargestNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/TopKLargestNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/TopPageVisitedSquence.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/TopPageVisitedSquence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/bitmanupulation/BitManupulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/bitmanupulation/BitManupulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/bitmanupulation/DecimalToBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/bitmanupulation/DecimalToBinary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/bitmanupulation/DuplicateCharsInString.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/bitmanupulation/DuplicateCharsInString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicconnectivityproblem/QuickFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicconnectivityproblem/QuickFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicconnectivityproblem/QuickUnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicconnectivityproblem/QuickUnion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicprogramming/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicprogramming/Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicprogramming/GreaterNumbersAhead.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicprogramming/GreaterNumbersAhead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicprogramming/HowManyJumps.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicprogramming/HowManyJumps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicprogramming/KnapsackProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicprogramming/KnapsackProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicprogramming/LongestCommonSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicprogramming/LongestCommonSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicprogramming/NumSetsWithGivenTotalNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicprogramming/NumSetsWithGivenTotalNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicprogramming/StepsProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/dynamicprogramming/StepsProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/DataTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/DataTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/MyBitSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/MyBitSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/MyPriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/MyPriorityQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/TestThings.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/TestThings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/deque/UniqueIntegersAmongAllSubarrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/deque/UniqueIntegersAmongAllSubarrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/strings/StringComparisions.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/strings/StringComparisions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/twoDArray/HourGlass.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/twoDArray/HourGlass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/twoDArray/Print2DArraySnakeOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/twoDArray/Print2DArraySnakeOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/twoDArray/Print2DArraySpiralOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/twoDArray/Print2DArraySpiralOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/twoDArray/Pyramid.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/twoDArray/Pyramid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/twoDArray/Rotate2DArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/twoDArray/Rotate2DArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/twoDArray/SearchInSortedMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/twoDArray/SearchInSortedMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/twoDArray/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hackerrank/twoDArray/Steps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hashmapdesign/CacheNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hashmapdesign/CacheNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hashmapdesign/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hashmapdesign/LRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hashmapdesign/MyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hashmapdesign/MyHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/interfaces/ReverseIntegerAlgo.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/interfaces/ReverseIntegerAlgo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/puzzles/Algos.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/puzzles/Algos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/puzzles/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/puzzles/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/puzzles/DoubleStringMystery.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/puzzles/DoubleStringMystery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/puzzles/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/puzzles/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/puzzles/OddityCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/puzzles/OddityCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/realInterviewQuestions/ContainsCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/realInterviewQuestions/ContainsCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/realInterviewQuestions/ReverseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/realInterviewQuestions/ReverseString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/realInterviewQuestions/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/realInterviewQuestions/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/realInterviewQuestions/ValueIncreaser.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/realInterviewQuestions/ValueIncreaser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/recursion/Factorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/recursion/Factorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/recursion/SumOfSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/recursion/SumOfSquares.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/recursion/TowerOfHanoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/recursion/TowerOfHanoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/sorting/insertionsort/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/sorting/insertionsort/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/sorting/insertionsort/InsertionSortAnother.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/sorting/insertionsort/InsertionSortAnother.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/sorting/mergesort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/sorting/mergesort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/sorting/quicksort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/sorting/quicksort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/sorting/radixsort/RadixSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/sorting/radixsort/RadixSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/sorting/selectionsort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/sorting/selectionsort/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/Anagram1.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/Anagram1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/Anagram2.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/Anagram2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/Anagram3.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/Anagram3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/CapitilizeSentence.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/CapitilizeSentence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/DuplicateChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/DuplicateChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/EmployeeSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/EmployeeSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/InputAndOrderingString.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/InputAndOrderingString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/LargestSubStringNoDups.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/LargestSubStringNoDups.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/LongestCommonSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/LongestCommonSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/MatchingSymbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/MatchingSymbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/PalindromePermutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/string/PalindromePermutations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/RemoveDulicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/RemoveDulicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/ReplaceSpacesByPercent20.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/ReplaceSpacesByPercent20.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/ReverseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/ReverseString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/ReverseStringButSpecialChars.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/ReverseStringButSpecialChars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/thread/producerconsumer/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/multithreading/producerconsumer/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/thread/producerconsumer/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/multithreading/producerconsumer/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/resources/StringsAndArrays_GeeksForGeeksTop10Questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/resources/StringsAndArrays_GeeksForGeeksTop10Questions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/CircularArrayNumRotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/CircularArrayNumRotation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/FindGraphPaths.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/bfs/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/bfs/BFS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/bfs/Vertex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/bfs/webcrawler/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/bfs/webcrawler/Site.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/bfs/webcrawler/WebCrawler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/dfs/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/dfs/DFS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/dfs/Vertex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/dfs/cycledetection/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/dfs/cycledetection/CycleDetection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/dfs/cycledetection/Vertex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/dfs/mazesolver/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/dfs/mazesolver/MazeSolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/dfs/mazesolver/MyFileReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/dfs/topologicalordering/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/dfs/topologicalordering/TopologicalOrdering.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/dfs/topologicalordering/Vertex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/shortestpath/dag/AcyclicShortestPath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/shortestpath/dag/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/shortestpath/dag/Edge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/shortestpath/dag/TopologicalSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/shortestpath/dag/Vertex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/shortestpath/dijkstra/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/shortestpath/dijkstra/DijkstraAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/shortestpath/dijkstra/Edge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/shortestpath/dijkstra/Vertex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/graphs/shortestpath/dijkstra/astar/AStarAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/twoDArray/SearchInSortedMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/twoDArray/SearchInSortedMatrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hashmapdesign/LRUCacheDesign.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/qaigeninterview/ContainsCycle$Link.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/qaigeninterview/ContainsCycle$LinkImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/qaigeninterview/ContainsCycle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/qaigeninterview/ReverseString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/qaigeninterview/Singleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/qaigeninterview/ValueIncreaser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/recursion/mergesort/MergeSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/queue/CircularQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/queue/CircularQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/queue/FindElementsInSortedCircularArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/stack/DecimalToBinary.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/stack/DecimalToBinary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/stack/StackDeque.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/stack/StackDeque.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/stack/StackTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/stack/StackTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/stack/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/stack/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/SplitTextMessageNumCharacterLimit.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/SplitTextMessageNumCharacterLimit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/StringAsSpaceSeparatedSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/StringAsSpaceSeparatedSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/StringManipulations.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/StringManipulations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/ValidInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/ValidInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/trie/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/trie/Trie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/trie/TrieNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/trie/TrieNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/trie/UseTrie.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/trie/UseTrie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/datastructures/queue/CircularQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/datastructures/queue/CircularQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/main/java/com/datastructures/tree/binarytree/binarysearchtree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/main/java/com/datastructures/tree/binarytree/binarysearchtree/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/ArrayCommonElements.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/ArrayElementsPairs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/ArrayElementsTripletsSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/ArrrayDuplicateElements.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/BalancedParantheses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/CircularArrayNumRotation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/CircularArraySearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/CommonElementsFromSortedArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/CompareAnimalsReverseAlphabatical.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/DictionaryWithLinkedListAlone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/FindDips.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/FirstOccurrence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/Incompatibility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/JavaFunStuff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/LargestSubsequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/LastOccurrence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/LongestConsecutiveSubsequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/MergeNSortedLinkedLists.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/NextGreaterNumberToTheRight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/Occurrences.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/ParanthesesCombinationsByReplacingAstrisks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/ParenthesesCombinations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/PerfectSquare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/PracticeAlgorithms.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/PracticeDataStructures.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/PrimeNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/RemoveDuplicatesIntArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/ReverseInteger1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/ReverseInteger2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/ReverseIntegerClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/StringToInteger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/SwapTwoNumbers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/Tests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/ThreeArrayElementCombinationsAsTargetSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/TopKCommonElements.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/TopKLargestNumbers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/TopPageVisitedSquence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/bitmanupulation/BitManupulation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/bitmanupulation/DecimalToBinary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/bitmanupulation/DuplicateCharsInString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/dynamicconnectivityproblem/QuickFind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/dynamicconnectivityproblem/QuickUnion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/dynamicprogramming/Fibonacci.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/dynamicprogramming/GreaterNumbersAhead.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/dynamicprogramming/HowManyJumps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/dynamicprogramming/KnapsackProblem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/dynamicprogramming/LongestCommonSubsequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/dynamicprogramming/NumSetsWithGivenTotalNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/dynamicprogramming/StepsProblem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/DataTypes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/MyBitSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/MyPriorityQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/Priorities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/TestThings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/deque/UniqueIntegersAmongAllSubarrays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/strings/StringComparisions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/twoDArray/HourGlass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/twoDArray/Print2DArraySnakeOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/twoDArray/Print2DArraySpiralOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/twoDArray/Pyramid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/twoDArray/Rotate2DArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/twoDArray/SearchInSortedMatrix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hackerrank/twoDArray/Steps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hashmapdesign/CacheNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hashmapdesign/LRUCache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/hashmapdesign/MyHashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/interfaces/ReverseIntegerAlgo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/puzzles/Algos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/puzzles/Base.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/puzzles/Card$Rank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/puzzles/Card$Suite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/puzzles/Card.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/puzzles/DoubleStringMystery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/puzzles/Example.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/puzzles/Extension.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/puzzles/OddityCheck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/recursion/Factorial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/recursion/SumOfSquares.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/recursion/TowerOfHanoi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/sorting/insertionsort/InsertionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/sorting/insertionsort/InsertionSortAnother.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/sorting/quicksort/QuickSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/sorting/radixsort/RadixSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/sorting/selectionsort/SelectionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/Anagram1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/Anagram2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/Anagram3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/CapitilizeSentence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/DuplicateChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/EmployeeSorter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/InputAndOrderingString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/LargestSubStringNoDups.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/LongestCommonSubstring.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/MatchingSymbol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/Palindrome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/PalindromePermutations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/RemoveDulicates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/ReplaceSpacesByPercent20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/ReverseString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/ReverseStringButSpecialChars.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/SplitTextMessageNumCharacterLimit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/StringAsSpaceSeparatedSequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/StringManipulations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/string/ValidInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/trie/Trie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/trie/TrieNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/algorithms/trie/UseTrie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/linkedlist/LinkedListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/linkedlist/SortedLinkedListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/stack/StackTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/tree/binarytree/binarysearchtree/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/tree/binarytree/binarysearchtree/BinarySearchTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/tree/binarytree/binarysearchtree/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/tree/binarytree/binarysearchtree/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/tree/binarytree/binarysearchtree/UseBinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/tree/binarytree/binarysearchtree/UseBinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/tree/binarytree/heap/AscendingHeap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/tree/binarytree/heap/Heap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/datastructures/tree/binarytree/heap/HeapFromArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/synchronizers/countdownlatch/CountDownLatchDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/synchronizers/countdownlatch/CountDownLatchDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/Connection.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/Connection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/DeadLocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/DeadLocks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/InterruptedExceptionDemo$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/InterruptedExceptionDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/InterruptedExceptionDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/ReentrantLockDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/ReentrantLockDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/ReentrantLockDemo$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/ReentrantLockDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/ReentrantLockDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/SemaphoreDemo$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/SemaphoreDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/multithreading/threads/SemaphoreDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/practice/misc/Misc.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/com/practice/misc/Misc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/thread/producerconsumer/Consumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/com/thread/producerconsumer/Producer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-projects.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/target/classes/main/resources/StringsAndArrays_GeeksForGeeksTop10Questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/target/classes/main/resources/StringsAndArrays_GeeksForGeeksTop10Questions.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -87,102 +238,40 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hashmapdesign/LRUCache.java">
+        <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/datastructures/tree/binarytree/binarysearchtree/MaxPathSum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/dsgnptrn/behavioral/state/VendingMachine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="589">
+              <caret line="32" column="25" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DataStructures/src/main/resources/StringsAndArrays_GeeksForGeeksTop10Questions.txt">
+        <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/datastructures/queue/CircularQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/ReverseStringButSpecialChars.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/realInterviewQuestions/Singleton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/realInterviewQuestions/ValueIncreaser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/recursion/SumOfSquares.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/SplitTextMessageNumCharacterLimit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/MatchingSymbol.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/recursion/Factorial.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="342">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -190,15 +279,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/ReverseStringButSpecialChars.java" />
         <option value="$PROJECT_DIR$/DataStructures/src/main/resources/StringsAndArrays_GeeksForGeeksTop10Questions.txt" />
+        <option value="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/ReverseStringButSpecialChars.java" />
+        <option value="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/PalindromicPartitions.java" />
+        <option value="$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/PalindromePermutations.java" />
+        <option value="$PROJECT_DIR$/DataStructures/src/main/java/com/string/PalindromePermutations.java" />
+        <option value="$PROJECT_DIR$/DataStructures/src/main/java/com/datastructures/tree/binarytree/binarysearchtree/BinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/DataStructures/src/main/java/com/datastructures/queue/CircularQueue.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="934" />
+    <option name="width" value="2044" />
+    <option name="height" value="1012" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -267,8 +361,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="string" type="462c0819:PsiDirectoryNode" />
+              <item name="calendar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-projects" type="b2602c69:ProjectViewProjectNode" />
@@ -276,7 +369,53 @@
               <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="currency" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-projects" type="462c0819:PsiDirectoryNode" />
+              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-projects" type="462c0819:PsiDirectoryNode" />
+              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructures" type="462c0819:PsiDirectoryNode" />
+              <item name="queue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-projects" type="462c0819:PsiDirectoryNode" />
+              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructures" type="462c0819:PsiDirectoryNode" />
+              <item name="tree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-projects" type="462c0819:PsiDirectoryNode" />
+              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructures" type="462c0819:PsiDirectoryNode" />
+              <item name="tree" type="462c0819:PsiDirectoryNode" />
+              <item name="binarysearchtree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -286,10 +425,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/DataStructures/src" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -303,13 +443,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReverseStringButSpecialChars">
+  <component name="RunManager" selected="Application.MaxPathSum">
     <configuration name="BalancedParantheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.algorithms.BalancedParantheses" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.algorithms.*" />
+          <option name="PATTERN" value="main.java.com.algorithms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -322,7 +462,20 @@
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.algorithms.*" />
+          <option name="PATTERN" value="main.java.com.algorithms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxPathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.datastructures.tree.binarytree.binarysearchtree.MaxPathSum" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.datastructures.tree.binarytree.binarysearchtree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -335,7 +488,7 @@
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.algorithms.string.*" />
+          <option name="PATTERN" value="main.java.com.string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -345,6 +498,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MaxPathSum" />
         <item itemvalue="Application.ReverseStringButSpecialChars" />
         <item itemvalue="Application.LongestConsecutiveSubsequence" />
         <item itemvalue="Application.BalancedParantheses" />
@@ -365,9 +519,37 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="934" extended-state="6" />
+    <frame x="0" y="23" width="2044" height="1012" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2052947" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32897863" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+    <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2722833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
@@ -394,7 +576,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/ArrayElementsTripletsSum.java">
@@ -530,20 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hashmapdesign/LRUCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/realInterviewQuestions/Singleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/realInterviewQuestions/ValueIncreaser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -579,24 +747,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/dsgnptrn/behavioral/state/VendingMachine.java">
+    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/realInterviewQuestions/Singleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/ReverseStringButSpecialChars.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+        <state relative-caret-position="396">
+          <caret line="59" column="46" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/dsgnptrn/behavioral/state/VendingMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/hashmapdesign/LRUCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/Palindrome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/string/PalindromePermutations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/string/PalindromicPartitions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/practice/misc/Misc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataStructures/src/main/resources/StringsAndArrays_GeeksForGeeksTop10Questions.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="869">
+          <caret line="80" column="3" selection-start-line="80" selection-start-column="3" selection-end-line="80" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/calendar/MyCalendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/LargestSubsequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/algorithms/PracticeAlgorithms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/datastructures/tree/binarytree/binarysearchtree/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="111" column="42" selection-start-line="111" selection-start-column="42" selection-end-line="111" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/datastructures/tree/binarytree/binarysearchtree/BinarySearchTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="835">
+          <caret line="263" column="29" selection-start-line="263" selection-start-column="29" selection-end-line="263" selection-end-column="29" />
+          <folding>
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/datastructures/tree/binarytree/binarysearchtree/MaxPathSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataStructures/src/main/java/com/datastructures/queue/CircularQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -650,7 +913,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>DataStructures</last-edited>
+          <last-edited>Guice</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

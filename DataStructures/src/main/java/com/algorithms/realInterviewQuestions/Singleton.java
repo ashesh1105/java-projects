@@ -1,4 +1,4 @@
-package com.algorithms.realInterviewQuestions;
+package main.java.com.algorithms.realInterviewQuestions;
 //Is this singleton class thread safe? Why? If not, how can it be made it thread safe?
 public class Singleton {
 

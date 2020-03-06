@@ -1,7 +1,5 @@
 package com.datastructures.queue;
 
-import static java.lang.System.exit;
-
 public class CircularQueue {
 
     private int head;

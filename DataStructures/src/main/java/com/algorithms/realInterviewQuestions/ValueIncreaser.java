@@ -1,4 +1,4 @@
-package com.algorithms.realInterviewQuestions;
+package main.java.com.algorithms.realInterviewQuestions;
 //TODO:  Is this class Thread Safe?  Why?  If not, make it Thread-Safe
 public class ValueIncreaser {
 
