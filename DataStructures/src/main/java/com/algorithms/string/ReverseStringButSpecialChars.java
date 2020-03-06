@@ -43,6 +43,7 @@ public class ReverseStringButSpecialChars {
 		int j = len-1;
 		
 		while (i<j) {
+			// Check if character is an alphabet, skip that one otherwise
 //			while (!('A' <= arr[i] && arr[i] <= 'Z') && !('a' <= arr[i] && arr[i] <= 'z')) {
 //				i++;
 //			}
@@ -56,11 +57,13 @@ public class ReverseStringButSpecialChars {
 			while (!Character.isAlphabetic(arr[j])) {
 				j--;
 			}
+			// Now you can swap if i still is less than j
 			if (i<j) {
 				char temp = arr[i];
 				arr[i] = arr[j];
 				arr[j] = temp;
 			}
+			// Don't forget to move i & j
 			i++;
 			j--;
 		}

@@ -2,7 +2,7 @@ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
 *****String / Array*****
 ------------------------
-1. Reverse an array without affecting special characters
+1. Reverse a string without affecting special characters
 Given a string, that contains special character together with alphabets (‘a’ to ‘z’ and ‘A’ to ‘Z’),
 reverse the string in a way that special characters are not affected.
 https://www.geeksforgeeks.org/reverse-an-array-without-affecting-special-characters/
@@ -14,6 +14,8 @@ Note that $ and , are not moved anywhere.
 Only subsequence "abc" is reversed
 Input:   str = "Ab,c,de!$"
 Output:  str = "ed,c,bA!$"
+
+Solution: Class: algorithms/string/ReverseStringButSpecialCharacters
 
 2. All Possible Palindromic Partitions
 Given a string, print all possible palindromic partitions.

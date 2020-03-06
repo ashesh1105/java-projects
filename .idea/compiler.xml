@@ -6,9 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="DataStructures" />
-        <module name="Enums" />
         <module name="Guice" />
+        <module name="DataStructures" />
       </profile>
     </annotationProcessing>
   </component>

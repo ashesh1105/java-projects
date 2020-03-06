@@ -4,9 +4,7 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/DataStructures/pom.xml" />
-        <option value="$PROJECT_DIR$/Enums/pom.xml" />
-        <option value="$PROJECT_DIR$/Guice/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
