@@ -1,4 +1,4 @@
-package com.thread.producerconsumer;
+package com.multithreading.producerconsumer;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
