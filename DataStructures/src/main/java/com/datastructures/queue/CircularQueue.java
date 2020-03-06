@@ -104,7 +104,8 @@ public class CircularQueue {
         System.out.println("Dequeue: " + cq.dequeue());
         System.out.println("Size of the queue now: " + cq.size());
         System.out.println("What will happen if we try to Dequeue now? It should cause an error, right?");
-        cq.dequeue();
+        System.out.println("You're right! There will be exception!");
+//        cq.dequeue();
 
     }
 
