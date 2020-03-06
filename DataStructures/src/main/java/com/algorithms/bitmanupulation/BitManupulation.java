@@ -1,4 +1,6 @@
-package main.java.com.algorithms.bitmanupulation;
+package com.algorithms.bitmanupulation;
+
+import com.datastructures.stack.DecimalToBinary;
 
 public class BitManupulation {
 
