@@ -1,5 +1,7 @@
 package com.algorithms.bitmanupulation;
 
+import com.datastructures.stack.DecimalToBinary;
+
 public class BitManupulation {
 
 	/*

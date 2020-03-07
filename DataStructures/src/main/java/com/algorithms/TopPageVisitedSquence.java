@@ -1,4 +1,4 @@
-package com.algorithms;
+package main.java.com.algorithms;
 
 public class TopPageVisitedSquence {
 

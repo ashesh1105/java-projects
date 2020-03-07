@@ -1,4 +1,4 @@
-package com.algorithms;
+package main.java.com.algorithms;
 
 /*
  * First all occurrences of an element inside a sorted array

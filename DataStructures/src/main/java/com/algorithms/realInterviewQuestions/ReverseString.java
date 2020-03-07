@@ -1,4 +1,4 @@
-package com.algorithms.realInterviewQuestions;
+package main.java.com.algorithms.realInterviewQuestions;
 //Implement your solution using only classes from java.lang.  No additional imports are permitted.
 
 public class ReverseString {

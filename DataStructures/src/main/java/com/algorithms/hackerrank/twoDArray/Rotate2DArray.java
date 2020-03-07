@@ -1,4 +1,4 @@
-package com.algorithms.hackerrank.twoDArray;
+package main.java.com.algorithms.hackerrank.twoDArray;
 
 /**
  Rotate n x n 2D Matrix clockwise

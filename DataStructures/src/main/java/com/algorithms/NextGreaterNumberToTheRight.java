@@ -1,6 +1,5 @@
-package com.algorithms;
+package main.java.com.algorithms;
 
-import java.util.Random;
 import java.util.Stack;
 
 public class NextGreaterNumberToTheRight {

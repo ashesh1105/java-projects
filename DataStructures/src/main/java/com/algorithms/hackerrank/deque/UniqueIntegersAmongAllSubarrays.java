@@ -1,4 +1,4 @@
-package com.algorithms.hackerrank.deque;
+package main.java.com.algorithms.hackerrank.deque;
 
 import java.util.*;
 

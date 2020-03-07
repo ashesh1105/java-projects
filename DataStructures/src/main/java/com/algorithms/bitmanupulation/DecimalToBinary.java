@@ -1,4 +1,4 @@
-package com.algorithms.bitmanupulation;
+package main.java.com.algorithms.bitmanupulation;
 
 import java.util.Stack;
 

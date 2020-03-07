@@ -1,4 +1,4 @@
-package com.algorithms.hashmapdesign;
+package main.java.com.algorithms.hashmapdesign;
 
 public class MyHashMap {
 	

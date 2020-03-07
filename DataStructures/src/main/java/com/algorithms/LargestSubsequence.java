@@ -1,7 +1,5 @@
-package com.algorithms;
+package main.java.com.algorithms;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 /**

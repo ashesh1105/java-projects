@@ -1,4 +1,4 @@
-package com.algorithms.string;
+package main.java.com.string;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,7 +7,7 @@ import org.apache.commons.lang3.StringUtils;
 
 /*
  * This cool algo to check if characters of this string can be rearranged as palindrome. Basically make sure 
- * every character is repeated even number of times and no more than one character appears in the string for 
+ * (every character is repeated even number of times, if repeated and) no more than one character appears in the string for
  * odd number of time.
  */
 

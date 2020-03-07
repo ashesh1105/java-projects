@@ -11,6 +11,10 @@ public class BinarySearchTree {
 	@Getter
 	private Node root;
 
+	public Node getRoot() {
+		return root;
+	}
+
 	public BinarySearchTree() {
 		this.root = null;
 	}

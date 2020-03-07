@@ -1,4 +1,4 @@
-package com.algorithms.hackerrank.twoDArray;
+package main.java.com.algorithms.hackerrank.twoDArray;
 
 import java.util.Scanner;
 

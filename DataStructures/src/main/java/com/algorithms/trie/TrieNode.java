@@ -1,4 +1,4 @@
-package com.algorithms.trie;
+package main.java.com.algorithms.trie;
 
 import java.util.HashMap;
 import java.util.Map;

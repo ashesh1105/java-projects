@@ -1,4 +1,4 @@
-package com.algorithms.string;
+package main.java.com.string;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
-import com.algorithms.bitmanupulation.DuplicateCharsInString;
+import main.java.com.algorithms.bitmanupulation.DuplicateCharsInString;
 
 public class StringManipulations {
 

@@ -1,4 +1,4 @@
-package com.algorithms.hashmapdesign;
+package main.java.com.algorithms.hashmapdesign;
 
 import java.util.HashMap;
 import java.util.Map;

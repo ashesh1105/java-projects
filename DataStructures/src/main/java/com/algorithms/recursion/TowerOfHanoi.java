@@ -1,4 +1,4 @@
-package com.algorithms.recursion;
+package main.java.com.algorithms.recursion;
 
 public class TowerOfHanoi {
 

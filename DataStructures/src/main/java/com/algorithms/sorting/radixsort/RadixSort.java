@@ -1,4 +1,4 @@
-package com.algorithms.sorting.radixsort;
+package main.java.com.algorithms.sorting.radixsort;
 
 public class RadixSort {
 	public static void main(String[] args) {
