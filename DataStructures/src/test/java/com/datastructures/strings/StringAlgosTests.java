@@ -1,6 +1,7 @@
 package com.datastructures.strings;
 
 import com.algorithms.hackerrank.strings.LargestSmallestSubstringLexographicalOrder;
+import com.algorithms.hackerrank.strings.regex.RegexIPValidation;
 import org.junit.*;
 
 import static org.junit.Assert.assertEquals;
@@ -10,6 +11,8 @@ public class StringAlgosTests {
 
     private LargestSmallestSubstringLexographicalOrder largestSmallestSubstringLexographicalOrder
             = new LargestSmallestSubstringLexographicalOrder();
+
+    private RegexIPValidation regexIPValidation = new RegexIPValidation();
 
     @Test
     public void test_s_GreaterThan_k_LargestSmallestSubstringLexographicalOrder() {
@@ -51,5 +54,35 @@ public class StringAlgosTests {
         assertEquals("s sent as null, result should've been ERROR!", "ERROR!", result1);
         assertEquals("k sent as 0, result should've been ERROR!", "ERROR!", result2);
     }
+
+    @Test
+    public void test_AreValidIPs_RegexIPValidation() {
+
+        // IPs strings to test
+        String input1 = "000.12.12.034";
+        String input2 = "23.45.12.56";
+        String input3 = "121.234.12.12";
+        String input4 = "00.12.123.123123.123";
+        String input5 = "122.23";
+        String input6 = "22.33.11.55";
+        String input7 = "000.00.01.19";
+        String input8 = "99.99.99.99";
+        String input9 = "I.am.not.IP";
+
+        // Positive tests
+        Assert.assertTrue(regexIPValidation.matches(input1));
+        Assert.assertTrue(regexIPValidation.matches(input2));
+        Assert.assertTrue(regexIPValidation.matches(input3));
+        Assert.assertTrue(regexIPValidation.matches(input6));
+        Assert.assertTrue(regexIPValidation.matches(input7));
+        Assert.assertTrue(regexIPValidation.matches(input8));
+
+        // Negative tests
+        Assert.assertFalse(regexIPValidation.matches(input4));
+        Assert.assertFalse(regexIPValidation.matches(input5));
+        Assert.assertFalse(regexIPValidation.matches(input9));
+    }
+
+
 
 }
