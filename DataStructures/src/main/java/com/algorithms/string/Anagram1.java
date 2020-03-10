@@ -11,6 +11,8 @@ public class Anagram1 {
 	 * The implementation in this class uses an int array of size 128 / 256 to find get all the characters of first
 	 * string with number of occurrences and then compares that with second string. int arrays get initialized to
 	 * zero for all its elements.
+	 *
+	 * Note:: If you want to check for case insensitive anagrams, change char to Character.toLowerCase(char) and proceed
 	 */
 	public boolean isAnagram(String str1, String str2) {
 		// if the lengths are not equal, they definitely cannot be anagrams
@@ -21,8 +23,8 @@ public class Anagram1 {
 		int numOfUniqueChars = 0;
 		int numCompletedInStr2 = 0;
 		char[] chars = str1.toCharArray();
-	
-		for (char c : chars) { // count number of each char in s.
+
+		for (char c : chars) { // count number of each char in str1
 			if (charSet[c] == 0)
 				++numOfUniqueChars;
 			++charSet[c];
@@ -32,7 +34,9 @@ public class Anagram1 {
 		// otherwise we reduce the count for that character in the charSet array.
 		// If you don't understand the code below, I suggest that you step through it using a debugger.
 		// It's not very difficult to understand if you do that.
-		for (int i = 0; i < str2.length(); ++i) {
+		for (int i = 0; i < str2.length(); i++) {
+
+			// If you want to find case insensitive anagrams, simple do c = Character.toLowerCase(c); after below line!
 			int c = (int) str2.charAt(i);
 			if (charSet[c] == 0) { // More of character 'c' in str2 than in str1
 				return false;
@@ -53,6 +57,7 @@ public class Anagram1 {
 	public static void main(String[] args) {
 //		System.out.println(isAnagram("ABABABC", "BABABADDP"));
 		System.out.println(new Anagram1().isAnagram("daniel clowes", "enid coleslaw"));
+		System.out.println(new Anagram1().isAnagram("Hello", "hello"));
 	}
 
 }
