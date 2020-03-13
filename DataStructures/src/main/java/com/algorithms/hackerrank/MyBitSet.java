@@ -1,4 +1,4 @@
-package main.java.com.algorithms.hackerrank;
+package com.algorithms.hackerrank;
 
 import java.util.BitSet;
 import java.util.Scanner;

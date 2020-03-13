@@ -1,4 +1,6 @@
-package main.java.com.algorithms;
+package com.algorithms;
+
+import java.math.BigInteger;
 
 public class PrimeNumber {
 
@@ -17,6 +19,20 @@ public class PrimeNumber {
 				System.out.println(i);
 			}
 		}
+
+		int num2 = 17;
+		System.out.println("Let's check isPrime2 method!");
+		System.out.println("Is " + num2 + " prime? " + new PrimeNumber().isPrime2(num2));
+
+
+		// This is how to check a super large number, like with 100 digits to be prime or not!
+		String num3 = "1111111111111111111111111111111111111111111111111111111111117";
+		System.out.println("Let's check isPrimeBigInteger method!");
+		System.out.println("Is " + num3 + " prime? " + new PrimeNumber().isPrimeBigInteger(new BigInteger(num3)));
+
+		String num4 = "669483106578092405936560831017556154622901950048903016651285";
+		System.out.println("Is " + num4 + " prime? " + new PrimeNumber().isPrimeBigInteger(new BigInteger(num4)));
+
 	}
 
 	public boolean isPrime1(int num) {
@@ -62,6 +78,24 @@ public class PrimeNumber {
 		} else {
 			return false;
 		}
+	}
+
+	public boolean isPrimeBigInteger(BigInteger bigInt) {
+
+		boolean isPrime = false;
+
+		if (bigInt.compareTo(BigInteger.ONE) == 0
+				|| !bigInt.isProbablePrime(1)) {
+			// keep isPrime as false
+		} else if (bigInt.compareTo(BigInteger.valueOf(2)) == 0
+				|| bigInt.compareTo(BigInteger.valueOf(3)) == 0
+				|| (bigInt.multiply(bigInt).subtract(BigInteger.ONE)
+				.remainder(BigInteger.valueOf(24)).equals(BigInteger.ZERO))) {
+			isPrime = true;
+		}
+
+		return isPrime;
+
 	}
 
 }
