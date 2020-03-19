@@ -1,18 +1,25 @@
-package main.java.com.algorithms;
+package com.algorithms;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class BalancedParantheses {
 
 	public static void main(String[] args) {
 
-		String str = "[(5+6)*{6*7}[(7+9)]]";
+		String str1 = "[(5+6)*{6*7}[(7+9)]]";
+		String str2 = "[(5+6)*{6*7}}[(7+9)]]";
 		System.out.println("String "
-				+ str
-				+ (isBalancedParantheses(str) ? " is balanced."
+				+ str1
+				+ (isBalancedParanthesesRegex(str1) ? " is balanced."
 						: " is not balanced."));
+		System.out.println("String "
+				+ str2
+				+ (isBalancedParantheses(str2) ? " is balanced."
+				: " is not balanced."));
 
 	}
 
@@ -52,6 +59,19 @@ public class BalancedParantheses {
 		} else {
 			return true;
 		}
+	}
+
+	// Another way of doing it without using map or stack, leveraging regex
+	private static boolean isBalancedParanthesesRegex(String input) {
+
+		// Replace every pair of (), {} or [] by "", meaning remove them from input string
+		// In regex, \\(\\) is one pair of ( and ), first occurrence of ) after first occurrence of (, and so on
+		while(input.length() != (input = input.replaceAll("\\(\\)|\\[\\]|\\{\\}", "")).length());
+
+		// Now, input should not contain any of (, ), {, }, [ or ] characters!
+		Pattern pattern = Pattern.compile("[\\(\\)\\{\\}\\[\\]]*");
+		Matcher matcher = pattern.matcher(input);
+		return !matcher.matches();
 	}
 
 }
