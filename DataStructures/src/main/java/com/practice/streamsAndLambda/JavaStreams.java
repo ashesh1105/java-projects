@@ -1,4 +1,4 @@
-package com.practice.streams;
+package com.practice.streamsAndLambda;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -27,7 +27,7 @@ public class JavaStreams {
 		// 2) Will skip first 5 elements and print 6 to 9
 		IntStream.range(1, 10)
 			.skip(5)
-			.forEach(x -> System.out.println(x));
+			.forEach(x -> System.out.println(x));	// You can also do: .forEach(System.out::println);
 
 		System.out.println();
 
@@ -75,7 +75,7 @@ public class JavaStreams {
 		System.out.println();
 		
 		// 8) Stream rows from a text file, sort, filter and print
-		Stream<String> bands = Files.lines(Paths.get("src/main/resources/bands.txt"));
+		Stream<String> bands = Files.lines(Paths.get("DataStructures/src/main/resources/bands.txt"));
 		bands
 			.sorted()
 			.filter(x -> x.length() > 30)
@@ -97,14 +97,14 @@ public class JavaStreams {
 		 */
 		
 		// 9) Stream rows from text files and save to list
-		List<String> bands2 = Files.lines(Paths.get("src/main/resources/bands.txt"))
+		List<String> bands2 = Files.lines(Paths.get("DataStructures/src/main/resources/bands.txt"))
 				.filter(x -> x.contains("Fire"))
 				.collect(Collectors.toList());
 		bands2.forEach(System.out::println);
 		System.out.println();
 		
 		// 10) Stream rows from CSV file, process it and count the results
-		Stream<String> rows = Files.lines(Paths.get("src/main/resources/data.txt"));
+		Stream<String> rows = Files.lines(Paths.get("DataStructures/src/main/resources/data.txt"));
 		int rowCount = (int) rows
 				.map(x -> x.split(","))
 				.filter(x -> x.length >= 3)
@@ -114,7 +114,7 @@ public class JavaStreams {
 		System.out.println();
 		
 		// 11. Stream rows from CSF file, parse data from rows and print
-		Stream<String> rows1 = Files.lines(Paths.get("src/main/resources/data.txt"));
+		Stream<String> rows1 = Files.lines(Paths.get("DataStructures/src/main/resources/data.txt"));
 		rows1.map(x -> x.split(","))
 			.filter(x -> x.length == 3)
 			.filter(x -> Integer.parseInt(x[1]) > 15)
@@ -123,7 +123,7 @@ public class JavaStreams {
 		System.out.println();
 		
 		// 12. Stream rows from CSV file, process, filter, collect in a map and then print
-		Stream<String> rows2 = Files.lines(Paths.get("src/main/resources/data.txt"));
+		Stream<String> rows2 = Files.lines(Paths.get("DataStructures/src/main/resources/data.txt"));
 		Map<String, Integer> map1 = new HashMap<>();
 		map1 = rows2
 				.map(x -> x.split(","))
@@ -156,11 +156,11 @@ public class JavaStreams {
 				.summaryStatistics();
 		System.out.println(summary2);
 		System.out.println();
-		
-		
-			
-		
-		
+
+
+
+
+
 
 	}
 

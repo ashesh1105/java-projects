@@ -19,6 +19,10 @@ public class TryAnything {
         sb.delete(0, sb.length());
         System.out.println("new sb: " + sb.toString());
 
+        int a = 858;
+        System.out.println("a as String: " + Integer.toString(a));
+
+
     }
 
 }

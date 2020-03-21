@@ -1,4 +1,4 @@
-package main.java.com.algorithms.puzzles;
+package com.algorithms.puzzles;
 
 public class OddityCheck {
 
