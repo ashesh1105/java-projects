@@ -1,6 +1,6 @@
-package main.java.com.algorithms;
+package com.algorithms;
 
-import main.java.com.algorithms.interfaces.ReverseIntegerAlgo;
+import com.algorithms.interfaces.ReverseIntegerAlgo;
 
 public class ReverseIntegerClient {
 

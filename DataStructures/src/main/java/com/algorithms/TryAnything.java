@@ -11,6 +11,10 @@ public class TryAnything {
         int temp = arr[ch];
         System.out.println(temp);
 
+        // Parse char to int
+
+
+
         StringBuilder sb = new StringBuilder();
 
         sb.append('c');
@@ -21,6 +25,15 @@ public class TryAnything {
 
         int a = 858;
         System.out.println("a as String: " + Integer.toString(a));
+
+        // ToDO: Find ways to remove just the matching paranthesis pairs, not the content between them!
+        String str1 = "[(5+6)*{6*7}}[(7+9)]{4+4}}]";
+        String regex1 = "\\(.*?\\)|\\[.*?\\]|\\{.*?\\}";
+        String regex2 = "\\(([\\w]+)\\)|\\{.*?\\}|\\[.*?\\]";
+        String replaced = str1.replaceAll(regex2, "");
+        System.out.println("input Vs replaced string:");
+        System.out.println(str1);
+        System.out.println(replaced);
 
 
     }

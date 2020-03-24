@@ -1,4 +1,4 @@
-package main.java.com.algorithms;
+package com.algorithms;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -33,7 +33,7 @@ public class PracticeDataStructures {
 
 		// Sort the list by reverse alphabetical order by inner class
 		// implementing comparator
-		animals.sort((animal1, animal2) -> animal1.compareTo(animal2));
+		animals.sort((animal1, animal2) -> (-1) * animal1.compareTo(animal2));	// -1 x since reverse alphabetical needed
 
 		// Print the list by reverse alphabetical order
 		System.out.println("\nPrinting animals in the list compared by reverse alphabatical order:");
@@ -47,10 +47,8 @@ public class PracticeDataStructures {
 		// Print the list by reverse alphabetical order
 		System.out
 				.println("\n"
-						+ "Animals in the list compared by reverse alphabatical order using class that implements Comparator:");
-		for (String animal : animals) {
-			System.out.println(animal);
-		}
+						+ "Animals in the list compared by reverse alphabetical order using class that implements Comparator:");
+		animals.forEach(System.out::println);
 
 		// Populate the Set (HashSet)
 		birds.add("Peacock");
@@ -80,9 +78,7 @@ public class PracticeDataStructures {
 
 		// Print the people List
 		System.out.println("\nPrinting the list of people:");
-		for (Person person : peopleList) {
-			System.out.println(person);
-		}
+		peopleList.forEach(System.out::println);
 
 		// Sort the list
 		Collections.sort(peopleList);
@@ -90,9 +86,6 @@ public class PracticeDataStructures {
 		// Print the sorted list of people
 		System.out
 				.println("\nPrinting the sorted list of people by length of names using Comparable:");
-//		for (Person person : peopleList) {
-//			System.out.println(person);
-//		}
 		
 		peopleList.forEach(people -> System.out.println(people));
 
@@ -103,9 +96,7 @@ public class PracticeDataStructures {
 		System.out
 				.println("\nPrinting the set of people from TreeSet with Person class implementing "
 						+ "Comparable:");
-		for (Person people : peopleSet) {
-			System.out.println(people);
-		}
+		peopleSet.forEach(System.out::println);
 
 	}
 

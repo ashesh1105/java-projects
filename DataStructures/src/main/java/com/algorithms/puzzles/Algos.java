@@ -1,10 +1,6 @@
-package main.java.com.algorithms.puzzles;
+package com.algorithms.puzzles;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 public class Algos {
 
@@ -61,9 +57,7 @@ public class Algos {
 
 		Map<String, Integer> map = algos.countWords(data1);
 
-		for (Map.Entry<String, Integer> entry : map.entrySet()) {
-			System.out.println(entry.getKey() + " = " + entry.getValue());
-		}
+		map.forEach((key, val) -> System.out.println(key + " = " + val));
 
 		// Map treeMap = new TreeMap(Collections.reverseOrder());
 
@@ -88,9 +82,7 @@ public class Algos {
 		Map<Integer, List<Card>> play = algos.shuffleAndDistributeCards(4);
 		for (Integer player : play.keySet()) {
 			System.out.println("\nPlayer " + player + " cards:");
-			for (Card card : play.get(player)) {
-				System.out.println(card);
-			}
+			play.get(player).forEach(card -> System.out.println(card));
 		}
 	}
 
@@ -167,7 +159,7 @@ public class Algos {
 
 		// We know there will be 100 numbers
 		int len = data.length;
-		int maxNum = 10;
+		int maxNum = len;
 		int sumExpected = maxNum * (maxNum + 1) / 2;
 
 		// Get the actual sum of numbers
@@ -185,8 +177,8 @@ public class Algos {
 
 	/*
 	 * Write a substring function in Java String test= "AA BB CC BB BB CC BB";
-	 * String[]{"BB", "CC", "AA"} Result shd be BB=4; CC=2 and AA=1 Since B
-	 * occurred 4 times C did 2 times and A only 1 time. This basic problem can
+	 * String[]{"BB", "CC", "AA"} Result shd be BB=4; CC=2 and AA=1 Since BB
+	 * occurred 4 times CC did 2 times and AA only 1 time. This basic problem can
 	 * be asked in different ways like, You have multiple words in new paper and
 	 * find out the frequency of words in one page of news paper?
 	 */
@@ -194,7 +186,7 @@ public class Algos {
 
 		Map<String, Integer> resultMap = new HashMap<String, Integer>();
 
-		String[] dataArr = data.split(" ");
+		String[] dataArr = data.split("\\s");
 
 		for (String str : dataArr) {
 			if (resultMap.containsKey(str)) {
@@ -234,7 +226,7 @@ public class Algos {
 		int index = mainString.indexOf(subString);
 		if (index == -1) {
 			return count;
-		}
+		} else count++;
 
 		// If first and last occurrences are same, return 1
 		if (index == mainString.lastIndexOf(subString)) {
@@ -246,16 +238,16 @@ public class Algos {
 
 		// Iterate through occurrences of subString beginning from first
 		// occurrence (above).
-		while ((index < len) && (mainString.indexOf(subString, index) != -1)) {
 
+		int nextIndex = index;
+		while (index < len) {
+			nextIndex = mainString.indexOf(subString, index+1);
+			if (nextIndex == -1) {
+				break;
+			}
 			count++;
-
 			// Get next occurrence of subString
-			index = mainString.indexOf(subString, index);
-
-			// Increment index by 1 so we can get to next occurrence during next
-			// iteration
-			index++;
+			index = nextIndex;
 		}
 		return count;
 	}

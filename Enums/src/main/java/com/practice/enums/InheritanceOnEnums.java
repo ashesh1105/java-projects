@@ -39,7 +39,7 @@ public class InheritanceOnEnums {
         // Using valueOf(). Returns an object of
         // Color with given constant.
         // Uncommenting second line causes exception
-        // IllegalArgumentException
+        // IllegalArgumentException since WHITE does not exist with Color enum
         System.out.println("Color.valueOf(\"RED\"): " + Color.valueOf("RED"));
         // System.out.println(Color.valueOf("WHITE"));
     }

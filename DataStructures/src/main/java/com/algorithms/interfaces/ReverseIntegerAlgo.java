@@ -1,4 +1,4 @@
-package main.java.com.algorithms.interfaces;
+package com.algorithms.interfaces;
 
 public interface ReverseIntegerAlgo {
 	

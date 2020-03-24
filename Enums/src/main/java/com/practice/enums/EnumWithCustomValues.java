@@ -11,12 +11,12 @@ import java.util.Arrays;
  *     APPLE(“RED”), BANANA(“YELLOW”), GRAPES(“GREEN”);
  * }
  *
- * In above example we can see that the Fruits enum have three members i.e APPLE, BANANA and GRAPES with have their own
+ * In above example we can see that the Fruits enum have three members i.e APPLE, BANANA and GRAPES which have their own
  * different custom values RED, YELLOW and GREEN respectively.
  *
- * Now to use this enum in code, there are some points we have to follow:-
+ * Now to use this enum in code, there are some rules we have to follow:-
  * We have to create parameterized constructor for this enum class. Why? Because as we know that enum class’s object
- * can’t be create explicitly so for initializing we use parameterized constructor. And the constructor cannot be the
+ * can’t be created explicitly so for initializing we use parameterized constructor. And the constructor cannot be the
  * public or protected it must have private or default modifiers. Why? if we create public or protected, it will allow
  * initializing more than one objects. This is totally against enum concept.
  *
@@ -42,15 +42,14 @@ enum EnumWithCustomValues {
 
     public static void main(String[] args) {
 
-        EnumWithCustomValues arr[] = EnumWithCustomValues.values();
+        EnumWithCustomValues arr[] = EnumWithCustomValues.values(); // <enum_class_name>.values() is built-in method!
 
         Arrays.stream(arr)
                 .forEach(enumVal -> {
                     System.out.println(
-                        "name: " + enumVal.name() +
+                        "name: " + enumVal.name() + // <enum_constants>.name() is built-in method, although not needed here
                                 " action: " + enumVal.getAction()
                     );
                 });
-
     }
 }

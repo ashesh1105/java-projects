@@ -12,7 +12,7 @@ public class Sha1Hash {
 
     public static void main(String[] args) throws NoSuchAlgorithmException {
         Scanner input = new Scanner(System.in);
-        MessageDigest m = MessageDigest.getInstance("SHA-256");
+        MessageDigest m = MessageDigest.getInstance("SHA-256"); // You can pass SHA-1 to have SHA-1 hashing
         m.reset();
         m.update(input.nextLine().getBytes());
         for (byte i : m.digest()) {

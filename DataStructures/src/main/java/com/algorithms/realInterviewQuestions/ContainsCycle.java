@@ -1,4 +1,4 @@
-package main.java.com.algorithms.realInterviewQuestions;
+package com.algorithms.realInterviewQuestions;
 public class ContainsCycle {
 
     interface Link {

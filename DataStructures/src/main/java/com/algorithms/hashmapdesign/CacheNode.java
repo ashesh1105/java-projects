@@ -1,4 +1,4 @@
-package main.java.com.algorithms.hashmapdesign;
+package com.algorithms.hashmapdesign;
 
 public class CacheNode {
 	

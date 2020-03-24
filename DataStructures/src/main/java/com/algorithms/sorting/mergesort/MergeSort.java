@@ -1,4 +1,4 @@
-package main.java.com.algorithms.sorting.mergesort;
+package com.algorithms.sorting.mergesort;
 
 public class MergeSort {
 

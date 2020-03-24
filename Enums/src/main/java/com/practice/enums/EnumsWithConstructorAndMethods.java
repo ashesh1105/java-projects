@@ -18,7 +18,6 @@ enum MyHobbies {
     // constructors in enums, if declared explicitly, must not be public or protected
     // Using private keyword will be redundant here but we can do that
     MyHobbies() {
-
         System.out.println("Enum constructor was called for: " + this.toString());
     }
 

@@ -40,6 +40,7 @@ public class EnumWithSwitchStatement {
     // Driver method
     public static void main(String[] args) {
         String str = "FRIDAY";
+        // Note how we can construct an enum constant out of plain string using <enum_class_name>.valueOf method
         EnumWithSwitchStatement enumWithSwitchStatement = new EnumWithSwitchStatement(Day.valueOf(str));
         enumWithSwitchStatement.dayIsLike();
     }
