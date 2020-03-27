@@ -1,13 +1,8 @@
-package main.java.com.string;
-
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.LinkedHashSet;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.Set;
+package com.algorithms.string;
 
 import main.java.com.algorithms.bitmanupulation.DuplicateCharsInString;
+
+import java.util.*;
 
 public class StringManipulations {
 

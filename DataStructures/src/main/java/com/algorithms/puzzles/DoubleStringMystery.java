@@ -1,4 +1,4 @@
-package main.java.com.algorithms.puzzles;
+package com.algorithms.puzzles;
 
 import java.math.BigDecimal;
 

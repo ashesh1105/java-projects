@@ -1,21 +1,21 @@
-package main.java.com.string;
+package com.algorithms.string;
 
 public class LongestCommonSubstring {
 
 	/**
 	 * Given two strings ‘X’ and ‘Y’, find the length of the longest common
-	 * substring. For example, if the given strings are “inyahooisthebest” and
-	 * “Iworkinyahoo”, the output should be 5 as longest common substring is
+	 * substring. For example, if the given strings are “ithinkglookoisthebest” and
+	 * “Iamworkingforglookoyes”, the output should be 5 as longest common substring is
 	 * “yahoo” .
 	 */
 
 	public static void main(String[] args) {
 
-		String str1 = "inyahooisthebest";
-		String str2 = "Iworkinyahoo";
+		String str1 = "ithinkglookoisthebest";
+		String str2 = "Iamworkingforglookoyes";
 
 		System.out
-				.println("Largest common substrings of \"inyahooisthebest\" and \"Iworkinyahoo\" is: "
+				.println("Largest common substrings of " + str1 + " and " + str2 + " is: "
 						+ new LongestCommonSubstring()
 								.largestCommonSubstringOptimized1(str1, str2));
 	}
@@ -78,7 +78,7 @@ public class LongestCommonSubstring {
 		String result = null;
 		int lenSubstring = 0;
 
-		int[] arr = new int[256];
+		int[] arr = new int[256];	// Size could be 128 if we have pure ASCII in strings
 //		for (int elem : arr) {
 //			elem = -1;
 //		}

@@ -1,4 +1,4 @@
-package main.java.com.string;
+package com.algorithms.string;
 
 public class Anagram3 {
 
@@ -14,7 +14,7 @@ public class Anagram3 {
 
     }
 
-    private boolean isAnagram(String str1, String str2) {
+    public boolean isAnagram(String str1, String str2) {
 
         int hash1 = 0;
         int hash2 = 0;

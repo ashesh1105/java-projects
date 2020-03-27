@@ -1,4 +1,4 @@
-package main.java.com.string;
+package com.algorithms.string;
 
 public class InputAndOrderingString {
 
@@ -34,7 +34,7 @@ public class InputAndOrderingString {
 		// If ordering has just one character, there is nothing to do
 		if (ordering.length() == 1) return true;
 		
-		// Finally, reverse iterate ordering and check if first index of character (in given string) is less than 
+		// Finally, iterate ordering and check if first index of character (in given string) is less than
 		// last index of preceding characters
 		for (int i=0; i<ordering.length()-1; i++) {
 			if (!(str.lastIndexOf(ordering.charAt(i)) < str.indexOf(ordering.charAt(i+1)))) return false;

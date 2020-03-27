@@ -1,6 +1,6 @@
-package main.java.com.string;
+package com.algorithms.string;
 
-public class PalindromicPartitions {
+public class PalindromicPartitionsTBD {
 
 /*
 All Possible Palindromic Partitions

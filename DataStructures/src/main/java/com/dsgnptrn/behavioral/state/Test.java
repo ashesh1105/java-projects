@@ -1,8 +1,12 @@
 package com.dsgnptrn.behavioral.state;
 
 /*
- * When behavior is associated with a specific state, we create an interface (State in this case) and have various implementations
- * which represent a behavior for a specific state.
+  Design a vending machine with these operations:
+  a) Insert a coin,
+  b) Press button
+  c) Dispense an item
+  When behavior is associated with a specific state, we create an interface (State in this case) and have various implementations
+  which represent a behavior for a specific state.
  */
 
 public class Test {

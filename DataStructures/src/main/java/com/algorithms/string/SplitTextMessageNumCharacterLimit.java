@@ -1,4 +1,4 @@
-package main.java.com.string;
+package com.algorithms.string;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,9 +7,7 @@ public class SplitTextMessageNumCharacterLimit {
 
 	/*
 	 * Given a text message and character limit per text message, split the text message to fit the rule.
-	 * 
 	 * Example: text message: "Hi Sivasrinivas, your Uber is arriving now!", with char limit of 25 you should get:
-	 * 
 	 * 3 text messages as: ["Hi Sivasrinivasa,(1/3)", "your Uber is arriving(2/3)", "now!(3/3)"]
 	 */
 

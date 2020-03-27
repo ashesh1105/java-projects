@@ -1,4 +1,4 @@
-package main.java.com.string;
+package com.algorithms.string;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,13 +18,6 @@ public class StringAsSpaceSeparatedSequence {
 
 		String str = "abcdspdf";
 		String[] dict = { "mn", "trp", "vkg", "ab", "cds", "pdf", "glmn", "olt" };
-		// boolean result = new StringAsSpaceSeparatedSequence().areSubStringsPresentInSequence(str, dict);
-		//
-		// System.out.print("String " + str + (result ? " can " : " can not ")
-		// + "be segmented as space separated sequence of one of more dictionary words from: ");
-		// for (String dictWords : dict) {
-		// System.out.print(dictWords + " ");
-		// }
 
 		new StringAsSpaceSeparatedSequence().subStringsPresentInSequenceAnotherWay(str, dict);
 

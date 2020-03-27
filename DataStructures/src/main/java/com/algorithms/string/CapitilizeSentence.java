@@ -1,4 +1,4 @@
-package main.java.com.string;
+package com.algorithms.string;
 
 import org.apache.commons.lang3.text.WordUtils;
 
@@ -6,6 +6,7 @@ public class CapitilizeSentence {
 	
 	/**
 	 * Capitalize a sentence by making first letter in each word capital letter
+	 * Use capitalizeMeAlternate4 - most elegant and efficient one!
 	 */
 
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package main.java.com.string;
+package com.algorithms.string;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -31,6 +31,8 @@ public class ReverseStringButSpecialChars {
 		System.out.println("Reverse of string " + str3 + ": " + reverseStringButSpecialChars.reverse(str3));
 	}
 
+	// Using Character.isAlphabetic(char ch) - will be true for A-Z and a-z chars only
+	// Where a digit needs to be verified, one can use Character.isDigit(char ch) - true only for 0-9 chars!
 	private String reverse(String str) {
 		
 		if (StringUtils.isEmpty(str)) {
@@ -44,13 +46,7 @@ public class ReverseStringButSpecialChars {
 		
 		while (i<j) {
 			// Check if character is an alphabet, skip that one otherwise
-//			while (!('A' <= arr[i] && arr[i] <= 'Z') && !('a' <= arr[i] && arr[i] <= 'z')) {
-//				i++;
-//			}
-//			while (!('A' <= arr[j] && arr[j] <= 'Z') && !('a' <= arr[j] && arr[j] <= 'z')) {
-//				j--;
-//			}
-			// Above commented line is good but can be simplified by this
+
 			while(!Character.isAlphabetic(arr[i])) {
 				i++;
 			}

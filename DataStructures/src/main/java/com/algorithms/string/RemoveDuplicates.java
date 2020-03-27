@@ -1,14 +1,14 @@
-package main.java.com.string;
+package com.algorithms.string;
 
 import org.apache.commons.lang3.StringUtils;
 
-public class RemoveDulicates {
+public class RemoveDuplicates {
 
 	public static void main(String[] args) {
 
-		String str = "!aaaaabcdefghabcdefgh!";
+		String str = "!aaaaabcdefghabcdeefghabfgh!";
 		System.out.println("Original String: " + str);
-		String result = new RemoveDulicates().removeDups(str);
+		String result = new RemoveDuplicates().removeDups(str);
 		if (!StringUtils.equals(str, result)) {
 			System.out.println("With duplicates removed, resulting string is: "
 					+ result);
@@ -44,7 +44,9 @@ public class RemoveDulicates {
 		// valueOf function of String takes array, offset and count. tail
 		// be one more than the last good element we need (due to last increment
 		// of it), but since it starts from 0, count will still be tail
-		return String.valueOf(arr, 0, tail);
+//		return String.valueOf(arr, 0, tail);
+		// Another way to return same result could be as below:
+		return new String(arr, 0, tail);
 	}
 
 }

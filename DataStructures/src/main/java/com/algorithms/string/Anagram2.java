@@ -1,9 +1,9 @@
-package main.java.com.string;
+package com.algorithms.string;
+
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import org.apache.commons.lang3.StringUtils;
 
 public class Anagram2 {
 
@@ -37,12 +37,22 @@ public class Anagram2 {
 		// End the timer
 		long end2 = System.nanoTime();
 
-		// Print time taken in 2 ways of checking Anagrams and compare them!
+		// Start the timer for Anagram3
+		long start3 = System.nanoTime();
+
+		System.out.println("Result: " + new Anagram3().isAnagram(str1, str2));
+
+		// End the timer
+		long end3 = System.nanoTime();
+
+		// Print time taken in 3 ways of checking Anagrams and compare them!
 
 		System.out.println("Time taken to compute Anagram1 method: "
 				+ (end1 - start1));
 		System.out.println("Time taken to compute Anagram2 method: "
 				+ (end2 - start2));
+		System.out.println("Time taken to compute Anagram3 method: "
+				+ (end3 - start3));
 	}
 
 	/*

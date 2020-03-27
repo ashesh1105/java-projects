@@ -1,4 +1,4 @@
-package main.java.com.string;
+package com.algorithms.string;
 
 import org.apache.commons.lang3.StringUtils;
 
