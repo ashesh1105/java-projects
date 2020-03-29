@@ -7,7 +7,7 @@ public class MyCurrency {
 
 	public static void main(String[] args) {
 		
-		double amt = 12324.134;
+		double amt = 12324.137;
 		
 		NumberFormat nf_US = NumberFormat.getCurrencyInstance(Locale.US);
 		System.out.println(nf_US.format(amt));

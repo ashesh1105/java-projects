@@ -84,11 +84,16 @@ public class PrimeNumber {
 
 		boolean isPrime = false;
 
-		if (bigInt.compareTo(BigInteger.ONE) == 0
+		if (
+				// 1, by definition, is not prime
+				bigInt.compareTo(BigInteger.ONE) == 0
 				|| !bigInt.isProbablePrime(1)) {
 			// keep isPrime as false
-		} else if (bigInt.compareTo(BigInteger.valueOf(2)) == 0
+		} else if (
+				// numbers 2 & 3 are prime
+				bigInt.compareTo(BigInteger.valueOf(2)) == 0
 				|| bigInt.compareTo(BigInteger.valueOf(3)) == 0
+				// If (num * num -1) % 24 == 0, it is a prime number
 				|| (bigInt.multiply(bigInt).subtract(BigInteger.ONE)
 				.remainder(BigInteger.valueOf(24)).equals(BigInteger.ZERO))) {
 			isPrime = true;

@@ -66,6 +66,9 @@ public class TryAnything {
         // Or, you can always do it this way:
         System.out.println("char ch = '0' can be converted by doing subtracting 48 from it: " + (ch1 - 48));
 
+        System.out.println("-1 % 7: " + (-1 %7));
+        System.out.println("7 % 7: " + (7 %7));
+
 
     }
 

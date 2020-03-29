@@ -1,4 +1,4 @@
-package main.java.com.algorithms.trie;
+package com.algorithms.trie;
 
 import java.util.Map;
 
@@ -11,8 +11,7 @@ public class Trie {
 	}
 	
 	public boolean insert(String data) {
-		
-		boolean result = false;
+
 		TrieNode current = root;
 		
 		for (int i=0; i<data.length(); i++) {
@@ -25,8 +24,7 @@ public class Trie {
 		}
 		// Finally set the end of word to true
 		current.setEndOfWord(true);
-		result = true;
-		return result;
+		return true;
 	}
 	
 	public boolean search(String data) {

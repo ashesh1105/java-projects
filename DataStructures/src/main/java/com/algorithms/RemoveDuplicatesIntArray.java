@@ -1,4 +1,4 @@
-package main.java.com.algorithms;
+package com.algorithms;
 
 import java.util.Arrays;
 
@@ -38,18 +38,22 @@ public class RemoveDuplicatesIntArray {
 		int j = 0;
 		
 		for (int i=1; i<len; i++) {
-			
-			for (j=0; j<tail; j++) {
+
+			j = 0;
+			while (j < tail) {
 				if (A[j] == A[i]) {
 					break;
 				}
+				j++;
 			}
+			// If j can reach all the way till tail, A[i] deserves its place on non duplicate elements
 			if (tail == j) {
 				A[tail] = A[i];
 				tail++;
 			}
 		}
-		
+
+		// Now, array elements from index 0 to tail-1 will be non duplicate elements
 		int [] result = new int[tail];
 		for (int k=0; k<result.length; k++) {
 			result[k] = A[k];

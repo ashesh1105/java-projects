@@ -1,4 +1,4 @@
-package main.java.com.algorithms;
+package com.algorithms;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -61,6 +61,7 @@ public class Incompatibility {
 					j++;
 				}
 				while (i != j) {
+					// Ensure to swap only between 2 adjacent positions and count each swap as incompatibility++
 					swap(second, j - 1, j);
 					j--;
 					incompatibility++;

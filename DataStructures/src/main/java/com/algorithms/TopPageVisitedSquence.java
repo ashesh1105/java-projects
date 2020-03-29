@@ -1,10 +1,10 @@
-package main.java.com.algorithms;
+package com.algorithms;
 
 public class TopPageVisitedSquence {
 
 	/*
 	 * You are given a file which contains the following information about users visiting the eBay website:
-	 * <user id> <type of page visited> <time stamp> <user id> is a unique key assigned to every user <type of
+	 * <user id> <type of page visited> <time stamp>. <user id> is a unique key assigned to every user <type of
 	 * page> is one of these "home", "search results", "check out", "payment". The file contains this
 	 * information sorted according to the time stamp. A sequence is defined as a continuous set of three
 	 * types of pages visited by a user. Example: if a user visits the following pages. "home" -> "search" ->

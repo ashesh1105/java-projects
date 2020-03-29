@@ -1,4 +1,4 @@
-package main.java.com.algorithms;
+package com.algorithms;
 
 import java.util.Stack;
 
@@ -86,10 +86,6 @@ public class NextGreaterNumberToTheRight {
 		}
 		
 		// Process the remaining elements in stack
-//		stack.stream()
-//			.forEach((elem) -> {
-//				sb.append(elem + " -> " + -1 + "\n");
-//			});
 		while(!stack.isEmpty()) {
 			sb.append(stack.pop() + " -> " + -1 + "\n");
 		}

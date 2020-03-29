@@ -1,6 +1,6 @@
-package main.java.com.algorithms;
+package com.datastructures.linkedlist.dictionary;
 
-public class DictionaryWithLinkedListAlone {
+public class UseDictionary {
 
 	/*
 	 * Develop a Dictionary supporting one implementation. This implementation can only use List interface. A
@@ -17,7 +17,17 @@ public class DictionaryWithLinkedListAlone {
 	 */
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+		Dictionary dictionary = new Dictionary();
+
+		dictionary.insert("NodeJS", "Pretty nice programming language!");
+		dictionary.insert("Java", "A great programming language!");
+		dictionary.insert("Ruby", "Powerful, but I am not a huge fan of it");
+		dictionary.insert("Golang", "Great potential, although available libraries are maturing now");
+		dictionary.insert("Ashesh", "Curious to learn, all the time!");
+
+		dictionary.printTermsInLexOrder();
+
 
 	}
 

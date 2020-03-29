@@ -33,9 +33,7 @@ public class ReverseIntegerClient {
 class ReverseInteger1 implements ReverseIntegerAlgo {
 
 	@Override
-	/*
-	 * I needed a temp string in this method, which I then converted to number. See next method below for better one.
-	 */
+	// I needed a temp string in this method, which I then converted to number. See next method below for better one.
 	public int reverseInteger(int num) {
 
 		if (num == 0)

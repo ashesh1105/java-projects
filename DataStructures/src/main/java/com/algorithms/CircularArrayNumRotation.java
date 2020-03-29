@@ -1,4 +1,4 @@
-package main.java.com.algorithms;
+package com.algorithms;
 
 /*
  * Find how many times a circular array is rotated

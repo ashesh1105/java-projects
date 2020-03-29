@@ -1,4 +1,4 @@
-package main.java.com.algorithms;
+package com.algorithms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,6 +25,7 @@ public class ThreeArrayElementCombinationsAsTargetSum {
 		
 	}
 
+	// O(n^2) for Array A & B iterating, find target sum - sum (elements from A&B) -> Do binary search on Array C
 	private List<List<Integer>> getThreeSome(int[] a, int[] b, int[] c, int targetSum) {
 		
 		// TBD: Do null checks for 3 arrays, log and return if null

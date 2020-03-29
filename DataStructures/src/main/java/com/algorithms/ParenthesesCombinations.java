@@ -32,20 +32,20 @@ public class ParenthesesCombinations {
 	}
 
 	private void getCombinations(int available, int currentlyOpen,
-			String prefix, List<String> acc) {
+			String prefix, List<String> result) {
 		// First possibility: add opening parenthesis (only if parentheses are
 		// still available)
 		if (available > 0) {
-			getCombinations(available - 1, currentlyOpen + 1, prefix + "(", acc);
+			getCombinations(available - 1, currentlyOpen + 1, prefix + "(", result);
 		}
 		// Second possibility: add closing parenthesis (only if at least one is
 		// open)
 		if (currentlyOpen > 0) {
-			getCombinations(available, currentlyOpen - 1, prefix + ")", acc);
+			getCombinations(available, currentlyOpen - 1, prefix + ")", result);
 		}
 		// If no parentheses are left and all of them are closed, we're done for one combination
 		if (available == 0 && currentlyOpen == 0) {
-			acc.add(prefix);
+			result.add(prefix);
 		}
 	}
 

@@ -1,4 +1,4 @@
-package main.java.com.algorithms;
+package com.algorithms;
 
 public class MergeNSortedLinkedLists {
 
