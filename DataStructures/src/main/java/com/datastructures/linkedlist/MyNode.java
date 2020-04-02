@@ -1,8 +1,16 @@
 package com.datastructures.linkedlist;
 
+import lombok.Getter;
+import lombok.Setter;
+
 public class MyNode {
-	
+
+	@Getter
+	@Setter
 	private int data;
+
+	@Getter
+	@Setter
 	private MyNode nextNode;
 
 	public MyNode(int data) {
@@ -11,23 +19,6 @@ public class MyNode {
 
 	public MyNode() {
 
-	}
-
-	// Getters and setters
-	public int getData() {
-		return data;
-	}
-
-	public void setData(int data) {
-		this.data = data;
-	}
-
-	public MyNode getNextNode() {
-		return nextNode;
-	}
-
-	public void setNextNode(MyNode next) {
-		this.nextNode = next;
 	}
 
 }

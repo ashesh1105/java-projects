@@ -1,37 +1,25 @@
 package com.datastructures.linkedlist;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@ToString
 public class DoublyLinkedNode {
+
+	@Getter
 	private Integer data;
+	@Getter
+	@Setter
+	@ToString.Exclude
 	private DoublyLinkedNode nextNode;
+	@Getter
+	@Setter
+	@ToString.Exclude
 	private DoublyLinkedNode previousNode;
 
 	public DoublyLinkedNode(Integer data) {
 		this.data = data;
-	}
-	
-	public Integer getData() {
-		return data;
-	}
-	
-	public DoublyLinkedNode getNextNode() {
-		return nextNode;
-	}
-	
-	public void setNextNode(DoublyLinkedNode nextNode) {
-		this.nextNode = nextNode;
-	}
-	
-	public DoublyLinkedNode getPreviousNode() {
-		return previousNode;
-	}
-	
-	public void setPreviousNode(DoublyLinkedNode prevNode) {
-		this.previousNode = prevNode;
-	}
-	
-	@Override
-	public String toString() {
-		return this.data.toString();
 	}
 
 }

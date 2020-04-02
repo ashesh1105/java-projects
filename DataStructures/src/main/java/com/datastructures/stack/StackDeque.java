@@ -1,5 +1,8 @@
 package com.datastructures.stack;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -20,7 +23,7 @@ public class StackDeque {
 		stack.push(new Student("Duc"));
 		stack.push(new Student("Guru"));
 		stack.push(new Student("Boon"));
-		stack.push(new Student("Makesh"));
+		stack.push(new Student("Mukesh"));
 		
 		System.out.println("Stack size is: " + stack.size() + "\n");
 		
@@ -48,17 +51,12 @@ public class StackDeque {
 }
 
 class Student {
+
+	@Getter
+	@Setter
 	private String name;
 	
 	public Student(String name) {
-		this.name = name;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
 		this.name = name;
 	}
 }

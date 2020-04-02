@@ -44,7 +44,7 @@ public class ChildClass extends ParentClass{
 		childClass.methodA();
 		
 		// Below will be a compile time error since it is not visible to GrandParentClass (reference)
-		// childClass.methodB();
+//		 childClass.methodB();
 		
 		// Both of below method calls will call GrandParentClass methods! Find out why??
 		childClass.parentMethod(new GrandParentClass());

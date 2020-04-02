@@ -29,7 +29,7 @@ public class DijkstraAlgorithm {
 
 		while (!priorityQueue.isEmpty()) {
 
-			// Below gives vertex still in queue and with minimum distance
+			// Below gives vertex which are still in queue and with minimum distance
 			Vertex actualVertex = priorityQueue.poll();
 
 			for (Edge e : actualVertex.getAdjacenciesList()) {

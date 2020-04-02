@@ -1,5 +1,9 @@
 package com.algorithms;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 public class TryAnything {
 
     public static void main(String[] args) {
@@ -68,6 +72,23 @@ public class TryAnything {
 
         System.out.println("-1 % 7: " + (-1 %7));
         System.out.println("7 % 7: " + (7 %7));
+
+        // Try map.forEach
+        Map<String, Integer> map = new HashMap<>();
+        map.put("Java", 8);
+        map.put("NodeJS", 6);
+        map.put("Kafka", 6);
+        map.forEach((k, v) -> {
+            System.out.println(k + " -> " + v);
+        });
+
+        // Arrays.stream
+        int [] arr1 = new int[] {100, 1000};
+        Arrays.stream(arr1).forEach(elem -> {
+            System.out.println(elem);
+        });
+
+
 
 
     }

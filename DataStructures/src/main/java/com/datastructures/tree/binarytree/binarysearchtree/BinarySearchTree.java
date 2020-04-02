@@ -11,10 +11,6 @@ public class BinarySearchTree {
 	@Getter
 	private Node root;
 
-	public Node getRoot() {
-		return root;
-	}
-
 	public BinarySearchTree() {
 		this.root = null;
 	}
@@ -273,6 +269,21 @@ public class BinarySearchTree {
 			bst.root = Node.addSorted(data, start, end);
 		}
 		return bst;
+	}
+
+	public int sum(Node n) {
+
+		if (n == null) {
+			return 0;
+		}
+
+		int leftSum = 0;
+		int rightSum = 0;
+
+		leftSum = sum(n.getLeftNode());
+		rightSum = sum(n.getRightNode());
+		return n.getData() + leftSum + rightSum;
+
 	}
 
 	/*

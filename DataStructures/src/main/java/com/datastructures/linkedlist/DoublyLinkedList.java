@@ -1,16 +1,13 @@
 package com.datastructures.linkedlist;
 
+import lombok.Getter;
+import lombok.Setter;
+
 public class DoublyLinkedList {
-	
+
+	@Getter
+	@Setter
 	private DoublyLinkedNode head;
-
-	public DoublyLinkedNode getHead() {
-		return this.head;
-	}
-
-	public void setHead(DoublyLinkedNode head) {
-		this.head = head;
-	}
 
 	public boolean isHead(DoublyLinkedNode node) {
 		return this.head == node;

@@ -1,28 +1,21 @@
 package com.datastructures.linkedlist;
 
 
+import lombok.Getter;
+import lombok.Setter;
+
 public class Node<T> {
+
+	@Getter
+	@Setter
 	private T data;
+
+	@Getter
+	@Setter
 	private Node<T> nextNode;
 	
 	public Node(T data) {
 		this.data = data;
-	}
-	
-	public void setData(T data) {
-		this.data = data;
-	}
-	
-	public T getData() {
-		return data;
-	}
-	
-	public Node<T> getNextNode() {
-		return nextNode;
-	}
-	
-	public void setNextNode(Node<T> nextNode) {
-		this.nextNode = nextNode;
 	}
 	
 	@Override

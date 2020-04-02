@@ -1,4 +1,4 @@
-package com.generalcoding.numberconversion;
+package com.algorithms;
 
 public class NumberSystemConversion {
 

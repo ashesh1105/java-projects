@@ -29,7 +29,8 @@ public class WebCrawler {
 		while (!queue.isEmpty()) {
 			String v = this.queue.remove();
 			String rawHtml = getRawHtml(v);
-			String regexp = "http://(\\w+\\.)*(\\w+)";
+			// Regex to identify URLs in raw html
+			String regexp = "https?://(\\w+\\.)*(\\w+)";
 			Pattern pattern = Pattern.compile(regexp);
 			Matcher regexMatcher = pattern.matcher(rawHtml);
 			
@@ -37,14 +38,13 @@ public class WebCrawler {
 				String newUrl = regexMatcher.group();
 				if (!discoveredWebsiteList.contains(newUrl)) {
 					discoveredWebsiteList.add(newUrl);
-					System.out.println("Match for new URL found with URL: "
-							+ newUrl);
+					System.out.println("Match for new URL found with URL: " + newUrl);
 					queue.add(newUrl);
-//					try {
-//						Thread.sleep(1000);
-//					} catch (InterruptedException e) {
-//						e.printStackTrace();
-//					}
+					try {
+						Thread.sleep(1000);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
 				}
 			}
 		}
@@ -52,8 +52,7 @@ public class WebCrawler {
 
 	private String getRawHtml(String siteAddr) {
 		StringBuilder sb = new StringBuilder();
-		try (BufferedReader in = new BufferedReader(new InputStreamReader(
-				new URL(siteAddr).openStream()))) {
+		try (BufferedReader in = new BufferedReader(new InputStreamReader(new URL(siteAddr).openStream()))) {
 			String inputLine;
 			while ((inputLine = in.readLine()) != null) {
 				inputLine = in.readLine();

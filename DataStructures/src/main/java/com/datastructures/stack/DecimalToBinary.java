@@ -6,7 +6,7 @@ public class DecimalToBinary {
 
 	public static void main(String[] args) {
 		
-		int a = -368;
+		int a = 368;
 		int b = 1;
 		
 		DecimalToBinary dtb = new DecimalToBinary();

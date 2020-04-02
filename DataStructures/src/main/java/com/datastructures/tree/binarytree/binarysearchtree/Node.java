@@ -1,8 +1,17 @@
 package com.datastructures.tree.binarytree.binarysearchtree;
 
+import lombok.Getter;
+import lombok.Setter;
+
 public class Node {
+	@Getter
+	@Setter
 	private int data;
+	@Getter
+	@Setter
 	private Node leftNode;
+	@Getter
+	@Setter
 	private Node rightNode;
 
 	public Node(int data) {
@@ -14,31 +23,6 @@ public class Node {
 	public Node() {
 		leftNode = null;
 		rightNode = null;
-	}
-
-	// Getters and Setters
-	public int getData() {
-		return data;
-	}
-
-	public void setData(int data) {
-		this.data = data;
-	}
-
-	public Node getLeftNode() {
-		return leftNode;
-	}
-
-	public void setLeftNode(Node leftNode) {
-		this.leftNode = leftNode;
-	}
-
-	public Node getRightNode() {
-		return rightNode;
-	}
-
-	public void setRightNode(Node rightNode) {
-		this.rightNode = rightNode;
 	}
 
 	public Node find(int data) {
@@ -125,6 +109,15 @@ public class Node {
 			return newNode;
 		}
 		return null;
+	}
+
+	// Adding print functionality in Node itself
+	public void printInOrder(Node n) {
+		if (n != null) {
+			printInOrder(n.getLeftNode());
+			System.out.println(n.getData());
+			printInOrder(n.getRightNode());
+		}
 	}
 
 }

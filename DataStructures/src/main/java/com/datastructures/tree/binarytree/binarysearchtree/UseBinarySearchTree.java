@@ -1,6 +1,6 @@
 package com.datastructures.tree.binarytree.binarysearchtree;
 
-public class UseBinaryTree {
+public class UseBinarySearchTree {
 
 	public static void main(String[] args) {
 		
@@ -105,6 +105,36 @@ public class UseBinaryTree {
 
 		BinarySearchTree myBST = new BinarySearchTree();
 		System.out.println("Find on myBST with root as null returns: " + myBST.find(5));
+
+		// Test height now
+		myBST.insert(5);
+		myBST.insert(3);
+		myBST.insert(2);
+		myBST.insert(4);
+		myBST.insert(8);
+		myBST.insert(7);
+		myBST.insert(12);
+		myBST.insert(13);
+		System.out.println("myBST:");
+		myBST.printInOrder();
+		System.out.println("Height of myBST: " + myBST.height());
+
+		// Test sum of nodes
+		BinarySearchTree bst1 = new BinarySearchTree();
+		bst1.insert(1);
+		bst1.insert(2);
+		bst1.insert(3);
+		bst1.insert(10);
+		bst1.insert(5);
+		bst1.insert(2);
+		bst1.insert(3);
+		bst1.insert(15);
+		bst1.insert(12);
+		bst1.insert(17);
+
+		System.out.println("The Binary Search Tree:");
+		bst.printInOrder();
+		System.out.println("Sum of all nodes: " + bst1.sum(bst1.getRoot()));
 		
 	}
 

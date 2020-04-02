@@ -1,12 +1,13 @@
 package com.datastructures.linkedlist;
 
+import lombok.Getter;
+import lombok.Setter;
+
 public class LinkedList<T> {
 
+	@Getter
+	@Setter
 	private Node<T> head;
-
-	public Node<T> getHead() {
-		return this.head;
-	}
 
 	public void addAtStart(T data) {
 		Node<T> newNode = new Node<T>(data);
@@ -34,13 +35,10 @@ public class LinkedList<T> {
 		current.setNextNode(end);
 	}
 
-	public void setHead(Node<T> data) {
-		this.head = data;
-	}
-
 	public Node<T> deleteAtStart() {
 		Node<T> toDel = this.head;
 		this.head = this.head.getNextNode();
+		toDel.setNextNode(null);
 		return toDel;
 	}
 

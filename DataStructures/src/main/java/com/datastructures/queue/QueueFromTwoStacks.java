@@ -3,7 +3,7 @@ package com.datastructures.queue;
 public class QueueFromTwoStacks {
 	
 	/**
-	 * Implement Queue behaviour using to stacks, not arrays at all!
+	 * Implement Queue behaviour using two stacks, not arrays at all!
 	 * Methods needed will be add, peek and pop
 	 * TODO: Implement this when you get time.
 	 * Approach:
