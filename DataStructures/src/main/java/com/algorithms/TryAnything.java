@@ -1,8 +1,6 @@
 package com.algorithms;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class TryAnything {
 
@@ -88,7 +86,31 @@ public class TryAnything {
             System.out.println(elem);
         });
 
+        // Try available elements in a list
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
+        list.add(7);
 
+        // Very Important Finding about List!!!
+        System.out.println("ArrayList size: " + list.size());
+        list.remove(5);
+        list.remove(3);
+        System.out.println("ArrayList new size: " + list.size());
+        System.out.println("List remaining elements after removing 5 and 3:");
+        list.forEach(System.out::println);
+        System.out.println("This means list.remove(element o) removes from index if only one int supplied");
+
+        list.remove(new Integer(7));
+        System.out.println("List remaining elements after removing 7 as Integer object:");
+        list.forEach(System.out::println);
+
+        // Now, if we grab by index
+        System.out.println("list.get(3): "+ list.get(3));    // should print 5
 
 
     }
