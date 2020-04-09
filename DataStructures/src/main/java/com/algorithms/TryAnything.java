@@ -1,11 +1,5 @@
 package com.algorithms;
 
-<<<<<<< HEAD
-import com.calendar.TodaysData;
-
-import java.time.LocalDate;
-=======
->>>>>>> ee48212a29f7b67dc1256b5c89aa49f50baa198a
 import java.util.*;
 
 public class TryAnything {
@@ -22,7 +16,6 @@ public class TryAnything {
         // Parse char to int
 
 
-
         StringBuilder sb = new StringBuilder();
 
         sb.append('c');
@@ -34,7 +27,7 @@ public class TryAnything {
         // Clear the StringBuilder
         sb.delete(0, sb.length());
 
-        sb.append(new String [] {"abc", "123", "def"}); // This will give you an object inside sb instead of strings
+        sb.append(new String[]{"abc", "123", "def"}); // This will give you an object inside sb instead of strings
         System.out.println("sb.toString:" + sb.toString());
 
         int a = 858;
@@ -74,8 +67,8 @@ public class TryAnything {
         // Or, you can always do it this way:
         System.out.println("char ch = '0' can be converted by doing subtracting 48 from it: " + (ch1 - 48));
 
-        System.out.println("-1 % 7: " + (-1 %7));
-        System.out.println("7 % 7: " + (7 %7));
+        System.out.println("-1 % 7: " + (-1 % 7));
+        System.out.println("7 % 7: " + (7 % 7));
 
         // Try map.forEach
         Map<String, Integer> map = new HashMap<>();
@@ -87,7 +80,7 @@ public class TryAnything {
         });
 
         // Arrays.stream
-        int [] arr1 = new int[] {100, 1000};
+        int[] arr1 = new int[]{100, 1000};
         Arrays.stream(arr1).forEach(elem -> {
             System.out.println(elem);
         });
@@ -116,7 +109,7 @@ public class TryAnything {
         list.forEach(System.out::println);
 
         // Now, if we grab by index
-        System.out.println("list.get(3): "+ list.get(3));    // should print 5
+        System.out.println("list.get(3): " + list.get(3));    // should print 5
 
 
     }
