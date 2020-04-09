@@ -81,5 +81,10 @@
             <artifactId>cassandra-all</artifactId>
             <version>3.0.9</version>
         </dependency>
+        <dependency>
+            <groupId>DataStructures</groupId>
+            <artifactId>DataStructures</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>

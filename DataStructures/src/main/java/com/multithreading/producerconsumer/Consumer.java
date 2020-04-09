@@ -18,6 +18,7 @@ public class Consumer implements Runnable {
 	public void run() {
 		while (true) {
 			try {
+				Thread.sleep(1000);
 				System.out.println("Consumed " + sharedQueue.take());
 			} catch (Exception e) {
 				logger.log(Level.SEVERE, "Issue is with consuming!");
@@ -26,7 +27,7 @@ public class Consumer implements Runnable {
 	}
 
 	public static void main(String args[]) {
-		BlockingQueue<String> sharedQueue = new LinkedBlockingQueue<String>();
+		BlockingQueue<String> sharedQueue = new LinkedBlockingQueue<String>(5);
 
 		Thread t1 = new Thread(new Producer(sharedQueue));
 		Thread t2 = new Thread(new Consumer(sharedQueue));
