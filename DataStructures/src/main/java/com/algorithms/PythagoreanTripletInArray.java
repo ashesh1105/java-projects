@@ -30,6 +30,7 @@ So, overall, this takes O(n) + nlog(n) + nlog(n) times. Can we say O(n) that way
  */
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class PythagoreanTripletInArray {
@@ -58,6 +59,9 @@ public class PythagoreanTripletInArray {
         for (int i=0; i<len; i++) {
             A[i] = A[i]*A[i];
         }
+
+        // Sort the array now
+        Arrays.sort(A);
 
         // Let's find the triplet(s) now. "Fix" last element, look for pair, then move to left
         for (int i=len-1; i>=2; i--) {
