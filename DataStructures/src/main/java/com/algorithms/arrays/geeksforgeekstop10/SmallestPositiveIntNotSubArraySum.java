@@ -1,4 +1,4 @@
-package com.algorithms;
+package com.algorithms.arrays.geeksforgeekstop10;
 
 /*
 https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
@@ -36,6 +36,7 @@ Approach 2:
      add A[i] to res and proceed to checking next elements.
 
 ** Note: elements are in non decreasing order!!
+** Note: Sub arrays have to be continuous, not in any random order!
  */
 
 public class SmallestPositiveIntNotSubArraySum {

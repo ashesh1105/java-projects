@@ -1,10 +1,10 @@
-package com.algorithms;
+package com.algorithms.arrays.geeksforgeekstop10;
 
 /*
 https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 https://www.geeksforgeeks.org/length-largest-subarray-contiguous-elements-set-1/
 
-Given an array of distinct integers, find length of the longest subarray which contains numbers that can be arranged
+Given an array of distinct integers, find length of the largest subarray which contains numbers that can be arranged
 in a continuous sequence. Note: elements of a sub array can be in any order, they will, however, be contiguous,
 i.e., together.
 

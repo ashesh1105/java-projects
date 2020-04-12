@@ -1,4 +1,4 @@
-package com.algorithms;
+package com.algorithms.arrays.geeksforgeekstop10;
 
 /*
 https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
