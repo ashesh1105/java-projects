@@ -1,4 +1,4 @@
-package com.algorithms;
+package com.datastructures.linkedlist;
 
 public class MergeNSortedLinkedLists {
 
