@@ -1,5 +1,7 @@
 package com.datastructures.linkedlist;
 
+import com.datastructures.linkedlist.geeksforgeekstop10.MyNode;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 

@@ -1,5 +1,7 @@
 package com.datastructures.linkedlist;
 
+import com.datastructures.linkedlist.geeksforgeekstop10.Node;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;

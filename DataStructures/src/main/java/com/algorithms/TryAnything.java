@@ -111,7 +111,10 @@ public class TryAnything {
         // Now, if we grab by index
         System.out.println("list.get(3): " + list.get(3));    // should print 5
 
-
+        // String compare
+        String str2 = "geeks";
+        String str3 = "get";
+        System.out.println(str2 + " compared to " + str3 + " = " + str2.compareTo(str3));
     }
 
 }

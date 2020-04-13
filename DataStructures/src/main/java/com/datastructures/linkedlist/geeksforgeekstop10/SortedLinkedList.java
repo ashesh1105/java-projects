@@ -1,4 +1,11 @@
-package com.datastructures.linkedlist;
+package com.datastructures.linkedlist.geeksforgeekstop10;
+
+/**
+ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
+ https://www.geeksforgeeks.org/given-a-linked-list-which-is-sorted-how-will-you-insert-in-sorted-way/
+ Given a linked list which is sorted, how will you insert in sorted way
+
+ */
 
 public class SortedLinkedList<T extends Comparable<T>> {
 	private Node<T> head;

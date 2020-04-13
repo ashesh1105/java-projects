@@ -1,5 +1,6 @@
 package com.datastructures.linkedlist;
 
+import com.datastructures.linkedlist.geeksforgeekstop10.Node;
 import lombok.Getter;
 import lombok.Setter;
 

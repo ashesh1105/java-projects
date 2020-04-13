@@ -1,5 +1,7 @@
 package com.datastructures.linkedlist;
 
+import com.datastructures.linkedlist.geeksforgeekstop10.Node;
+
 public class DoubleEndedList<T> extends LinkedList<T> {
 
 	private Node<T> tail;

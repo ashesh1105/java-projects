@@ -1,5 +1,6 @@
 package com.datastructures.linkedlist;
 
+import com.datastructures.linkedlist.geeksforgeekstop10.MyNode;
 import org.junit.*;
 
 import static org.junit.Assert.assertEquals;

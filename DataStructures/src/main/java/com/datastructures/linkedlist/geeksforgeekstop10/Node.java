@@ -1,4 +1,4 @@
-package com.datastructures.linkedlist;
+package com.datastructures.linkedlist.geeksforgeekstop10;
 
 
 import lombok.Getter;
