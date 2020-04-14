@@ -1,16 +1,20 @@
-package com.datastructures.linkedlist;
+package com.datastructures.linkedlist.geeksforgeekstop10;
 
-import com.datastructures.linkedlist.geeksforgeekstop10.MyNode;
+import com.datastructures.linkedlist.MyLinkedList;
+
+/**
+ https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
+ https://www.geeksforgeeks.org/sum-of-two-linked-lists/
+
+ We have two large numbers represented as linked list as below:
+ list1 => 1234 -> 5678 -> 9101 -> 2345
+ list2 => 7564 -> 6762 -> 7619 -> 4675
+ Sum the numbers and have them represented same way as above.
+ Sum: 0001 -> 0799 -> 2441 -> 6721 -> 0920
+
+ */
 
 public class SumNumberRepresentedAsLinkedList {
-
-	/*
-	 * We have two large numbers represented as linked list as below:
-	 * 
-	 * list1 => 1234 -> 5678 -> 9101 -> 2345
-	 * 
-	 * Sum the numbers and have them represented same way as above.
-	 */
 
 	public static void main(String[] args) {
 
