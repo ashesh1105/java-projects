@@ -184,6 +184,22 @@ public class LinkedList<T> {
 		head = previous;
 	}
 
+	// Get middle node
+	public Node middleNode(Node head) {
+
+		if (head == null || head.getNextNode() == null) return head;
+
+		Node slow = head;
+		Node fast = head;
+
+		while(fast.getNextNode() != null && fast.getNextNode().getNextNode() != null) {
+			slow = slow.getNextNode();
+			fast = fast.getNextNode().getNextNode();
+		}
+
+		return slow;
+	}
+
 	@Override
 	public String toString() {
 		String res = "";
