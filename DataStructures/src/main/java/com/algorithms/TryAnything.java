@@ -115,6 +115,24 @@ public class TryAnything {
         String str2 = "geeks";
         String str3 = "get";
         System.out.println(str2 + " compared to " + str3 + " = " + str2.compareTo(str3));
+
+        // Math.random()
+
+        System.out.println("Math.random() = " + Math.random());
+        System.out.println("Math.random() % 2 = " + Math.random() % 2);
+        System.out.println("Math.random() % 2 == 0 ? " + (Math.random() % 2 == 0));
+
+        System.out.println("Get large random number by: Math.abs(UUID.randomUUID().getMostSignificantBits()): "
+                + Math.abs(UUID.randomUUID().getMostSignificantBits()));
+
+        // Math.pi
+        System.out.println("Math.PI: " + Math.PI);
+        int r = 2;
+        System.out.println("2 * Math.PI * r: " + 2 * Math.PI * r);
+
+        
+
+
     }
 
 }

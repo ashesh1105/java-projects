@@ -3,7 +3,7 @@ package com.datastructures.heaps;
 import java.util.Arrays;
 
 /**
- * Implementation of heap using arrays
+ * Implementation of heap using arrays. This is a Max Heap Implementation assuming fixed size.
  */
 public class Heap {
 	private Integer[] heapData;
@@ -20,7 +20,7 @@ public class Heap {
 		fixUp(currentPosition);
 	}
 
-	public int deleteRoot() {
+	public int poll() {
 		int result = heapData[0];
 		heapData[0] = heapData[currentPosition--];
 		heapData[currentPosition + 1] = null;
@@ -74,8 +74,11 @@ public class Heap {
 
 	/**
 	 * Heap Sort could be called in a heap array, so we assume that this heap
-	 * was built up by calling insert repeatedly, and then we call heapSort on
-	 * it.
+	 * was built up by calling insert repeatedly, and then we call heapSort on it.
+	 *
+	 * Note** once you apply below method, it will no longer satisfy the Max Heap Property where a Parent
+	 * will always be greater than its children. Tree will be complete though, meaning no empty position unless it is
+	 * last level.
 	 */
 	public void heapSort() {
 		for (int i = 0; i < currentPosition; i++) {
@@ -110,12 +113,21 @@ public class Heap {
 		heap.insert(5);
 		heap.insert(2);
 		heap.insert(21);
-		// System.out.println(heap.deleteRoot());
+
+		System.out.println("Original Heap: " + heap);
+
+		System.out.println("\nheap.poll(): " + heap.poll());
+		System.out.println("New Heap: " + heap);
+
+		System.out.println("\nLet's sort the heap by our method: heap.heapSort()");
 		heap.heapSort();
-		System.out.println(heap);
+		System.out.println("Sorted heap or array: " + heap);
+
 		Heap another = Heap.heapify(new int[] { 73, 16, 40, 1, 46, 28, 12, 21,
 				22, 44, 66, 90, 7 });
+		System.out.println("\nHeap Formed from an array as input using Heap.heapify(int [] data): " + another);
+		System.out.println("Lets sort our underlying array by heapSort()");
 		another.heapSort();
-		System.out.println(another);
+		System.out.println("Sorted underlying array: " + another);
 	}
 }
