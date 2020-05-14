@@ -19,6 +19,7 @@ import java.util.Arrays;
     B) Check if new element is more than min element in the Heap, if not, then ignore the add request.
     C) poll the Min Heap, meaning remove the minimum element from it and then add the new element.
     D) Code an API to return top K elements anytime, which will be the underlying data itself, array in our case
+       This API can be a simple getData() which will return all of heap data anytime which will be Top K elements so far
 
  */
 
@@ -33,12 +34,21 @@ public class TopKElementsWithMinHeap {
         heapData = new Integer[capacity];
     }
 
+
+
     public Integer peak() {
         return heapData[0];
     }
 
     public int size() {
         return currentPosition;
+    }
+
+    // This API can be called anytime to get Top K Elements, where K=capacity of this heap we initialize it with
+    // Note: returning array will confirm to Min Heap data structure, will not be sorted.
+    // It can be sorted by using Arrays.sort method, first element will still be the same, i.e., min of the top K elements
+    public Integer[] getHeapData() {
+        return heapData;
     }
 
     public void add(Integer[] data) {
