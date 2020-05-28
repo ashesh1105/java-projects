@@ -88,7 +88,7 @@ class Event implements Comparable {
     }
 }
 
-public class TopKElementsWithMinHeap {
+public class TopKElementsWithCustomMinHeap {
 
     private Event[] heapData;
     private int capacity;
@@ -96,7 +96,7 @@ public class TopKElementsWithMinHeap {
     private Map<String, Event> map; // contains frequency of all the events, heap or off-heap :)
     private Set<Event> set; // helps keep unique events in Heap
 
-    public TopKElementsWithMinHeap(int capacity) {
+    public TopKElementsWithCustomMinHeap(int capacity) {
         this.capacity = capacity;
         heapData = new Event[capacity];
         map = new HashMap<>();
@@ -152,7 +152,7 @@ public class TopKElementsWithMinHeap {
             if (map.get(elem).compareTo(heapData[0]) > 0) {
                 Event polledData = poll();
                 set.remove(polledData);
-                    System.out.println("\nRemoving " + polledData + " from the heap and adding event with id: " + elem);
+//                    System.out.println("\nRemoving " + polledData + " from the heap and adding event with id: " + elem);
             } else {
                 return;
             }
@@ -227,9 +227,9 @@ public class TopKElementsWithMinHeap {
 
     public static void main(String[] args) {
 
-        TopKElementsWithMinHeap heap = new TopKElementsWithMinHeap(5);
+        TopKElementsWithCustomMinHeap heap = new TopKElementsWithCustomMinHeap(5);
         // We are passing 4 As, 3 Bs, 3 Cs, 1 D and 1 E
-        String dataArr[] = {"A", "C", "B", "C", "A", "E", "A", "B", "C", "A", "D", "B"};
+        String dataArr[] = {"A", "C", "B", "C", "A", "E", "M", "A", "B", "C", "A", "D", "B", "L", "M", "L"};
 
         heap.add(dataArr);
 
