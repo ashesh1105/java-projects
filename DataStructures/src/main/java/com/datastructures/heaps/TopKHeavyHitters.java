@@ -18,7 +18,9 @@ import java.util.*;
  data accumulated and similarly the TopK results from it, the heap data show the TopK at any point all the way since
  first call to the last one. It is also important to note that with this class, even with subsequent calls, heap never
  keeps any duplicate events. So we can say, it is more for Batch Processing.
- TopKElementsWithCustomMinHeap: 
+
+ TopKElementsWithCustomMinHeap:
+ https://github.com/ashesh1105/java-projects/blob/master/DataStructures/src/main/java/com/datastructures/heaps/TopKElementsWithCustomMinHeap.java
 
  With above said, we might need a less memory intensive Data Structure like Count-min Sketch instead of a HashMap.
  Refer the TopK Design Considerations for more details on it:
