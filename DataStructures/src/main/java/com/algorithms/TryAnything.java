@@ -130,8 +130,53 @@ public class TryAnything {
         int r = 2;
         System.out.println("2 * Math.PI * r: " + 2 * Math.PI * r);
 
-        
+        // Compare between Arrays
+        List<String> samDocErrorsList = new ArrayList<>(Arrays.asList(
+                "ERR_MISSING_TID", "ERR_MISSING_TOR", "ERR_MISSING_PID", "ERR_MISSING_PID", "ERR_MISSING_DD",
+                "ERR_MISSING_TBG",
+                "ERR_MISSING_FBG", "ERR_MISSING_ADR", "ERR_MISSING_IRF", "ERR_MISSING_HT", "ERR_MISSING_AS",
+                "ERR_MISSING_DH", "ERR_MISSING_FBGH",
+                "ERR_MISSING_HEH", "ERR_FBG_OOR", "ERR_DOSE_OOR", "ERR_TOR_OUT_OF_SYNC", "ERR_REQ_TOO_OLD",
+                "WARN_SUSPEND_INSUFF_DGH", "WARN_SUSPEND_INSUFF_DH",
+                "WARN_TOO_EARLY", "WARN_DOSE_TAKEN_ALREADY", "WARN_HYPO_EVENT_IN_ADR", "WARN_HYPO_EVENT_BELOW_ADR",
+                "WARN_MISSED_DOSE",
+                "WARN_DIFF_DOSE_OR_DAY", "WARN_INSUFF_FBG", "WARN_INITIAL_DOSE",
+                "DOWN_TITRATE_BELOW_TBG_IN_ADR", "DOWN_TITRATE_BELOW_TBG_BELOW_ADR",
+                "UP_TITRATE_ABOVE_TBG_IN_ADR", "UP_TITRATE_ABOVE_TBG_ABOVE_ADR"));
 
+        List<String> flexDocErrorsList = new ArrayList<>(Arrays.asList(
+            "ERR_MISSING_TID", "ERR_MISSING_TOR", "ERR_MISSING_PID", "ERR_MISSING_DD", "ERR_MISSING_LTR",
+                "ERR_MISSING_UTR","ERR_MISSING_LDR", "ERR_MISSING_UDR", "ERR_MISSING_IRF", "ERR_MISSING_AS",
+                "ERR_MISSING_DH", "ERR_MISSING_BDH","ERR_MISSING_IH", "ERR_MISSING_RDH", "ERR_MISSING_FBGH",
+                "ERR_MISSING_HH", "ERR_FBG_MEAS_OOR", "ERR_TIMESTAMP_FORMAT_FBGH",
+                "ERR_WRONG_UOM_FBGH", "ERR_FBG_PARAM_OOR", "ERR_WRONG_UOM_FBG_PARAM", "ERR_BDH_OOR", "ERR_IH_OOR",
+                "ERR_RDH_OOR", "ERR_TIMESTAMP_FORMAT_DH", "ERR_WRONG_UOM_DH", "ERR_DOSE_PARAM_OOR",
+                "ERR_WRONG_UOM_DOSE_PARAM", "ERR_DGB_OOR", "ERR_TIMESTAMP_FORMAT_HH", "ERR_TIMESTAMP_FORMAT_TOR",
+                "ERR_TIMESTAMP_FORMAT_IRF", "ERR_TOR_OUT_OF_SYNC", "ERR_REQ_TOO_OLD", "INITIAL_DOSE", "WARN_TOO_EARLY",
+                "WARN_DOSE_TAKEN_ALREADY", "WARN_SUSPEND_INSUFF_DH", "WARN_SUSPEND_INSUFF_DGH",
+                "WARN_HYPO_EVENT_BELOW_ADR", "WARN_HYPO_EVENT_IN_ADR", "DOWN_TITRATE_BELOW_TBG_BELOW_ADR",
+                "DOWN_TITRATE_BELOW_TBG_IN_ADR", "WARN_RCM_BD_MISSED_DOSE", "WARN_RCM_BD_DIFF_DOSE_OR_DAY",
+                "WARN_RCM_BD_INSUFF_FBG", "MAINTAIN_TITRATE", "UP_TITRATE_ABOVE_TBG_ABOVE_ADR",
+                "UP_TITRATE_ABOVE_TBG_IN_ADR", "ERR_INT_PROTOBUF_CONVERSION", "ERR_INT_WRONG_INPUT_TYPE"
+        ));
+
+        System.out.println("flexDocErrorsList.size(): " + flexDocErrorsList.size());
+        System.out.println("samDocErrorsList.size(): " + samDocErrorsList.size());
+
+        flexDocErrorsList.removeAll(samDocErrorsList);
+
+        flexDocErrorsList.forEach(e -> {
+            System.out.println(e);
+        });
+        System.out.println("Code in Flex doc but not in Sam: " + flexDocErrorsList.size());
+
+        // Reverse of above
+//        samDocErrorsList.removeAll(flexDocErrorsList);
+//
+//        samDocErrorsList.forEach(e -> {
+//            System.out.println(e);
+//        });
+//        System.out.println("Code in Sam doc but not in Flex: " + samDocErrorsList.size());
 
     }
 

@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
  * complete the job and then shuts them down. We can shutdown all the threads right there by
  * using method shutdownNow(). submit method of Executors takes a Runnable implementation.
  * awaitTermination method takes the number and unit of time when we want the tasks to timeout. In this
- * case the unit is very big (1, DAYS), basically meaning no timeout given the triial tasks we have, 
+ * case the unit is very big (1, DAYS), basically meaning no timeout given the trial tasks we have,
  * but we can specify other units like SECONDS, MILLISECONDS, etc.
  * 
  */
@@ -42,6 +42,12 @@ public class ThreadPoolDemo {
 		
 		System.out.println("All tasks completed or timed out");
 		System.out.println("Total time taken: " + (endTimer - startTimer));
+	}
+
+	public static void main(String[] args) {
+
+		new ThreadPoolDemo().submitTasks();
+
 	}
 
 }
