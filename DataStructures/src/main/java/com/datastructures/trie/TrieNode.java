@@ -1,4 +1,4 @@
-package com.algorithms.trie;
+package com.datastructures.trie;
 
 import lombok.Getter;
 import lombok.Setter;
