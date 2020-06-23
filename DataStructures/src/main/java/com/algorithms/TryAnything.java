@@ -1,11 +1,13 @@
 package com.algorithms;
 
-import java.util.*;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 public class TryAnything {
 
     public static void main(String[] args) {
 
+        /*
         int[] arr = new int[256];
         String str = "abcdefg";
 
@@ -66,10 +68,11 @@ public class TryAnything {
 
         // Or, you can always do it this way:
         System.out.println("char ch = '0' can be converted by doing subtracting 48 from it: " + (ch1 - 48));
-
+*/
         System.out.println("-1 % 7: " + (-1 % 7));
         System.out.println("7 % 7: " + (7 % 7));
-
+        System.out.println("3 % 7: " + (3 % 7));
+/*
         // Try map.forEach
         Map<String, Integer> map = new HashMap<>();
         map.put("Java", 8);
@@ -178,6 +181,14 @@ public class TryAnything {
 //        });
 //        System.out.println("Code in Sam doc but not in Flex: " + samDocErrorsList.size());
 
+          */
+
+
+
+
+        /*
+
+   */
     }
 
 }
