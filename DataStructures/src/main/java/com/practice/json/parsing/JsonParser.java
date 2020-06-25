@@ -1,4 +1,4 @@
-package com.learn.json.parsing;
+package com.practice.json.parsing;
 
 import java.io.File;
 import java.util.ArrayList;

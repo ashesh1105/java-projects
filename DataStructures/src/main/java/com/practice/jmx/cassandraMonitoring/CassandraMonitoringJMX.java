@@ -1,4 +1,4 @@
-package com.jmx.cassandraMonitoring;
+package com.practice.jmx.cassandraMonitoring;
 
 import org.apache.cassandra.metrics.CassandraMetricsRegistry;
 import org.apache.commons.lang3.StringUtils;

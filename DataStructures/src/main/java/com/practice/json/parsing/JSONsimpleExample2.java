@@ -1,4 +1,4 @@
-package com.learn.json.parsing;
+package com.practice.json.parsing;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
