@@ -2,6 +2,19 @@ package com.practice.streamsAndLambda.comparator;
 
 import java.util.Comparator;
 
+/**
+ * This package demonstrates usage of Comparator as Lambda. We define list of Students in a class ComparatorAsLambda
+ * class and also provide there a sort method that takes a Comparator instance. That way, a client can
+ * sort the list the way (s)he needs it without accessing the list itself (immutable). sort method can take
+ * following:
+ * 1) Comparator.comparing(Student::getName())
+ * 2) Comparator.comparing(Student::getRollNumber())
+ * 3) Comparator.comparing(Student::getAge())
+ * 4) Comparator.comparing(Student::getName()).reversed()   // For revered sorting
+ * 5) Comparator.comparing(Student::getName()).reversed()
+ * 6) Comparator.comparing(Student::getName).thenComparing(Student::getAge), etc.
+ */
+
 public class UseComparator {
 
     public static void main(String[] args) {
