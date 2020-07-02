@@ -1,4 +1,4 @@
-package com.algorithms;
+package com.algorithms.arrays;
 
 import java.math.BigInteger;
 
@@ -42,13 +42,13 @@ public class PrimeNumber {
 			return false;
 		}
 
+		if (num == 2 || num == 3) {
+			return true;
+		}
+
 		if (num % 2 == 0) {
 			System.out.println("Even numbers can never be prime.");
 			return false;
-		}
-
-		if (num == 3) {
-			return true;
 		}
 
 		int sqrt = (int) Math.sqrt(num);

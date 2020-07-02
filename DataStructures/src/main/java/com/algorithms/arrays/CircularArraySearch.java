@@ -1,4 +1,4 @@
-package com.algorithms;
+package com.algorithms.arrays;
 
 /**
  * Search a specific number in a sorted circular array.
@@ -28,13 +28,14 @@ public class CircularArraySearch {
 
 			int mid = (low + high) / 2;
 
-			// To avoid ArrayIndexOutOfBounds error in case of Circular Arrays
-			int prev = (mid - 1 + len) % len;
-			int next = (mid + 1) % len;
 
 			if (A[mid] == num) {
 				return mid;
 			}
+
+			// To avoid ArrayIndexOutOfBounds error in case of Circular Arrays
+			int prev = (mid - 1 + len) % len;
+			int next = (mid + 1) % len;
 
 			/**
 			 * We have following cases now: 

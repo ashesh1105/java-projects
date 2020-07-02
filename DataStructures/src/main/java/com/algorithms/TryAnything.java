@@ -1,8 +1,5 @@
 package com.algorithms;
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-
 public class TryAnything {
 
     public static void main(String[] args) {
@@ -180,9 +177,11 @@ public class TryAnything {
 //            System.out.println(e);
 //        });
 //        System.out.println("Code in Sam doc but not in Flex: " + samDocErrorsList.size());
-
           */
+        System.out.println("-1 % 5 = " + -1 % 5);
 
+        String ten = Integer.toString(10);
+        System.out.println("Integer.toBinaryString(10) " + Integer.toBinaryString(10));
 
 
 

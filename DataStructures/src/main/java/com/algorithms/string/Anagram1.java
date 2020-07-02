@@ -3,14 +3,16 @@ package com.algorithms.string;
 public class Anagram1 {
 
 	/**
-	 * If we could change the contents of the string, we can sort them in nlogn
-	 * time and check if both the strings are equal (easy)
-	 * BUT IN THIS METHOD we will consider that characters of the
-	 * string are all ASCII.
+	 * Anagrams are where characters of a string can be rearranged to form another one.
 	 *
-	 * The implementation in this class uses an int array of size 128 / 256 to find get all the characters of first
+	 * We convert string to char array, we can sort them in nlogn time and check if both the strings are equal (easy)
+	 * We will consider that characters of the string are all ASCII.
+	 *
+	 * The implementation in this class uses an int array of size 128 / 256 to find all the characters of first
 	 * string with number of occurrences and then compares that with second string. int arrays get initialized to
 	 * zero for all its elements.
+	 *
+	 * So, approach with this class will take Big O(n).
 	 *
 	 * Note:: If you want to check for case insensitive anagrams, change char to Character.toLowerCase(char) and proceed
 	 */
@@ -37,7 +39,7 @@ public class Anagram1 {
 		for (int i = 0; i < str2.length(); i++) {
 
 			// If you want to find case insensitive anagrams, simple do c = Character.toLowerCase(c); after below line!
-			int c = (int) str2.charAt(i);
+			int c = str2.charAt(i);
 			if (charSet[c] == 0) { // More of character 'c' in str2 than in str1
 				return false;
 			}
@@ -51,7 +53,7 @@ public class Anagram1 {
 				}
 			}
 		}
-		return false;
+		return true;
 	}
 	
 	public static void main(String[] args) {

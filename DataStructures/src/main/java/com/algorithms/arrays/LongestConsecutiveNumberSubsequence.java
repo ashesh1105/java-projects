@@ -1,4 +1,4 @@
-package com.algorithms;
+package com.algorithms.arrays;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -60,12 +60,10 @@ public class LongestConsecutiveNumberSubsequence {
             set.add(arr[i]);
   
         // check each possible sequence from the start then update optimal length
-        for (int i=0; i<len; ++i)
-        { 
+        for (int i=0; i<len; ++i) {
             // if current element is the starting element of a sequence, meaning its not part of another sequence
-            // which will be obvious if this this element - 1 is already present in the set
-            if (!set.contains(arr[i]-1))
-            { 
+            // which will be obvious if this element - 1 is already present in the set
+            if (!set.contains(arr[i]-1)) {
                 // Then check for next elements in the 
                 // sequence 
                 int elem = arr[i];
@@ -76,7 +74,7 @@ public class LongestConsecutiveNumberSubsequence {
                 }
   
                 // update  optimal length if this length is more
-                int subsequenceLength = elem - arr[i];
+                int subsequenceLength = elem - arr[i];  // elem is now one more than last one in subsequence
                 if (result < subsequenceLength) {
                     result = subsequenceLength;
                     // Clear StringBuilder from earlier max subsequence and refill with new max

@@ -1,4 +1,4 @@
-package com.algorithms;
+package com.algorithms.arrays;
 
 public class StringToInteger {
 
@@ -14,6 +14,9 @@ public class StringToInteger {
 		 * Check for all boundary conditions:
 		 * 1) String can not be null or empty
 		 * 2) String can not have non numeric value or '-' char in the middle
+		 *
+		 * Note** You can also read string from front and for every numeric value of char (ch - 48), do:
+		 * result = result * 10 + num. So you keep on promoting the result by 10th place and then add new number to it.
 		 */
 
 		char[] charArrInput = input.toCharArray();

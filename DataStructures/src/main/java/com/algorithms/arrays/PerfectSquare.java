@@ -1,4 +1,4 @@
-package com.algorithms;
+package com.algorithms.arrays;
 
 public class PerfectSquare {
 
@@ -11,8 +11,6 @@ public class PerfectSquare {
 		int n = 49;
 		System.out.println("Number " + n + " is "
 				+ (new PerfectSquare().isPerfectSquare2(n) ? "a perfect square." : "not a perfect square."));
-		
-
 	}
 
 	/*

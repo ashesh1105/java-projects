@@ -1,4 +1,4 @@
-package com.algorithms;
+package com.algorithms.arrays;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ public class FindDips {
 
 	public static void main(String[] args) {
 
-		int[] array = { 20, 21, 23, 25, 22, 29, 36, 55, 56, 38, 41};
+		int[] array = { 20, 21, 23, 25, 22, 29, 36, 55, 56, 38, 41 };
 
 		List<Integer> dips = new FindDips().findDips(array);
 		

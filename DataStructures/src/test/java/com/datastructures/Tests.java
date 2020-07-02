@@ -3,8 +3,8 @@
  */
 package com.datastructures;
 
-import com.algorithms.NextGreaterNumberToTheRight;
-import com.algorithms.StringToInteger;
+import com.algorithms.arrays.StringToInteger;
+import com.algorithms.arrays.NextGreaterNumberToTheRight;
 import org.junit.*;
 
 import static org.junit.Assert.assertEquals;

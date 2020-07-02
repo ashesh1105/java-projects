@@ -1,4 +1,4 @@
-package com.algorithms;
+package com.algorithms.arrays;
 
 public class TopPageVisitedSquence {
 
@@ -13,12 +13,13 @@ public class TopPageVisitedSquence {
 	 * of times (for all users).
 	 * 
 	 * Approach: 
-	 * 1) Design a method that takes ArrayList<String> with pages visited in the order of timestamp.
-	 * 2) Use a HashTable<String, Integer> or map to store sequence of pages visited with occurrences
-	 * 3) Key of above will be 3 continuous concatenated values from ArrayList, if they exist.
-	 * 4) Check for i + 2 < length as condition before computing key and occurrences for map.
-	 * 5) Use a max_value variable to store max occurrence and specific 3 pages of sequence
-	 * Once reach till end of ArrayList, return the sequence with max occurrence.
+	   This is a TopK Problem. See:
+https://github.com/ashesh1105/java-projects/blob/master/DataStructures/src/main/java/com/datastructures/heaps/TopKHeavyHitters.java
+	   1) Define a Map of String and Integer. Key will be combination of 3 pages visited, like home -> search -> checkout
+	      value will be frequency of them.
+	   2) Populate this map for the time range we are interested. Bigger time ranges will need offline data pipeline.
+	   3) Define a Min PriorityQueue of size k (if k==1, just iterate through map and get the max one.
+	   4) On PriorityQueue, whenever k+1th element comes, pool the queue, which will remove the minimum element from it.
 	 */
 
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.algorithms;
+package com.algorithms.arrays;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -51,36 +51,7 @@ public class ArrayElementsPairs {
 		int i = 0;
 		int j = array.length - 1;
 
-		while (i <= j) {
-
-			if (array[i] + array[j] > sum) {
-				j--;
-			} else {
-				if (array[i] + array[j] == sum) {
-					pairs.put(array[i], array[j]);
-				}
-				i++;
-			}
-		}
-		if (pairs.isEmpty()) {
-			// log the msg
-			System.out
-					.println("No pairs found in the array with sum as " + sum);
-		}
-		return pairs;
-	}
-	
-	public Map<Integer, Integer> findPairsWithGivenSumOptimized(int[] array, int sum) {
-
-		Map<Integer, Integer> pairs = new HashMap<Integer, Integer>();
-
-		// Sort the array, if it is not already sorted
-		Arrays.sort(array);
-
-		int i = 0;
-		int j = array.length - 1;
-
-		while (i <= j) {
+		while (i < j) {
 
 			if (array[i] + array[j] > sum) {
 				j--;

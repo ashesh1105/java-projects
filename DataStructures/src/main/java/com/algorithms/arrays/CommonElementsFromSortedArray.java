@@ -1,4 +1,4 @@
-package com.algorithms;
+package com.algorithms.arrays;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +17,8 @@ import java.util.List;
  * Note** With above, there is no need to check e1 with e3 since that is taken care in above conditions. if e1 > e2 && e2 > e3, then e1 > e3.
  * Note** For > or < comparisons, don't rely on doing else only, add the conditions explicitly like e1 > e2 else e2 > e1. This will help
  * to not increment the indices when elements are equal and then capture them as part of your result with case a) above!
+ *
+ * Is this Big O(n)? Seems like isn't it? We are looping in only once here!
  */
 
 public class CommonElementsFromSortedArray {
@@ -24,7 +26,7 @@ public class CommonElementsFromSortedArray {
 	public static void main(String[] args) {
 		
 		int [] arr1 = {1, 5, 5, 6, 9};
-		int [] arr2 = {3, 4, 5, 5, 9, 10};
+		int [] arr2 = {1, 4, 5, 5, 9, 10};
 		int [] arr3 = {5, 5, 9, 10, 20};
 		
 		List<Integer> result = findSortedArrayCommonElements(arr1, arr2, arr3);
@@ -49,22 +51,28 @@ public class CommonElementsFromSortedArray {
 			int e1 = arr1[i];
 			int e2 = arr2[j];
 			int e3 = arr3[k];
-			
-			if (e1 == e2 && e2 == e3) {
-				result.add(e1);
-				i++;
-				j++;
-				k++;
-			} 
-			
-			if (e1 < e2) {
-				i++;
-				if (e2 < e3) {
+
+			if (e1 == e2) {
+				// Our desired situation here
+				if (e2 == e3) {
+					result.add(e1);
+					i++;
 					j++;
-				} else if (e2 > e3) {	// Don't increase indices if elements are equal 
+					k++;
+				} else if (e2 < e3) {
+					j++;
+				} else {
 					k++;
 				}
-			} else if (e1 > e2) {	// Don't increase indices if elements are equal
+			} else if (e1 < e2) {
+				i++;
+				// Check conditions between e2 and e3 explicitly here, don't increment indices if they're equal!
+				if (e2 < e3) {
+					j++;
+				} else if (e2 > e3) {	// Don't increase indices if elements are equal
+					k++;
+				}
+			} else if (e1 > e2) {	// e1 > e2 condition is obvious here, added just for code clarity.
 				j++;
 				if (e2 < e3) {
 					j++;
