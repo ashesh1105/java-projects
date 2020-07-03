@@ -1,6 +1,9 @@
 package com.algorithms.string;
 
+import lombok.Getter;
+
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class EmployeeSorter {
 	private Employee[] employees;
@@ -31,14 +34,21 @@ public class EmployeeSorter {
 		sorter.employees[2] = emp3;
 		Employee emp4 = new Employee(100000004, "Barbara","Weatherspoon", "barbara.weatherspoon@dsnalgos.com");
 		sorter.employees[3] = emp4;
-		sorter.sort();
+//		sorter.sort();
 		System.out.println(Arrays.deepToString(sorter.employees));
+
+		// I can achieve the same here without using custom sorting
+		// Note: sorter.sort() method is commented out above!
+		Arrays.sort(sorter.employees, Comparator.comparing(Employee::getEmployeeNumber));
+		System.out.println(Arrays.deepToString(sorter.employees));	// Will print sorted employees from array
 	}
 	
 }
 
 class Employee {
-	public int employeeNumber;
+
+	@Getter
+	public int employeeNumber;	// Need getter her to use it in Comparator.comparing method as sort criteria
 	public String firstName;
 	public String lastName;
 	public String email;

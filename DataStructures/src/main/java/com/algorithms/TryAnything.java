@@ -1,5 +1,8 @@
 package com.algorithms;
 
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.text.WordUtils;
+
 public class TryAnything {
 
     public static void main(String[] args) {
@@ -182,6 +185,15 @@ public class TryAnything {
 
         String ten = Integer.toString(10);
         System.out.println("Integer.toBinaryString(10) " + Integer.toBinaryString(10));
+
+        // Capitalize a string
+        String str1 = "this is a great weather over here!     ";
+        System.out.println(WordUtils.capitalize(str1));
+
+        // Join function on an array
+        String [] arr = str1.split(" ");
+        String newStr = StringUtils.join(arr, " | ");
+        System.out.println(newStr);
 
 
 

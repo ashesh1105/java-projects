@@ -1,5 +1,7 @@
 package com.algorithms.string;
 
+import java.util.Arrays;
+
 public class DuplicateChecker {
     /**
      * This version assumes that the string is any general string (may contain
@@ -30,7 +32,7 @@ public class DuplicateChecker {
      */
     public boolean hasDuplicateChars(String s) {
         // Standard ASCII (if you want to include extended ASCII, you may use a 256 length array
-        boolean[] charSet = new boolean[128]; // additional memory
+        boolean[] charSet = new boolean[128]; // additional memory, but constant one
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (charSet[c]) return true;
@@ -62,9 +64,13 @@ public class DuplicateChecker {
 			return true;
 		}
 
+		char [] charArr = s.toCharArray();
+        Arrays.sort(charArr);   // Will take nLog(n) here
+
 		// Now check if any consecutive chars are same
-		for (int i=1; i < s.length(); i++) { //
-			if (s.charAt(i-1) == s.charAt(i))
+        // Will take O(n) time
+		for (int i=1; i < charArr.length; i++) { //
+			if (charArr[i-1] == charArr[i])
 				return true;
 		}
 		return false;
@@ -77,8 +83,9 @@ public class DuplicateChecker {
         int len = str.length();
         char[] A = str.toCharArray();
         int tail = 1;
+        int j = 0;
         for (int i = 1; i < len; i++) {
-            int j = 0;
+            j = 0;
             while (j < tail) {
                 if (A[j] == A[i]) {
                     return true;

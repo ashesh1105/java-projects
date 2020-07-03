@@ -1,5 +1,6 @@
 package com.algorithms.string;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.text.WordUtils;
 
 public class CapitilizeSentence {
@@ -7,6 +8,9 @@ public class CapitilizeSentence {
 	/**
 	 * Capitalize a sentence by making first letter in each word capital letter
 	 * Use capitalizeMeAlternate4 - most elegant and efficient one!
+	 *
+	 * BTW, WordUtils of apache.commons does it in one shot for any string. It also preserves the white space:
+	 * WordUtils.capitalize(str) will do the trick for you!
 	 */
 
 	public static void main(String[] args) {
@@ -14,7 +18,7 @@ public class CapitilizeSentence {
 		String str = "this is a great weather over here!     ";
 		CapitilizeSentence capitilizeSentence = new CapitilizeSentence();
 		System.out.println("Original String: " + str);
-		System.out.println("Resulting String: " + capitilizeSentence.capitalizeMeAlternate4(str));
+		System.out.println("Resulting String: " + capitilizeSentence.capitalizeMeAlternate3(str));
 	}
 	
 	/**
@@ -23,7 +27,6 @@ public class CapitilizeSentence {
 	 */
 	private String capitalizeMe(String str) {
 		String result = "";
-		StringBuilder sb = new StringBuilder();
 		String [] arr = str.split(" ");
 		int len = arr.length;
 		
@@ -35,13 +38,8 @@ public class CapitilizeSentence {
 			  } else {
 				arr[i] = Character.toUpperCase(word.charAt(0)) + word.substring(1);  
 			  }
-			  if (i == len-1) {
-				  sb.append(arr[i]);
-			  } else {
-				  sb.append(arr[i] + " ");
-			  }
 		}
-		return sb.toString();
+		return StringUtils.join(arr, " ");
 	}
 
 	private String capitalizeMeAlternate1(String str) {
@@ -67,10 +65,11 @@ public class CapitilizeSentence {
 	/**
 	 * Below approach loses leading or trailing white spaces. Fix this!
 	 * Also see the alternate solutions below
+	 *
+	 * WordUtils.capitalize(str) will do the trick for you for entire string! Also preserves the white spaces in it!
 	 */
 	private String capitalizeMeAlternate3(String str) {
 		String result = "";
-		StringBuilder sb = new StringBuilder();
 		String [] arr = str.split(" ");
 		int len = arr.length;
 		
@@ -79,15 +78,9 @@ public class CapitilizeSentence {
 			 * Note: If we have words with mixed case letters like wOrD, we can use WordUtils.capitalizeFully method
 			 * to convert it to only first letter capitalized
 			 */
-			String capitalizedWord = WordUtils.capitalize(arr[i]);
-			
-			if (i == len-1) {
-			  sb.append(capitalizedWord);
-			} else {
-		      sb.append(capitalizedWord + " ");
-			}
+			arr[i] = WordUtils.capitalize(arr[i]);
 		}
-		return sb.toString();
+		return StringUtils.join(arr, " ");
 	}
 	
 	/**
