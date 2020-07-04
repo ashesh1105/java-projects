@@ -44,14 +44,11 @@ public class LargestSubStringNoDups {
 				if (tempLen > maxSubStringLength) {
 					maxSubStringLength = tempLen;
 				}
-				// Do below if-else only if you need to return the max length substring and not if only max length is needed.
-				if (map.containsKey(tempLen)) {
-					map.get(tempLen).add(sb.toString());
-				} else {
-					List<String> newTempList = new ArrayList<String>();
-					newTempList.add(sb.toString());
-					map.put(tempLen, newTempList);
-				}
+				// Do below only if you need to return the substring(s) as well and not if just the max length.
+				List<String> list = map.getOrDefault(tempLen, new ArrayList<>());
+				list.add(sb.toString());
+				map.put(tempLen, list);
+
 				sb.delete(0, tempLen);
 				// With temp bucket clear now, don't forget to add the current char in temp to start with
 				sb.append(tempStr);

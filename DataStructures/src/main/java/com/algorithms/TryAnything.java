@@ -195,6 +195,9 @@ public class TryAnything {
         String newStr = StringUtils.join(arr, " | ");
         System.out.println(newStr);
 
+        char zero = 122;
+        System.out.println(zero);
+
 
 
         /*

@@ -1,5 +1,7 @@
 package com.algorithms.string;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 public class MatchingSymbol {
 
 	/*
@@ -30,20 +32,14 @@ public class MatchingSymbol {
 
 	private String[] matchStringWithSymbols(String[] str, String[] sym) {
 		
-		// Null check
-		if (str == null || sym == null ) {
-			System.out.println("Either string or symbols array passed are null.");
+		// Null or Empty array check
+		if (ArrayUtils.isEmpty(str) || ArrayUtils.isEmpty(sym)) {
+			System.out.println("Entered string or symbols array passed are empty or null.");
 			return str;
 		}
 		
 		int lenStr = str.length;
 		int lenSym = sym.length;
-		
-		// Empty array check
-		if (lenStr == 0 || lenSym == 0) {
-			System.out.println("Either string or symbols array passed empty.");
-			return str;
-		}
 		
 		// result array that will contain strings with largest matching symbol
 		String [] result = new String[lenStr];

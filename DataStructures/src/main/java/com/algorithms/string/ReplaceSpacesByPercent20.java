@@ -8,7 +8,7 @@ public class ReplaceSpacesByPercent20 {
 
 		String str = "abc def ghi";
 
-		String result = new ReplaceSpacesByPercent20().replaceSpacesByPercent20UsingArray(str);
+		String result = new ReplaceSpacesByPercent20().replaceSpacesByPercent20StringUtils(str);
 
 		System.out.println("Original string: " + str + "\nNew string: " + result);
 
@@ -70,5 +70,18 @@ public class ReplaceSpacesByPercent20 {
 			}
 		}
 		return String.copyValueOf(resultArr);
+	}
+
+	// You should do it this way for non academic level coding
+	public String replaceSpacesByPercent20StringUtils(String str) {
+
+		if(StringUtils.isEmpty(str)) {
+			System.out.println("String input was null or empty!");
+			return "";
+		}
+
+		String [] arr = str.split(" ");
+
+		return StringUtils.join(arr, "%20");
 	}
 }

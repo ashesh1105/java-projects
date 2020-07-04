@@ -2,12 +2,14 @@ package com.algorithms.arrays;
 
 public class StringToInteger {
 
-	/*
+	/**
 	 * You’re given a string of ASCII characters, convert them into the integer
 	 * equivalent. "12345" = 12,345 "987" "-474" = -474 47-4 "5858-37835" =
 	 * 37,835 "8-9" = 9 8ab7 ,&,% 123e10
+	 * Return 0 means there was '-' character in input string after 1st position
+	 *
+	 * Note** In practice you should use the static method in String for this: String.valueOf(123)
 	 */
-	// return 0 means there was '-' character in input string after 1st position
 	public int convertStringToInteger(String input) {
 		
 		/*

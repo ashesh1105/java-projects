@@ -6,13 +6,13 @@ public class LongestCommonSubstring {
 	 * Given two strings ‘X’ and ‘Y’, find the length of the longest common
 	 * substring. For example, if the given strings are “ithinkglookoisthebest” and
 	 * “Iamworkingforglookoyes”, the output should be 5 as longest common substring is
-	 * “yahoo” .
+	 * “glooko” .
 	 */
 
 	public static void main(String[] args) {
 
-		String str1 = "ithinkglookoisthebest";
-		String str2 = "Iamworkingforglookoyes";
+		String str1 = "thinkglookoisthebest";
+		String str2 = "iamworkingforglookoyes";
 
 		System.out
 				.println("Largest common substrings of " + str1 + " and " + str2 + " is: "
@@ -82,8 +82,10 @@ public class LongestCommonSubstring {
 //		for (int elem : arr) {
 //			elem = -1;
 //		}
-		// Add a special element at index 0 so we can tell if a string char matches this index or not
-		arr[0] = -1;
+		// Initialize each arr elements by -1
+		for (int i=0; i<arr.length; i++) {
+			arr[i] = -1;
+		}
 
 		for (int i = 0; i < len1; i++) {
 			arr[str1.charAt(i)] = i;
@@ -91,7 +93,7 @@ public class LongestCommonSubstring {
 
 		for (int j = 0; j < len2; j++) {
 			int beginIndex = -1;
-			if (arr[str2.charAt(j)] <= 0) {	// empty elements will be either -1 (at index 0) or 0 (default)
+			if (arr[str2.charAt(j)] < 0) {	// empty elements will be either -1 (at index 0) or 0 (default)
 				continue;
 			} else {
 				beginIndex = j;

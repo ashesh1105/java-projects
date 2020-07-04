@@ -1,5 +1,7 @@
 package com.algorithms.string;
 
+import org.apache.commons.lang3.StringUtils;
+
 public class InputAndOrderingString {
 
 	/*
@@ -25,8 +27,8 @@ public class InputAndOrderingString {
 
 	private static boolean followsOrdering(String str, String ordering) {
 		
-		// Return if either of the strings are null or empty
-		if (str == null || str.length() == 0 || ordering == null || ordering.length() == 0) {
+		// Return if either of the strings are null or empty. StringUtils does null and empty checks, both
+		if (StringUtils.isEmpty(str) || StringUtils.isEmpty(ordering)) {
 			System.out.println("Either of the passed strings are null.");
 			return false;
 		}

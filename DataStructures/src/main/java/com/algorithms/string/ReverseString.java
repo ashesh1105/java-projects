@@ -32,14 +32,11 @@ public class ReverseString {
 	
 	public String reverse2(String str) {
 		
-		String result = "";
-		
 		if (str.length() == 1) {
 			return str;
 		} else {
 			return (reverse2(str.substring(1)) + str.charAt(0));
-		} 
-		
+		}
 	}
 
 }
