@@ -1,7 +1,7 @@
 package com.algorithms.hackerrank.arrays;
 
 /*
-Its a game of 2D array, you win or lose it, rules as below:
+It's a game of 2D array, you win or lose it, rules as below:
 1) A 2D array "game" of integers 0 or 1 as its elements of n length and a given integer leap to jump
 2) You can move forward or backward one step at a time or by leap as long as game[i+1], game[i-1] or game[i+leap] == 0
 3) If you reach at index n-1 (i.e., end of array) or i+leap >= n, the length of array, you Win. Print YES for it.

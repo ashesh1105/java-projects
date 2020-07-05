@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 public class LocalizedLocks {
-	/*
+	/**
 	 * This is a demo of the thread interlocking issues and how to avoid that.
 	 * Two threads try to work on two lists but they are processed in two
 	 * different methods. We can either synchronize StageOne and StageTwo

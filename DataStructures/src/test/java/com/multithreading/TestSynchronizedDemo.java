@@ -1,10 +1,9 @@
-package com.multithreading.test;
-
-import static org.junit.Assert.*;
-
-import org.junit.Test;
+package com.multithreading;
 
 import com.multithreading.threads.SynchronizedDemo;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class TestSynchronizedDemo {
 	
@@ -37,9 +36,6 @@ public class TestSynchronizedDemo {
 		// Add the test
 		int finalCounter = demo.getCounter();
 		assertEquals("Final counter value must be 20,000!", 20000, finalCounter);
-		
-		
-		
 	}
 
 }

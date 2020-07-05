@@ -10,8 +10,11 @@ public class MyCalendar {
 	public static void main(String[] args) {
 		
         Scanner in = new Scanner(System.in);
+        System.out.println("Enter month (mm): ");
         String month = in.next();
+        System.out.println("Enter day (dd): ");
         String day = in.next();
+        System.out.println("Enter year (yyyy): ");
         String year = in.next();
         
         System.out.println(getDay(day, month, year));

@@ -1,7 +1,5 @@
 package com.multithreading.threads;
 
-import static org.hamcrest.CoreMatchers.startsWith;
-
 public class WaysOfCreatingThreads {
 
 	public static void main(String[] args) {
@@ -17,7 +15,7 @@ public class WaysOfCreatingThreads {
 			
 		});
 		
-		// 2) From Java8. No reference to runnable, simply pass it in Thread constructor
+		// 2) From Java8. Use Lambda to define Runnable implementation, simply pass it in Thread constructor
 		new Thread(() -> {
 			System.out.println("From new thread...");
 		}).start();

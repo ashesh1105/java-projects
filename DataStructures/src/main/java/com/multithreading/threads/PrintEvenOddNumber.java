@@ -38,6 +38,7 @@ public class PrintEvenOddNumber {
 
 		while (count < MAX_COUNT) {
 			synchronized (lock) {
+				// If a num & 1 == 1 then it is odd, (its first bit was set, else result would be 0)
 				if ((count & 1) == 1) {
 					System.out.println(Thread.currentThread().getName() + " "
 							+ count);

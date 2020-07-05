@@ -33,7 +33,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class RegexExtractTagContents {
+public class RegexExtractXmlTagContents {
 
     public List<String> getValidTagContents(String input) {
 
@@ -75,7 +75,7 @@ public class RegexExtractTagContents {
         String input3 = "<SA premium>Imtiaz has a secret life</SA premium>";
         String input4 = "<Amee>safat codes like a ninja</amee>";
 
-        RegexExtractTagContents extractTagContents = new RegexExtractTagContents();
+        RegexExtractXmlTagContents extractTagContents = new RegexExtractXmlTagContents();
 
         List<String> contents1 = extractTagContents.getValidTagContents(input1);
 

@@ -1,7 +1,7 @@
 package com.algorithms.hackerrank.strings;
 
 /*
-Given a string with alphanumeric and other characters, print number of tokens ane then one token on each
+Given a string with alphanumeric and other characters, print number of tokens and then one token on each
 line. A token in this case is consecutive set of alphabetic characters.
 Hint: use String.split(regex) method.
  */
@@ -26,7 +26,7 @@ public class PrintStringTokens {
 
     public void printAlphabaticTokens(String str) {
 
-        String[] arr = str.split("[^a-zA-Z]+");
+        String[] arr = str.split("[^a-zA-Z\\'\\,]+");
         System.out.println(arr.length);
         for (String s : arr) {
             System.out.println(s);

@@ -16,7 +16,7 @@ public class NoCoinInsertedState implements State {
         // Machine should have items available for it to start accepting coins
         if (!machine.isEmpty()) {
         	System.out.println("Inserting coin..");
-            machine.setMachineState(machine.getConinInsertedState());
+            machine.setMachineState(machine.getCoinInsertedState());
         }
         else {
             throw new MachineWarning("Can not process request .. Machine is out of stock");

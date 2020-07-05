@@ -1,6 +1,7 @@
 package com.multithreading.threads;
 
 public class VolatileDemo extends Thread {
+
 	volatile boolean running = true;
 	
 	public void run() {

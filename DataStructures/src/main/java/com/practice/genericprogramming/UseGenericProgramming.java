@@ -3,7 +3,8 @@ package com.practice.genericprogramming;
 public class UseGenericProgramming {
 
 	public static void main(String[] args) {
-		GenericInterface<Integer, String> genericData = new GenericClass<Integer, String>(
+
+		GenericMapInterface<Integer, String> genericData = new GenericMapClass<Integer, String>(
 				DataType.HashMap);
 		genericData.add(1, "David");
 		genericData.add(2, "Sue");
@@ -11,7 +12,7 @@ public class UseGenericProgramming {
 
 		System.out.println(genericData);
 
-		GenericInterface<String, String> genericData2 = new GenericClass<String, String>(
+		GenericMapInterface<String, String> genericData2 = new GenericMapClass<String, String>(
 				DataType.TreeMap);
 		genericData2.add("Mark", "408-999-2343");
 		genericData2.add("Partha", "987-222-4444");

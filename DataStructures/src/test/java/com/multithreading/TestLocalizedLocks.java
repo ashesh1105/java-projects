@@ -1,4 +1,4 @@
-package com.multithreading.test;
+package com.multithreading;
 
 import org.junit.Test;
 
@@ -33,7 +33,6 @@ public class TestLocalizedLocks {
 		Long end = System.currentTimeMillis();
 		// Print the time taken to pupulate the lists by two thread
 		System.out.println("Time taken to populate lists: " + (end - start));
-		
 		
 	}
 

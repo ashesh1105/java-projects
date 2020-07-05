@@ -1,4 +1,4 @@
-package com.multithreading.threads;
+package com.multithreading.reentrantlock;
 
 /**
  * Implement your own Reentrant Lock with features like "fairness", etc., in it 

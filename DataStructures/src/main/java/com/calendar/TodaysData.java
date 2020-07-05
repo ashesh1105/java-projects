@@ -4,7 +4,7 @@ import lombok.Getter;
 
 import java.time.LocalDate;
 
-public class TodaysData implements Comparable<TodaysData> {
+public class TodaysData {
 
     @Getter
     private LocalDate date;
@@ -16,9 +16,9 @@ public class TodaysData implements Comparable<TodaysData> {
         this.data = data;
     }
 
-    @Override
-    public int compareTo(TodaysData o) {
-        // Allows sorting via latest date - check class TryAnything for more details
-        return -this.date.compareTo(o.getDate());
-    }
+//    @Override
+//    public int compareTo(TodaysData o) {
+//        // Allows sorting via latest date - check class TryAnything for more details
+//        return -this.date.compareTo(o.getDate());
+//    }
 }

@@ -1,8 +1,8 @@
-package com.multithreading.test;
+package com.multithreading;
 
 import org.junit.Test;
 
-import com.multithreading.threads.ThreadPoolDemo;
+import com.multithreading.threadpool.ThreadPoolDemo;
 
 public class TestThreadPoolDemo {
 	

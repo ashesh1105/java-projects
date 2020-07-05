@@ -1,6 +1,7 @@
 package com.practice.genericprogramming;
 
 public class LinkedList {
+
 	public static void main(String[] args) {
 		Node<String> node1 = new Node("David");
 		Node<String> node2 = new Node("Sue");

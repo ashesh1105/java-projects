@@ -26,7 +26,7 @@ I.Am.not.an.ip
 
  */
 
-public class RegexIPValidation {
+    public class RegexIPValidation {
 
     public boolean matches(String input) {
 

@@ -21,7 +21,7 @@ public class ListToArray {
 
         // Convert this list to an array
         Integer [] emptyArr = new Integer[list.size()];
-        Integer [] result = list.toArray(emptyArr);
+        Integer [] result = list.toArray(emptyArr); // Must pass an empty array of same type!
 
         for (Integer i : result) {
             System.out.println(i);

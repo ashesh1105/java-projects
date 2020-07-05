@@ -1,4 +1,4 @@
-package com.multithreading.test;
+package com.multithreading;
 
 import org.junit.After;
 import org.junit.AfterClass;

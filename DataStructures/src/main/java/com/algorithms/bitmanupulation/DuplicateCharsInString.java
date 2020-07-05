@@ -1,4 +1,4 @@
-package main.java.com.algorithms.bitmanupulation;
+package com.algorithms.bitmanupulation;
 
 public class DuplicateCharsInString {
 

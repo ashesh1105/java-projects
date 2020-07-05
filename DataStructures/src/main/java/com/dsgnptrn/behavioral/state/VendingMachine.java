@@ -13,7 +13,7 @@ public class VendingMachine {
     private State noCoinInsertedState = new NoCoinInsertedState(this);
     @Getter
     @Setter
-    private State coninInsertedState = new CoinInsertedState(this);
+    private State coinInsertedState = new CoinInsertedState(this);
     @Getter
     @Setter
     private State dispensingState = new DispensingState(this);

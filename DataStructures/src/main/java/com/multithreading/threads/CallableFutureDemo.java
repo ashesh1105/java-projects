@@ -2,11 +2,16 @@ package com.multithreading.threads;
 
 import java.io.IOException;
 import java.util.Random;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
+
+/**
+ * You can pass a Callable<?> to a thread pool's execute method (executor.submit(new Callable<?>(){}) which returns
+ * a Future object. When you call get() method on that, it waits till callable does the job and returns.
+ *
+ * Difference between Runnable and Callable are:
+ * 1) Callable returns an object, Runnable doesn't and uses void in method signature.
+ * 2) Callable can throw an exception.
+ */
 
 public class CallableFutureDemo {
 
@@ -56,6 +61,7 @@ public class CallableFutureDemo {
 			// Way to handle exceptions from Callable threads
 			if (e.getCause() instanceof IOException) {
 				IOException io = (IOException) e.getCause();
+				System.out.println("Received IOException from Future:");
 				System.out.println(io.getMessage());
 			}
 		}

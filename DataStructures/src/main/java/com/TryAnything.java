@@ -1,7 +1,10 @@
-package com.algorithms;
+package com;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.text.WordUtils;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class TryAnything {
 
@@ -197,6 +200,19 @@ public class TryAnything {
 
         char zero = 122;
         System.out.println(zero);
+
+        // Do we need to remove a key first before updating it?
+        Map<String, Integer> map = new HashMap<>();
+        map.put("a", 1);
+        map.put("b", 2);
+
+        // Now let's update it
+        map.put("b", 5);
+
+        map.forEach((k, v) -> {
+            System.out.println("key: " + k + ", value: " + v);
+        });
+
 
 
 

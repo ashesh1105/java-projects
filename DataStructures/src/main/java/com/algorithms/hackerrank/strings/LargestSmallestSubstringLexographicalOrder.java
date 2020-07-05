@@ -8,7 +8,7 @@ largest substrings of length k. s consists of English alphabetic letters only (i
 Example:
 Lexicographical order example: ball < cat, dog < dorm, Happy < happy, Zoo < ball.
 
-For string "welcomejava" has has the following lexicographically-ordered substrings of length k=3:
+For string "welcomejava" has the following lexicographically-ordered substrings of length k=3:
 ["ava", "com", "elc", "eto", "jav", "lco", "met", "oja", "ome", "toj", "wel"]
 
 Result will be smallest substring on first line and largest on second line ("smallest%nlargest")
@@ -60,14 +60,9 @@ public class LargestSmallestSubstringLexographicalOrder {
     public static void main(String[] args) {
 
         String result1 = new LargestSmallestSubstringLexographicalOrder()
-                .getLargestSmallestSubstringsLexicographicalOrder("welcomejava", 3);
-
-        String result2 = new LargestSmallestSubstringLexographicalOrder()
-                .getLargestSmallestSubstringsLexicographicalOrder("welcomeToJava", 3);
+                .getLargestSmallestSubstringsLexicographicalOrder("welcomeTojava", 3);
 
         System.out.println(result1);
-        System.out.println(result2);
-
     }
 
     private static boolean isGreater(String s1, String s2) {

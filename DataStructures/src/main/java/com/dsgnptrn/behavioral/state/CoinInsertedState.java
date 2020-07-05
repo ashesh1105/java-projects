@@ -15,16 +15,16 @@ public class CoinInsertedState implements State {
         throw new MachineWarning("Coin is already inserted, wait till current order finished.");
     }
 
+    // This is the only operation allowed when vending machine is in CoinInsertedState
+    public void pressButton() throws MachineWarning {
+        System.out.println("Button Pressed..");
+
+        // Now that button is pressed, machine gets to dispensing state
+        machine.setMachineState(machine.getDispensingState());
+    }
+
     // You can't dispense until button is pressed!
     public void dispense() throws MachineWarning {
         throw new MachineWarning("Can't dispense, button is not pressed.");
-    }
-
-    // This is the only operation allowed when vending machine is in CoinInsertedState
-    public void pressButton() throws MachineWarning {
-    	System.out.println("Button Pressed..");
-
-    	// Now that button is pressed, machine gets to dispensing state
-        machine.setMachineState(machine.getDispensingState());
     }
 }

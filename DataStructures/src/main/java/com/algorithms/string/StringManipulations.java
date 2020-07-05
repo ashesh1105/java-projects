@@ -1,6 +1,6 @@
 package com.algorithms.string;
 
-import main.java.com.algorithms.bitmanupulation.DuplicateCharsInString;
+import com.algorithms.bitmanupulation.DuplicateCharsInString;
 
 import java.util.*;
 

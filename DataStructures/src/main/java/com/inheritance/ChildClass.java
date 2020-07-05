@@ -47,6 +47,8 @@ public class ChildClass extends ParentClass{
 //		 childClass.methodB();
 		
 		// Both of below method calls will call GrandParentClass methods! Find out why??
+		// Since parentMethod is defined in GrandParentClass and the argument we are sending is within the class
+		// hierarchy of GrandParentClass: ChildClass -> ParentClass -> GrandParentClass
 		childClass.parentMethod(new GrandParentClass());
 		childClass.parentMethod(new ChildClass());
 		

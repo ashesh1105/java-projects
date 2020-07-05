@@ -1,4 +1,4 @@
-package main.java.com.algorithms.hackerrank.deque;
+package com.algorithms.hackerrank.deque;
 
 import java.util.*;
 
@@ -27,7 +27,9 @@ import java.util.*;
  */
 
 public class UniqueIntegersAmongAllSubarrays {
+
     public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
         Deque<Integer> deque = new ArrayDeque<>();
         Set<Integer> set = new HashSet<>();

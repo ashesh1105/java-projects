@@ -1,4 +1,4 @@
-package com.algorithms.puzzles;
+package com.systemdesign.ticTacToeGame;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -6,7 +6,7 @@ public class GrandParentClass {
 		System.out.println("GrandParentClass");
 	}
 	
-	public void parentMethod(GrandParentClass G){
+	public void parentMethod(GrandParentClass G) {
 		
 		System.out.println("GrandParent");
 	}
