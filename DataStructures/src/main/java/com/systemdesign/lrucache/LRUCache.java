@@ -1,4 +1,4 @@
-package com.systemdesign.hashmapdesign;
+package com.systemdesign.lrucache;
 
 import java.util.HashMap;
 import java.util.Map;

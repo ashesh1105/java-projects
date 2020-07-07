@@ -1,13 +1,6 @@
 package com.datastructures;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class PracticeDataStructures {
 
@@ -25,7 +18,7 @@ public class PracticeDataStructures {
 		animals.add("dog");
 		
 		// Java8 Lambda - sort() is part of List interface itself
-		animals.sort((str1, str2) -> str1.length() - str2.length());
+		animals.sort(Comparator.comparing(e -> e.length()));
 
 		// Print the list by length of their names
 		System.out.println("Printing animals sorted by their length of name:");
@@ -33,10 +26,12 @@ public class PracticeDataStructures {
 
 		// Sort the list by reverse alphabetical order by inner class
 		// implementing comparator
-		animals.sort((animal1, animal2) -> (-1) * animal1.compareTo(animal2));	// -1 x since reverse alphabetical needed
+//		animals.sort((animal1, animal2) -> (-1) * animal1.compareTo(animal2));	// -1 x since reverse alphabetical needed
+		animals.sort(Comparator.reverseOrder());
+
 
 		// Print the list by reverse alphabetical order
-		System.out.println("\nPrinting animals in the list compared by reverse alphabatical order:");
+		System.out.println("\nPrinting animals in the list compared by reverse alphabetical order:");
 		animals.forEach(System.out::println);
 
 		// Sort the list by reverse alphabetical order by outer class
@@ -81,7 +76,7 @@ public class PracticeDataStructures {
 		peopleList.forEach(System.out::println);
 
 		// Sort the list
-		Collections.sort(peopleList);
+		Collections.sort(peopleList, Comparator.comparing(e -> e.getName().length()));
 
 		// Print the sorted list of people
 		System.out
@@ -158,11 +153,11 @@ class Person implements Comparable<Person> {
 		// commenting it out
 		// return (name.compareTo(person.getName()));
 		// going by sorting by length of names
-		
+
 		if (!(person instanceof Person)) {
 			System.out.println("Comparing wrong object types!");
 		}
-		
+
 		int len1 = name.length();
 		int len2 = person.getName().length();
 		if (len1 > len2) {
@@ -170,7 +165,7 @@ class Person implements Comparable<Person> {
 		} else if (len1 < len2) {
 			return -1;
 		}
-		return name.compareTo(person.getName());
+		return name.compareTo(person.getName());	// lexicographical order for people with same name lengths
 	}
 
 }

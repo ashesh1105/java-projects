@@ -14,12 +14,16 @@ public class LinkedListDemo {
 		
 		System.out.println("Printing elements of integers list: " + integers.toString());
 
+		// Middle node
+		System.out.println("\nMiddle Node: " + integers.middleNode());
+
 		// add some duplicate data
 		integers.addAtStart(2);
 		integers.addAtStart(10);
 		integers.addAtStart(5);
 		integers.addAtStart(20);
-		
+
+
 		System.out.println("Added some duplicate data at start. List integers now is: " + integers.toString());
 
 		// remove duplicates

@@ -44,7 +44,7 @@ public class MergeSortLinkedList  extends LinkedList {
         }
 
         // get the middle of the list
-        Node middle = middleNode(h);
+        Node middle = middleNode();
         Node nextOfMiddle = middle.getNextNode();
 
         // set the next of middle node to null

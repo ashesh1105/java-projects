@@ -1,4 +1,4 @@
-package com.datastructures.heaps;
+package com.systemdesign.topKelements;
 
 import lombok.Getter;
 
@@ -63,9 +63,9 @@ public class TopKHeavyHitters {
         // Iterate through map and add the events with frequency to heap
         frequencyTable.forEach((event, frequency) -> {
             heap.offer(new HeavyHitter(event, frequency));
+            if (heap.size() > k) heap.poll();
         });
 
-        if (heap.size() > k) heap.poll();
 
         return new ArrayList<HeavyHitter>(heap);
     }

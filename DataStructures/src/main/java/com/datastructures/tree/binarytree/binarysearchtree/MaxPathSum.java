@@ -45,6 +45,49 @@ public class MaxPathSum extends BinarySearchTree {
 	 *
 	 */
 
+	// Need to do this for root node since path might include root + (max of max paths among left & right node)
+	// plus the lower max path child node, as long as it is positive. If other child max path is negative, we don't
+	// include them in max path for root. So root is special, this can be part of the max path
+	public int maxPathSum(Node n) {
+		if (n == null) {
+			return 0;
+		}
+		int maxPathLeft = maxPathSumForNode(n.getLeftNode());
+		int maxPathRight = maxPathSumForNode(n.getRightNode());
+
+		// Max Path for Root Node = max of max paths of its children + data + max path of lower child if it is positive
+		// If both children have negative max paths, do not take either of them.
+		if (maxPathLeft <= 0 && maxPathRight <= 0) {
+			return n.getData();
+		}
+		return maxPathLeft > maxPathRight ?
+				maxPathLeft + n.getData() + (maxPathRight > 0 ? maxPathRight : 0)
+				: maxPathRight + n.getData() + (maxPathLeft > 0 ? maxPathLeft : 0);
+	}
+
+	private int maxPathSumForNode(Node n) {
+
+		if (n == null) {
+			return 0;
+		}
+
+		int maxPathLeft = maxPathSumForNode(n.getLeftNode());
+		int maxPathRight = maxPathSumForNode(n.getRightNode());
+
+		// Max path for non-root nodes = max of max paths of its child (unless both of them are negative) + nodes's own data.
+		if  (maxPathLeft <=0 && maxPathRight <= 0) return n.getData();
+		return Math.max(maxPathLeft, maxPathRight) + n.getData();
+	}
+
+	static class BinaryTree {
+		@Getter
+		private Node root;
+
+		public BinaryTree(int data) {
+			this.root = new Node(data);
+		}
+	}
+
 	public static void main(String[] args) {
 
 		BinaryTree bt = new BinaryTree(1);
@@ -82,48 +125,4 @@ public class MaxPathSum extends BinarySearchTree {
 
 
 	}
-
-	// Need to do this for root node since path might include root + (max of max path for left & right node)
-	// plus the lower max path child node, as long as it is positive. If other child max path is negative, we don't
-	// include them in max path for root. So root is special, this can be part of the max path
-	public int maxPathSum(Node n) {
-		if (n == null) {
-			return 0;
-		}
-		int maxPathLeft = maxPathSumForNode(n.getLeftNode());
-		int maxPathRight = maxPathSumForNode(n.getRightNode());
-
-		// Max Path for Root Node = max of max paths of its children + data + max path of lower child if it is positive
-		// If both children have negative max paths, do not take either of them.
-		if (maxPathLeft <= 0 && maxPathRight <= 0) {
-			return n.getData();
-		}
-		return maxPathLeft > maxPathRight ?
-				maxPathLeft + n.getData() + (maxPathRight > 0 ? maxPathRight : 0)
-				: maxPathRight + n.getData() + (maxPathLeft > 0 ? maxPathLeft : 0);
-	}
-
-	private int maxPathSumForNode(Node n) {
-
-		if (n == null) {
-			return 0;
-		}
-
-		int maxPathLeft = maxPathSumForNode(n.getLeftNode());
-		int maxPathRight = maxPathSumForNode(n.getRightNode());
-
-		// Max path for non-root nodes = max of max paths of its child, unless both of them are negative + nodes's own data.
-		if  (maxPathLeft <=0 && maxPathRight <= 0) return n.getData();
-		return Math.max(maxPathLeft, maxPathRight) + n.getData();
-	}
-
-	static class BinaryTree {
-		@Getter
-		private Node root;
-
-		public BinaryTree(int data) {
-			this.root = new Node(data);
-		}
-	}
-
 }

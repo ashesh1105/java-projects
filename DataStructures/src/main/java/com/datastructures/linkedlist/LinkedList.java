@@ -11,7 +11,7 @@ public class LinkedList<T> {
 	private Node<T> head;
 
 	public void addAtStart(T data) {
-		Node<T> newNode = new Node<T>(data);
+		Node<T> newNode = new Node<>(data);
 		// if head is null, add the new node right there
 		if (head == null) {
 			head = newNode;
@@ -70,7 +70,7 @@ public class LinkedList<T> {
 		return this.head == null;
 	}
 
-	// Practice - remove duplicates without using any storage
+	// Practice - removing duplicates without using any storage
 	public void removeDuplicates() {
 
 		// return right away if head is null or list has only one element
@@ -87,7 +87,8 @@ public class LinkedList<T> {
 					Node<T> temp = current.getNextNode();
 					previous.setNextNode(temp);
 					current = temp;
-					break;	// You want to restart the
+					// You want to restart comparing all of previous runner nodes to new current node
+					break;
 				}
 				runner = runner.getNextNode();
 			}
@@ -121,7 +122,7 @@ public class LinkedList<T> {
 			} else if (counter < n) {
 				System.out
 						.println("ERROR: Argument n supplied is more than size of the list. Returning null..");
-				return current;
+				return null;
 			}
 		}
 
@@ -142,9 +143,9 @@ public class LinkedList<T> {
 					.println("WARNING: 'n' is equal to or more than the size of list. Nothing needs to be done here.");
 			return;
 		}
-		Node<T> headForsubListToBeAppendedToCurrentHead = nodeBeforeNthOne.getNextNode();
+		Node<T> newHead = nodeBeforeNthOne.getNextNode();
 		nodeBeforeNthOne.setNextNode(null);
-		Node<T> current = headForsubListToBeAppendedToCurrentHead;
+		Node<T> current = newHead;
 
 		// Get last node of current list
 		Node<T> currentLastNode = null;
@@ -157,7 +158,7 @@ public class LinkedList<T> {
 		currentLastNode.setNextNode(head);
 
 		// Finally, don't forget to change the head of the list!
-		head = headForsubListToBeAppendedToCurrentHead;
+		head = newHead;
 
 	}
 
@@ -167,6 +168,7 @@ public class LinkedList<T> {
 		// if empty list or list has just one element, there is nothing to do
 		if (head == null || head.getNextNode() == null) {
 			System.out.println("List is empty or has just one element. There is nothing to do.");
+			return;
 		}
 
 		Node<T> previous = null;
@@ -185,14 +187,14 @@ public class LinkedList<T> {
 	}
 
 	// Get middle node
-	public Node middleNode(Node head) {
+	public Node middleNode() {
 
 		if (head == null || head.getNextNode() == null) return head;
 
 		Node slow = head;
 		Node fast = head;
 
-		while(fast.getNextNode() != null && fast.getNextNode().getNextNode() != null) {
+		while(fast != null && fast.getNextNode() != null) {
 			slow = slow.getNextNode();
 			fast = fast.getNextNode().getNextNode();
 		}

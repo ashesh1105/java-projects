@@ -20,6 +20,7 @@ public class TicTacToe {
         playGameWithComputer(gameBoard, "Ashesh");
     }
 
+    // It is for a human to play with computer
     public static void playGameWithComputer (char[][] gameBoard, String playerOne) {
 
         Scanner scanner = new Scanner(System.in);
@@ -30,7 +31,7 @@ public class TicTacToe {
 
         // Winning Combinations
         List<List<Integer>> winningCombinations = new ArrayList<>();
-        populateWinningCombinations(gameBoard, winningCombinations);
+        populateWinningCombinations(winningCombinations);
 
         // Player positions
         List<Integer> playerOnePositions = new ArrayList<>();
@@ -38,15 +39,7 @@ public class TicTacToe {
 
         // Available positions in list
         List<Integer> availablePositions = new ArrayList<>();
-        availablePositions.add(1);
-        availablePositions.add(2);
-        availablePositions.add(3);
-        availablePositions.add(4);
-        availablePositions.add(5);
-        availablePositions.add(6);
-        availablePositions.add(7);
-        availablePositions.add(8);
-        availablePositions.add(9);
+        populateAvailablePositions(availablePositions, 1, 9);
 
         String player = playerOne;
         char symbol = 'x';
@@ -109,6 +102,7 @@ public class TicTacToe {
         }
     }
 
+    // It is for two humans to play with each other
     public static void playGame(char[][] gameBoard, String playerOne, String playerTwo) {
 
         Scanner scanner = new Scanner(System.in);
@@ -119,7 +113,7 @@ public class TicTacToe {
 
         // Winning Combinations
         List<List<Integer>> winningCombinations = new ArrayList<>();
-        populateWinningCombinations(gameBoard, winningCombinations);
+        populateWinningCombinations(winningCombinations);
 
         // Player positions
         List<Integer> playerOnePositions = new ArrayList<>();
@@ -177,6 +171,12 @@ public class TicTacToe {
         }
     }
 
+    private static void populateAvailablePositions(List<Integer> availablePositions, int first, int last) {
+        for (int i=first; i<=last; i++) {
+            availablePositions.add(i);
+        }
+    }
+
     public static char[][] getTicTacToeGameBoard() {
         return new char[][] {
                 {' ', '|', ' ', '|', ' '},
@@ -198,7 +198,7 @@ public class TicTacToe {
         return false;
     }
 
-    private static void populateWinningCombinations(char[][] gameBoard, List<List<Integer>> winningCombinations) {
+    private static void populateWinningCombinations(List<List<Integer>> winningCombinations) {
 
         List<Integer> topRow = new ArrayList<>();
         topRow.add(1);
@@ -296,7 +296,7 @@ public class TicTacToe {
             printGameBoard(gameBoard);
             result = "done";
         } else {
-            System.out.println("Symbol was placed was not a non-empty position: " + pos + "!");
+            System.out.println("Symbol was placed on a non-empty position: " + pos + "!");
         }
         return result;
     }

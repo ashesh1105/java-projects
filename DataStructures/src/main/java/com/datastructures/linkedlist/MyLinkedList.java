@@ -1,6 +1,8 @@
 package com.datastructures.linkedlist;
 
 import com.datastructures.linkedlist.geeksforgeekstop10.MyNode;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -11,15 +13,9 @@ import java.util.Deque;
 
 public class MyLinkedList {
 
+	@Getter
+	@Setter
 	private MyNode head;
-
-	public MyNode getHead() {
-		return head;
-	}
-
-	public void setHead(MyNode head) {
-		this.head = head;
-	}
 
 	public MyLinkedList(MyNode head) {
 		this.head = head;
@@ -46,6 +42,9 @@ public class MyLinkedList {
 
 	// Search and delete a node
 	public void deleteNode(int data) {
+
+		if (head == null) return;
+
 		MyNode current = head;
 		MyNode previous = head; // in case data is found at last node
 		current = current.getNextNode();
@@ -121,8 +120,10 @@ public class MyLinkedList {
 			current = previous.getNextNode();
 		}
 
+		MyNode runner = head;
+
 		while (current != null) {
-			MyNode runner = head;
+			runner = head;
 			while (runner != current) {
 				if (runner.getData() == current.getData()) {
 					MyNode temp = current.getNextNode();
@@ -181,6 +182,7 @@ public class MyLinkedList {
 
 	/**
 	 * Delete Middle Node by using head and return boolean
+	 * Check middleNode() method in LinkedList class
 	 */
 	public boolean deleteMiddleNode() {
 		if (head == null) {

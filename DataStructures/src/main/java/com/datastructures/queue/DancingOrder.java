@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -11,16 +12,14 @@ public class DancingOrder {
 
 	public static void main(String[] args) {
 		// Declare a priority queue
-		Queue<String> men = new PriorityQueue<String>();
-		Queue<String> women = new PriorityQueue<String>();
+		Queue<String> men = new PriorityQueue<String>(Comparator.reverseOrder());  // if reverse lexicographical order needed
+		Queue<String> women = new PriorityQueue<String>();	// Can pass Comparator.naturalOrder(), will be same result
 		String sex = "";
 		String line = null;
-		BufferedReader reader;
 		URL url = DancingOrder.class.getClassLoader().getResource("Dancers.txt");
 		String file = url.getPath();
-		try {
+		try(BufferedReader reader = new BufferedReader(new FileReader(file))) {
 			// Read line and populate both the Priority Queues
-			reader = new BufferedReader(new FileReader(file));
 			while ((line = reader.readLine()) != null) {
 				sex = line.substring(0, 1);
 				if (sex.equalsIgnoreCase("M")) {
