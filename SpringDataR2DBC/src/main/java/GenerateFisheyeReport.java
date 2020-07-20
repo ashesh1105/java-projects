@@ -1,12 +1,8 @@
 import models.CodeReviewData;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import service.CsvDataFileIO;
 import service.ExcelDataFileIO;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class GenerateFisheyeReport {
@@ -22,21 +18,6 @@ public class GenerateFisheyeReport {
 
         fisheyeReportData.populateData(codeReviewDataAll);
 
-        // ToDO: Remove below print statement after testing
-//        codeReviewDataAll.forEach(e -> {
-//            System.out.println(e.getProject()
-//                    + " | " + e.getVersion()
-//                    + " | " + e.getJiraTicketNumber()
-//                    + " | " + e.getJiraType()
-//                    + " | " + e.getGetJiraTicketSummaryText()
-//                    + " | " + e.getCrucibleId()
-//                    + " | " + e.getAuthor()
-//                    + " | " + e.getReviewers()
-//                    + " | " + e.getReviewDescription()
-//                    + " | " + e.getStatus()
-//                    + " | " + e.getReviewDate());
-//        });
-
         fisheyeReportData.generateCodeReviewReport(codeReviewDataAll);
     }
 
@@ -47,30 +28,22 @@ public class GenerateFisheyeReport {
     private void populateData(List<CodeReviewData> codeReviewDataAll) {
 
         try {
-            XSSFWorkbook wb = ExcelDataFileIO.getExcelData("Jira_CodeReviewReport.xlsx");
-            XSSFSheet sheet = wb.getSheetAt(0);     //creating a Sheet object to retrieve object
-            Iterator<Row> itr = sheet.iterator();    //iterating over excel file
 
-//            int counter = 0;
+            List<List<String>> jiraCodeReviewReportsData = CsvDataFileIO.getCsvData("report.csv", ",");
+
+            int counter = 0;
             boolean isHeader = true;
 
-            while (itr.hasNext()) {
+            while (counter < jiraCodeReviewReportsData.size()) {
 
-
-                Row row = itr.next();
-                Cell projectCell = row.getCell(0);
-                Cell versionCell = row.getCell(1);
-                Cell jiraTicketNumberCell = row.getCell(2);
-                Cell jiraTypeCell = row.getCell(3);
-                Cell jiraTicketSummaryTextCell = row.getCell(4);
-
+                List<String> rowData = jiraCodeReviewReportsData.get(counter);
                 CodeReviewData codeReviewData = new CodeReviewData();
 
-                codeReviewData.setProject(projectCell.getStringCellValue());
-                codeReviewData.setVersion(versionCell.getStringCellValue());
-                codeReviewData.setJiraTicketNumber(jiraTicketNumberCell.getStringCellValue());
-                codeReviewData.setJiraType(jiraTypeCell.getStringCellValue());
-                codeReviewData.setGetJiraTicketSummaryText(jiraTicketSummaryTextCell.getStringCellValue());
+                codeReviewData.setProject(rowData.get(0));
+                codeReviewData.setVersion(rowData.get(1));
+                codeReviewData.setJiraTicketNumber(rowData.get(2));
+                codeReviewData.setJiraType(rowData.get(3));
+                codeReviewData.setGetJiraTicketSummaryText(rowData.get(4));
 
                 // Set headers if i is top row, else, fetch Fisheye data from the DB
                 if (isHeader) {
@@ -94,6 +67,7 @@ public class GenerateFisheyeReport {
                         }
                     }
                 }
+                counter++;
             }
         }
         catch(Exception e) {
