@@ -23,5 +23,6 @@
     <modules>
         <module>DataStructures</module>
         <module>Guice</module>
+        <module>SpringDataR2DBC</module>
     </modules>
 </project>
