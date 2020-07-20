@@ -3,11 +3,8 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import service.FileIO;
+import service.ExcelDataFileIO;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -15,7 +12,7 @@ import java.util.List;
 public class GenerateFisheyeReport {
 
     private TestDB testDB = new TestDB();
-    private FileIO fileIO = new FileIO();
+    private ExcelDataFileIO excelDataFileIO = new ExcelDataFileIO();
 
     public static void main(String[] args) {
 
@@ -44,21 +41,13 @@ public class GenerateFisheyeReport {
     }
 
     private void generateCodeReviewReport(List<CodeReviewData> codeReviewDataAll) {
-        fileIO.generateExcelFile(codeReviewDataAll);
+        excelDataFileIO.generateExcelFile(codeReviewDataAll);
     }
 
     private void populateData(List<CodeReviewData> codeReviewDataAll) {
 
         try {
-            URL url = GenerateFisheyeReport.class
-                    .getClassLoader()
-                    .getResource("Jira_CodeReviewReport.xlsx");
-
-            File file = new File(url.getPath());
-            FileInputStream fis = new FileInputStream(file);   //obtaining bytes from the file
-
-            //creating Workbook instance that refers to .xlsx file
-            XSSFWorkbook wb = new XSSFWorkbook(fis);
+            XSSFWorkbook wb = ExcelDataFileIO.getExcelData("Jira_CodeReviewReport.xlsx");
             XSSFSheet sheet = wb.getSheetAt(0);     //creating a Sheet object to retrieve object
             Iterator<Row> itr = sheet.iterator();    //iterating over excel file
 
