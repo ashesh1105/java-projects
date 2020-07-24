@@ -51,7 +51,7 @@ public class TestDB {
                     "From cru_review A \n" +
                     "Inner Join cru_user B on A.cru_creator = B.cru_user_id\n" +
                     "Inner Join cwd_user C on B.cru_user_name = C.user_name\n" +
-                    "Where A.cru_name like '%" + codeReviewData.getJiraTicketNumber() + "%';";
+                    "Where A.cru_name like '%" + codeReviewData.getJiraTicketNumber() + " %';"; // Need a space before %
 
             rs1 = st1.executeQuery(sql1);
 
