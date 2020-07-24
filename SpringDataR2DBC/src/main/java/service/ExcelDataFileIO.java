@@ -1,12 +1,8 @@
 package service;
 
 import models.CodeReviewData;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.*;
 
 import java.io.*;
 import java.net.URL;
@@ -95,11 +91,12 @@ public class ExcelDataFileIO {
             // Create cells
             int cellNum = 0;
 
-            cell = row.createCell(cellNum++);
-            cell.setCellValue(crData.getProject());
-
-            cell = row.createCell(cellNum++);
-            cell.setCellValue(crData.getVersion());
+            // Glooko Regulatory suggestion on 07/23/2020: Project and Version columns are not needed in the report
+//            cell = row.createCell(cellNum++);
+//            cell.setCellValue(crData.getProject());
+//
+//            cell = row.createCell(cellNum++);
+//            cell.setCellValue(crData.getVersion());
 
             cell = row.createCell(cellNum++);
             cell.setCellValue(crData.getJiraTicketNumber());
@@ -110,8 +107,9 @@ public class ExcelDataFileIO {
             cell = row.createCell(cellNum++);
             cell.setCellValue(crData.getGetJiraTicketSummaryText());
 
-            cell = row.createCell(cellNum++);
-            cell.setCellValue(crData.getCrucibleId());
+            // CrucibleID is not there in Fisheye DB, so commenting this out for now
+//            cell = row.createCell(cellNum++);
+//            cell.setCellValue(crData.getCrucibleId());
 
             cell = row.createCell(cellNum++);
             cell.setCellValue(crData.getAuthor());
@@ -130,19 +128,38 @@ public class ExcelDataFileIO {
         }
 
         try {
-//            URL url = FileIO.class.getClassLoader().getResource("report.xlsx");
             FileOutputStream out = new FileOutputStream(
               new File("SpringDataR2DBC/src/main/resources/code_review_reports/CodeReviewReport.xlsx"));
 
+            // Set row font and cell styles headers
+            formatRow(workbook, spreadsheet.getRow(0));
+
             workbook.write(out);
             out.close();
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
+    }
+
+    private void formatRow(Workbook workbook, Row row) {
+
+        CellStyle style = workbook.createCellStyle();
+        // style.setWrapText(true);
+
+        Font font = workbook.createFont();
+        font.setBold(true);
+        font.setFontHeightInPoints((short) 14);
+        style.setFont(font);
+
+        style.setFillForegroundColor(IndexedColors.GREY_25_PERCENT.getIndex());
+        style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+
+        for(int i = 0; i < row.getLastCellNum(); i++){//For each cell in the row
+            row.getCell(i).setCellStyle(style);   //Set the style
+        }
     }
 
 

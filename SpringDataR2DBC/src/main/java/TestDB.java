@@ -46,7 +46,7 @@ public class TestDB {
 
             sql1 = "Select A.cru_review_id, A.cru_creator, B.cru_user_name, " +
                     "concat_ws(' ', C.first_name, C.last_name) as Author, " +
-                    "A.cru_name, A.cru_description, to_char(TO_TIMESTAMP(A.cru_create_date/1000), 'YYYY-MM-DD:HH:MI:SS')" +
+                    "A.cru_name, A.cru_description, to_char(TO_TIMESTAMP(A.cru_create_date/1000), 'YYYY-MM-DD')" +
                     " as \"Review Date\"\n" +
                     "From cru_review A \n" +
                     "Inner Join cru_user B on A.cru_creator = B.cru_user_id\n" +
@@ -90,17 +90,9 @@ public class TestDB {
                         temp += arr[i];
                     } else {
                         temp += arr[i];
-                        temp += ',';
+                        temp += ", ";   // Mary Beth suggestion Dtd 7/23/2020: comma + one space between reviewers
                     }
                 }
-
-//                System.out.println(
-//                        author + " | " +
-//                                temp + " | "
-//                                + cruName + " | "
-//                                + "Accepted" + " | "
-//                                + reviewDate + " | "
-//                );
 
                 CodeReviewData resultObj = new CodeReviewData();
 
@@ -112,7 +104,7 @@ public class TestDB {
                 resultObj.setGetJiraTicketSummaryText(codeReviewData.getGetJiraTicketSummaryText());
 
                 // TODO: Not able to fetch CrucibleId from DB as of now. Find a solve for it
-                resultObj.setCrucibleId("Unknown");
+//                resultObj.setCrucibleId("Unknown");
                 resultObj.setAuthor(author);
                 resultObj.setReviewers(temp);
                 resultObj.setReviewDescription(cruName);

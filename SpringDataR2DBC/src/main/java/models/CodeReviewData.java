@@ -12,7 +12,7 @@ public class CodeReviewData {
     private String jiraTicketNumber;
     private String jiraType;
     private String getJiraTicketSummaryText;
-    private String crucibleId;
+//    private String crucibleId;
     private String author;
     private String reviewers;
     private String reviewDescription;
