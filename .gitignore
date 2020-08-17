@@ -1,6 +1,10 @@
 /.idea/
 .idea/workspace.xml
 DataStructures/DataStructures.iml
+Guice/Guice.iml
+SpringDataR2DBC/SpringDataR2DBC.iml
+java-projects.iml
+
 */target/**
 
 .idea
