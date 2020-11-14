@@ -21,6 +21,8 @@ import java.util.concurrent.CountDownLatch;
  * such requirements: https://javarevisited.blogspot.com/2012/07/cyclicbarrier-example-java-5-concurrency-tutorial.html
  *
  * Read more on CountDownLatch at: https://javarevisited.blogspot.com/2012/07/countdownlatch-example-in-java.html
+ *
+ * Check com.multithreading.TestCountDownLatch in test package to run this demo.
  */
 
 class Service implements Runnable {

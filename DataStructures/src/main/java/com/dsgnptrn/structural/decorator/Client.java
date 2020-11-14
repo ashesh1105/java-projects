@@ -7,7 +7,7 @@ public class Client {
 	 * alternative to subclassing for extending functionality. Also known as "Wrapper". Adapter Patterns also known as "Wrapper" but they
 	 * provide access to legacy systems, so the intentions of two patterns are different.
 	 * 
-	 * Usages: 1) Add functionality to an object without affecting other objects, 2) Functionalities can be taken away in future, hence
+	 * Usages: 1) Add functionality to an object without affecting other objects, 2) Functionality can be taken away in future, hence
 	 * they're flexible and don't affect other objects, 3) Extension by subclassing is difficult (due to code duplication).
 	 * 
 	 * Structure: Base Component -> Regular Implementation (We don't change this) and Decorator (Interface) -> Implementations of Decorator.

@@ -7,9 +7,11 @@ public class Node {
 	@Getter
 	@Setter
 	private int data;
+
 	@Getter
 	@Setter
 	private Node leftNode;
+
 	@Getter
 	@Setter
 	private Node rightNode;

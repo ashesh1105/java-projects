@@ -33,7 +33,7 @@ public class DancingOrder {
 			// Print the Dancing Pairs
 			System.out.println("Dancing pair will be:\n");
 			while (men.size() != 0 && women.size() != 0) {
-				System.out.println(men.poll().trim() + " and " + women.poll());
+				System.out.println(men.poll().trim() + " and " + women.poll().trim());
 			}
 			// Check for men or women still waiting and print the next one in
 			// the line

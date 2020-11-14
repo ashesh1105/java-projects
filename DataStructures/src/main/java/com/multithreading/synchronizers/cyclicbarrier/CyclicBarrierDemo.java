@@ -48,13 +48,10 @@ public class CyclicBarrierDemo {
 
     public static void main(String args[]) {
 
-        //creating CyclicBarrier with 3 parties i.e. 3 Threads needs to call await()
-        final CyclicBarrier cb = new CyclicBarrier(3, new Runnable(){
-            @Override
-            public void run(){
-                //This task will be executed once all thread reaches barrier
-                System.out.println("All parties are arrived at barrier, lets play");
-            }
+        //creating CyclicBarrier with 3 parties i.e. 3 Threads needs to call await(). It takes a Runnable implementation
+        final CyclicBarrier cb = new CyclicBarrier(3, () -> {
+            //This task will be executed once all thread reaches barrier
+            System.out.println("All parties are arrived at barrier, lets play");
         });
 
         //starting each of thread

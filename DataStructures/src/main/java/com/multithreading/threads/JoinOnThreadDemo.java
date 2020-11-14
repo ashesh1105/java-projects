@@ -20,7 +20,7 @@ public class JoinOnThreadDemo {
 	private volatile int count;
 	private Object lock = new Object();
 
-	public void incrementCount() {
+	private void incrementCount() {
 		synchronized (lock) {
 			count++;
 		}

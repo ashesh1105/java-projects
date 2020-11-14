@@ -34,6 +34,12 @@ public class Client {
 		Rectangle rectangle = new Rectangle();
 		client.calculateRectangleSize(rectangle);
 
+		// Note: You can not do below since client.calculateRectangleSize method takes an instance or a subclass of
+		// Rectagle and not of LegacyRectangle. Hence, you need a "wrapper" around LegacyRectangle
+		// (the LegacyRectangleAdaptor) here which extends Rectangle, like above.
+//		LegacyRectangle legecyRectangle = new LegacyRectangle();
+//		client.calculateRectangleSize(legacyRectangle);
+
 	}
 
 	public void calculateRectangleSize(Rectangle rectangle) {

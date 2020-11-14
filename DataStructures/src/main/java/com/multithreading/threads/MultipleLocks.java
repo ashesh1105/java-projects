@@ -76,7 +76,7 @@ public class MultipleLocks {
 		 * 
 		 * If you run this, results prove that it is indeed working in above way. Weird multi-threading issues with
 		 * Exceptions, timing, sizes lists get filed, are gone with this arrangement, but still find out why
-		 * order of method calls don't matter and threads can switch between them based on which locks are available?
+		 * order of method calls don't matter and threads can switch between them based on locks that are available?
 		 */
 
 		for (int i = 0; i < 1000; i++) {

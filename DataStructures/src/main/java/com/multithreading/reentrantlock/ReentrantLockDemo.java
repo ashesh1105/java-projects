@@ -33,7 +33,7 @@ public class ReentrantLockDemo {
 					boolean tryLock = lock
 							.tryLock(1, TimeUnit.MILLISECONDS);
 					if (tryLock == true) {
-						acc1.transfer(acc1, acc2, 10);
+						acc1.transfer(acc2, 10);
 					}
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -51,7 +51,7 @@ public class ReentrantLockDemo {
 					// }
 					try {
 						lock.lock();
-						acc1.transfer(acc2, acc1, 10);
+						acc1.transfer(acc2, 10);
 					} finally {
 						lock.unlock();
 					}
@@ -88,8 +88,8 @@ class Account {
 		return balance;
 	}
 
-	public void transfer(Account acc1, Account acc2, long amount) {
-		acc1.balance -= amount;
+	public void transfer(Account acc2, long amount) {
+		this.balance -= amount;
 		acc2.balance += amount;
 	}
 }

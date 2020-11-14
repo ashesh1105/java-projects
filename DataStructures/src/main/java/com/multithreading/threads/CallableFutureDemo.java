@@ -5,7 +5,7 @@ import java.util.Random;
 import java.util.concurrent.*;
 
 /**
- * You can pass a Callable<?> to a thread pool's execute method (executor.submit(new Callable<?>(){}) which returns
+ * You can pass a Callable<?> to a thread pool's submit method (executor.submit(new Callable<?>(){}) which returns
  * a Future object. When you call get() method on that, it waits till callable does the job and returns.
  *
  * Difference between Runnable and Callable are:
@@ -19,29 +19,26 @@ public class CallableFutureDemo {
 
 		ExecutorService executor = Executors.newCachedThreadPool();
 		/*
-		 * When don't need to return anything from Callable and still wait to
+		 * When don't need to return anything from Callable and still want to
 		 * use it for say, through an exception from it, etc., use it as:
 		 * Future<?> and new Callable<Void>() .. and public Void call() .. Also
 		 * return null in that case.
+		 *
+		 * Using lambda like runnable below. This avoids explicitly coding executor.submit(new Callable<Integer>() { ...
 		 */
-		Future<Integer> future = executor.submit(new Callable<Integer>() {
+		Future<Integer> future = executor.submit(() -> {
 
-			@Override
-			public Integer call() throws Exception {
+			Random random = new Random();
+			int waitTime = random.nextInt(4001);
 
-				Random random = new Random();
-				int waitTime = random.nextInt(4001);
-
-				if (waitTime > 2000) {
-					// Say this thread handled an IO and got exception
-					throw new IOException("Wait time more than 2 seconds.");
-				}
-
-				Thread.sleep(waitTime);
-
-				return waitTime;
+			if (waitTime > 2000) {
+				// Say this thread handled an IO and got exception
+				throw new IOException("Wait time more than 2 seconds.");
 			}
 
+			Thread.sleep(waitTime);
+
+			return waitTime;
 		});
 
 		executor.shutdown();

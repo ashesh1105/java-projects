@@ -1,19 +1,18 @@
 package com.algorithms.arrays;
 
-import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.List;
+import java.util.*;
 
+// Essentially Algo 1 or Algo 2 methods look similar to Algo 3 which is O(n^2) where we check each elements of arr1
+// with each element of arr2 anyway. So, I would use the built in way of Java, which is list1.retainAll(list2) -
+// the Algo1 when it comes to finding common elements between two arrays
 public class ArrayCommonElements {
 
     public static void main(String[] args) {
 
-        int[] arr1 = {0, 201, 45, 56, 34, 98, 202, 68, 13, 40, 200};
-        int[] arr2 = {5, 11, 22, 200, 34, 99, 55, 66, 79, 209, 111, 1};
+        int[] arr1 = {34, 98, 202, 68, 13, 40, 200};
+        int[] arr2 = {5, 11, 22, 40, 200, 34, 68, 99, 55, 66, 79, 209, 111, 1};
 
         long start = System.nanoTime();
-        // TODO: Write an Efficient method for it!!!!
-//        List<Integer> duplicates = getCommonElementsAlgo2(arr1, arr2);
         Integer [] duplicates = getCommonElementsAlgo2(arr1, arr2);
         long end = System.nanoTime();
 
@@ -30,9 +29,9 @@ public class ArrayCommonElements {
     }
 
     // Using collection, but does not seem faster than iterative method of O(n^2)
-    private static Integer[] getCommonElementsAlgo1(int[] arr1, int[] arr2) {
+    private static int [] getCommonElementsAlgo1(int[] arr1, int[] arr2) {
 
-        Integer[] emptyArr;
+        int [] result;
 
 		List<Integer> list1 = new ArrayList<Integer>();
 		for (int i : arr1) {
@@ -43,34 +42,28 @@ public class ArrayCommonElements {
         for (int i : arr2) {
             list2.add(i);
         }
-        if (list1.size() > list2.size()) {
-            list1.retainAll(list2);
-            emptyArr = new Integer[list1.size()];
-            return list1.toArray(emptyArr);
-        } else {
-            list2.retainAll(list1);
-            emptyArr = new Integer[list2.size()];
-            return list2.toArray(emptyArr);
+
+        list1.retainAll(list2);
+        result = new int[list1.size()];
+        for (int i=0; i< list1.size(); i++) {
+            result[i] = list1.get(i);
         }
 
+        return result;
     }
 
     // Another Algo, does not seem faster than iterative one of O(n^2)
     private static Integer[] getCommonElementsAlgo2(int[] arr1, int[] arr2) {
 
         List<Integer> duplicates = new ArrayList<>();
-
-        Hashtable<Integer, Integer> table = new Hashtable<>();
+        Set<Integer> set = new HashSet<>();
 
         for (int i : arr1) {
-            if (table.containsKey(i)) {
-                table.put(i, table.get(i) + 1);
-            }
-            table.put(i, 1);
+            set.add(i);
         }
 
         for (int j : arr2) {
-            if (table.containsKey(j)) {
+            if (set.contains(j)) {
                 duplicates.add(j);
             }
         }

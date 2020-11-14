@@ -17,7 +17,7 @@ public class TestVolatileDemo {
         // Get user input to stop the thread
 		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Press any key to stop the thread..");
+		System.out.println("Press any key to stop the thread..\n");
 		scanner.nextLine();
 		demoThread.stopThread();
 		

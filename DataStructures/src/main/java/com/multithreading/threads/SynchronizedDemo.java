@@ -1,5 +1,6 @@
 package com.multithreading.threads;
 
+// Check TestSynchronizedDemo under test.java.com.multithreading to see this demo
 public class SynchronizedDemo {
 	
 	private int counter = 0;

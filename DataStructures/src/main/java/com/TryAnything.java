@@ -184,41 +184,46 @@ public class TryAnything {
 //        });
 //        System.out.println("Code in Sam doc but not in Flex: " + samDocErrorsList.size());
           */
-        System.out.println("-1 % 5 = " + -1 % 5);
-
-        String ten = Integer.toString(10);
-        System.out.println("Integer.toBinaryString(10) " + Integer.toBinaryString(10));
-
-        // Capitalize a string
-        String str1 = "this is a great weather over here!     ";
-        System.out.println(WordUtils.capitalize(str1));
-
-        // Join function on an array
-        String [] arr = str1.split(" ");
-        String newStr = StringUtils.join(arr, " | ");
-        System.out.println(newStr);
-
-        char zero = 122;
-        System.out.println(zero);
-
-        // Do we need to remove a key first before updating it?
-        Map<String, Integer> map = new HashMap<>();
-        map.put("a", 1);
-        map.put("b", 2);
-
-        // Now let's update it
-        map.put("b", 5);
-
-        map.forEach((k, v) -> {
-            System.out.println("key: " + k + ", value: " + v);
-        });
-
-
-
-
+//        System.out.println("-1 % 5 = " + -1 % 5);
+//
+//        String ten = Integer.toString(10);
+//        System.out.println("Integer.toBinaryString(10) " + Integer.toBinaryString(10));
+//
+//        // Capitalize a string
+//        String str1 = "this is a great weather over here!     ";
+//        System.out.println(WordUtils.capitalize(str1));
+//
+//        // Join function on an array
+//        String [] arr = str1.split(" ");
+//        String newStr = StringUtils.join(arr, " | ");
+//        System.out.println(newStr);
+//
+//        char zero = 122;
+//        System.out.println(zero);
+//
+//        // Do we need to remove a key first before updating it?
+//        Map<String, Integer> map = new HashMap<>();
+//        map.put("a", 1);
+//        map.put("b", 2);
+//
+//        // Now let's update it
+//        map.put("b", 5);
+//
+//        map.forEach((k, v) -> {
+//            System.out.println("key: " + k + ", value: " + v);
+//        });
         /*
-
    */
+
+        System.out.println(1 % 2);
+        char ch = '9';
+        System.out.println("'" + ch + "'" + " - 48: " + (ch - 48));
+
+        int [] arr = new int[256];
+
+        ch = '9';
+        System.out.println("ch = 19: " + ch);
+
     }
 
 }

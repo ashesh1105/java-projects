@@ -35,7 +35,7 @@ public class MaxPathSum extends BinarySearchTree {
 	 * Another good test case in above binary tree could be that if for a node, both left and right nodes have negative
 	 * max paths, then do not take either of the children, just take node's own data as max path for that node.
 	 * For example, if we replace left child of root, 2 to -4, then for root, max paths of both the children will be
-	 * negative, so max path of root will be its own data, without considering any child, i.e. 3.
+	 * negative, so max path of root will be its own data, without considering any child, i.e. 1.
 	 *
 	 * Hence, for Root:
 	 * Max Path for Root Node = max of max paths of its children + data + max path of lower child if it is positive

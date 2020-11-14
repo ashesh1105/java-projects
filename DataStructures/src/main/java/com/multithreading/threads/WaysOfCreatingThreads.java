@@ -10,10 +10,11 @@ public class WaysOfCreatingThreads {
 		Thread t1 = new Thread(new Runnable() {
 			
 			public void run() {
-				
+				System.out.println("From new thread...");
 			}
 			
 		});
+		t1.start();
 		
 		// 2) From Java8. Use Lambda to define Runnable implementation, simply pass it in Thread constructor
 		new Thread(() -> {
@@ -22,9 +23,9 @@ public class WaysOfCreatingThreads {
 		
 		// 3) Similar to upper one but here we have a reference to Runnable
 		Runnable runnable = () -> {
-			
+			System.out.println("From new thread...");
 		};
-		new Thread(runnable);
+		new Thread(runnable).start();
 		
 		// 4) Create a class extending Thread and provide your run method in that. Takes longer but more modularized.
 
