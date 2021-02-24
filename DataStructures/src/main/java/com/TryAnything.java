@@ -240,17 +240,21 @@ public class TryAnything {
 
         */
 
-        String s = "12345";
-        int multiplier = 1;
-        int result = 0;
+        String s = "abcdbefgh";
 
-        for (int i=s.length()-1; i>=0; i--) {
-            char ch = s.charAt(i);
-            result += (ch - 48) * multiplier;
-            multiplier *= 10;
-        }
+        // Result: aefgh and 5
+        // Correct result: bcdaefgh and 8!
 
-        System.out.println(result);
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("abcd");
+        String tempStr = s.substring(4, 5);
+        System.out.println(tempStr);
+
+        int idx = sb.indexOf(tempStr);
+
+        sb.delete(idx, idx+1);
+        System.out.println(sb.toString());
 
 
 

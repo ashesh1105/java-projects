@@ -36,10 +36,12 @@ public class LargestSubStringNoDups {
 //			char ch = str.charAt(i);
 //			Character.toString(ch);
 			// We need String because indexOf method of StringBuilder takes a String and not char
-			// Make sure to check for last index of string too (i != len-1) as condition to add temp to map
-			if (sb.indexOf(tempStr) == -1) {
+			// If next char is not in StringBuilder, append to it, else 'update' the StringBuilder
+			int idx = sb.indexOf(tempStr);
+			if (idx == -1) {
 				sb.append(tempStr);
 			} else {
+				// Add to map if current size is greater than max size so far
 				int tempLen = sb.length();
 				if (tempLen > maxSubStringLength) {
 					maxSubStringLength = tempLen;
@@ -49,8 +51,11 @@ public class LargestSubStringNoDups {
 				list.add(sb.toString());
 				map.put(tempLen, list);
 
-				sb.delete(0, tempLen);
-				// With temp bucket clear now, don't forget to add the current char in temp to start with
+				// Now, we want to remove the chars from 0 to idx in current StringBuilder, then
+				// append current char to it. This way to restart on next set of non-repeating chars
+				sb.delete(0, idx+1);
+				// With temp bucket clear from up to the duplicate character found,
+				// don't forget to add the current char in temp before proceeding to next char
 				sb.append(tempStr);
 			}
 		}
