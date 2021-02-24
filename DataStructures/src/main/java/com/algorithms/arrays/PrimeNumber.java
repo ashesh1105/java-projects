@@ -6,19 +6,25 @@ public class PrimeNumber {
 
 	public static void main(String[] args) {
 
-		int num = 11;
+		int num = 100;
 
 		// System.out.println("The number " + num + " is "
 		// + (new PrimeNumber().isPrime1(num) ? "prime." : "not prime."));
 
-		System.out.println("Printing prime numbers till 100:");
+		System.out.println("Printing prime numbers till " + num + ":");
 		System.out.println(2);
+		int num_primes = 0;
 
-		for (int i = 3; i <= 1000; i += 2) {
+		if (num >= 2) num_primes++;
+
+		for (int i = 3; i <= num; i += 2) {
 			if (new PrimeNumber().isPrime1(i)) {
+				num_primes++;
 				System.out.println(i);
 			}
 		}
+
+		System.out.println("Number of prime numbers till " + num + ": " + num_primes);
 
 		int num2 = 17;
 		System.out.println("Let's check isPrime2 method!");

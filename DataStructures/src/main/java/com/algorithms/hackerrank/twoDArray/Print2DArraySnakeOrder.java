@@ -15,7 +15,7 @@ Output:
 a) Snake order horizontal: 1, 2, 3, 6, 5, 4, 7, 8, 9, 12, 11, 10
 b) Snake order vertical: 1, 4, 7, 10, 11, 8, 5, 2, 3, 6, 9, 12
 
-Solution:
+StaticInnerClassDemo:
 A) Snake Horizontal Order:
 1) We basically need to print m rows by varying the direction every time, left to right (to start with) and alternate that
    every time.

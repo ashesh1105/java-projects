@@ -23,7 +23,7 @@ public class KnapsackProblem {
 	 * knapsack Weight (kg) 1 | 2 | 4 | 2 | 5 Value($) 5 | 3 | 5 | 3 | 2
 	 * Note** You can not take a fraction of an item. Either you take the whole or not at all
 	 * 
-	 * TODO: Solution below is based on recursion + memoization: https://www.youtube.com/watch?v=xOlhR_2QCXY
+	 * TODO: StaticInnerClassDemo below is based on recursion + memoization: https://www.youtube.com/watch?v=xOlhR_2QCXY
 	 * and it returns max value knapsack can carry. Find out how we can get actual items??
 	 * that need to be put into knapsack from recursive (+ memoization) approach. May be we need a bottom-up approach for it
 	 * which is described here: https://www.youtube.com/watch?v=8LusJS5-AGo&t=127s

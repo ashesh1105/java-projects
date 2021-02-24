@@ -3,8 +3,7 @@ package com;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.text.WordUtils;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class TryAnything {
 
@@ -73,6 +72,10 @@ public class TryAnything {
         System.out.println("char ch = '0' can be converted by doing subtracting 48 from it: " + (ch1 - 48));
 */
         System.out.println("-1 % 7: " + (-1 % 7));
+        System.out.println("-6 % 7: " + (-6 % 7));
+        System.out.println("-7 % 7: " + (-7 % 7));
+        System.out.println("-8 % 7: " + (-8 % 7));
+        System.out.println("-199 % 7: " + (-199 % 7));
         System.out.println("7 % 7: " + (7 % 7));
         System.out.println("3 % 7: " + (3 % 7));
 /*
@@ -215,6 +218,8 @@ public class TryAnything {
         /*
    */
 
+        /*
+
         System.out.println(1 % 2);
         char ch = '9';
         System.out.println("'" + ch + "'" + " - 48: " + (ch - 48));
@@ -223,6 +228,31 @@ public class TryAnything {
 
         ch = '9';
         System.out.println("ch = 19: " + ch);
+
+        ch = 65;
+        System.out.println("ch = 65 => " + ch);
+        ch = 90;
+        System.out.println("ch = 90 => " + ch);
+        ch = 97;
+        System.out.println("ch = 97 => " + ch);
+        ch = 122;
+        System.out.println("ch = 122 => " + ch);
+
+        */
+
+        String s = "12345";
+        int multiplier = 1;
+        int result = 0;
+
+        for (int i=s.length()-1; i>=0; i--) {
+            char ch = s.charAt(i);
+            result += (ch - 48) * multiplier;
+            multiplier *= 10;
+        }
+
+        System.out.println(result);
+
+
 
     }
 

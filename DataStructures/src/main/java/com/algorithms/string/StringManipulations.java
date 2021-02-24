@@ -123,7 +123,7 @@ public class StringManipulations {
 		return true;
 	}
 
-	// find if String us unique or not - more efficient method!
+	// find if String has unique characters or not - more efficient method!
 	private static boolean hasAllUniqueCharsOptimized(String text) {
 		boolean[] charSet = new boolean[256];
 		// get the chars from text, use them as index to set such elements of

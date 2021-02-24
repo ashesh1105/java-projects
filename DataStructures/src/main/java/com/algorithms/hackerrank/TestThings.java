@@ -43,7 +43,7 @@ public class TestThings {
 		System.out.println(sb.toString());
 		char ch = '5';
 		System.out.println("Character.isDigit('5') returns: " + Character.isDigit(ch));
-		System.out.println("48 <= ch && ch <= 57 for ch = 5 gives: " + (48 <= ch && ch <= 57));
+		System.out.println("48 <= ch && ch <= 57 for ch = '5' gives: " + (48 <= ch && ch <= 57));
 
 		System.out.println(Character.isSpaceChar(' '));
 		System.out.println(Character.isLowerCase('d'));
@@ -56,7 +56,7 @@ public class TestThings {
 
 		System.out.println("Number of Tiles possible with 23 layers: " + numTiles);// Math.pow(4, 24));
 		System.out.println("With " + NumberFormat.getInstance().format(numTiles)
-				+ " vector map tiles, at zoom level 23 (begining from 0), area represented by 1 map tile: " + surfaceAreaEarth / numTiles
+				+ " vector map tiles, at zoom level 23 (beginning from 0), area represented by 1 map tile: " + surfaceAreaEarth / numTiles
 				+ " square meter.");
 
 	}

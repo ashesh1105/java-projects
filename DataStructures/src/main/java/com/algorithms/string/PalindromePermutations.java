@@ -1,4 +1,4 @@
-package main.java.com.string;
+package com.algorithms.string;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -54,7 +54,7 @@ public class PalindromePermutations {
 				if (value) count++;
 			}
 		
-		// Check if more than one character is repeated odd number of times, string is a permutation of palindrome otherwise
+		// Check if no more than one character is repeated odd number of times, string is a permutation of palindrome
 		if (count > 1) return false;
 		else return true;
 	}

@@ -8,18 +8,18 @@ public class DuplicateChecker {
      * non-ascii chars) Time complexity is order of n squared. This method does
      * not take additional space.
      *
-     * @param s
-     * @return
+     * @param s: String
+     * @return boolean
      */
-	public boolean hasDuplicateCharsTwoLoops(String s) {
-		for (int i = 0; i < s.length() - 1; i++) {
-			for (int j = i + 1; j < s.length(); j++) {
-				if (s.charAt(i) == s.charAt(j))
-					return true;
-			}
-		}
-		return false;
-	}
+    public boolean hasDuplicateCharsTwoLoops(String s) {
+        for (int i = 0; i < s.length() - 1; i++) {
+            for (int j = i + 1; j < s.length(); j++) {
+                if (s.charAt(i) == s.charAt(j))
+                    return true;
+            }
+        }
+        return false;
+    }
 
     /**
      * This method assumes that only ASCII characters are present Given the
@@ -50,33 +50,33 @@ public class DuplicateChecker {
      * @param s
      * @return
      */
-	public boolean hasDuplicateCharsSortedChars(String s) {
+    public boolean hasDuplicateCharsSortedChars(String s) {
 //		// first sort the string in nlogn time (get char array, sort them and get string back by new String(array)
 //		// now assuming that string has its characters sorted
 
-		// Input validations
-		if (s == null) {
-			// log error
-		}
-		if (s.length() == 1) {
-			return false;
-		} else if(s.charAt(0) == s.charAt(1)) {
-			return true;
-		}
+        // Input validations
+        if (s == null) {
+            // log error
+        }
+        if (s.length() == 1) {
+            return false;
+        } else if (s.charAt(0) == s.charAt(1)) {
+            return true;
+        }
 
-		char [] charArr = s.toCharArray();
+        char[] charArr = s.toCharArray();
         Arrays.sort(charArr);   // Will take nLog(n) here
 
-		// Now check if any consecutive chars are same
+        // Now check if any consecutive chars are same
         // Will take O(n) time
-		for (int i=1; i < charArr.length; i++) { //
-			if (charArr[i-1] == charArr[i])
-				return true;
-		}
-		return false;
-	}
+        for (int i = 1; i < charArr.length; i++) { //
+            if (charArr[i - 1] == charArr[i])
+                return true;
+        }
+        return false;
+    }
 
-	// Use this method, it is order of magnitude faster, even compared to ASCII array based method!
+    // Use this method, it is order of magnitude faster, even compared to ASCII array based method!
     public boolean hasDuplicateCharsTailBasedMethod(String str) {
 
         // Do null checks and see if string has just one character in it, log errors appropriately
@@ -89,11 +89,11 @@ public class DuplicateChecker {
             while (j < tail) {
                 if (A[j] == A[i]) {
                     return true;
-                } else {
-                    j++;
                 }
+                j++;
             }
             if (j == tail) {
+                // If we had to remove the duplicates here, we would do: A[tail] = A[i]; and tail++;
                 tail++;
             }
         }
@@ -105,16 +105,16 @@ public class DuplicateChecker {
 
         // Comparing two methods
         long start1 = System.nanoTime();
-		DuplicateChecker dc = new DuplicateChecker();
-		long end1 = System.nanoTime();
-		System.out.println(dc.hasDuplicateChars("abcdefghijklmnopqrstuvwxyy") + " -- Time taken by ASCII array based method: "
-				+ (end1 - start1));
+        DuplicateChecker dc = new DuplicateChecker();
+        long end1 = System.nanoTime();
+        System.out.println(dc.hasDuplicateChars("abcdefghijklmnopqrstuvwxyy") + " -- Time taken by ASCII array based method: "
+                + (end1 - start1));
 
-		long start2 = System.nanoTime();
-		long end2 = System.nanoTime();
-		System.out.println(dc.hasDuplicateCharsTailBasedMethod("abcdefghijklmnopqrstuvwxyy")
-				+ " -- Time taken by Tail based method: "
-				+ (end2 - start2));
+        long start2 = System.nanoTime();
+        long end2 = System.nanoTime();
+        System.out.println(dc.hasDuplicateCharsTailBasedMethod("abcdefghijklmnopqrstuvwxyy")
+                + " -- Time taken by Tail based method: "
+                + (end2 - start2));
 
     }
 }

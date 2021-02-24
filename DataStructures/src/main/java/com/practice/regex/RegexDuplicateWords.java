@@ -1,7 +1,7 @@
-package com.algorithms.hackerrank.strings.regex;
+package com.practice.regex;
 
-/*
-
+/**
+From Hackerank challenge.
 In this challenge, we use regular expressions (RegEx) to remove instances of words that are repeated more than
 once, but retain the first occurrence of any case-insensitive repeated word. For example, the words love
 is repeated in the sentence I love Love to To tO code. Can you complete the code in the editor so it will turn

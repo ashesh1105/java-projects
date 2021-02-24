@@ -61,9 +61,10 @@ public class LongestCommonSubstring {
 	/**
 	 * Here, time complexity will be of O(n). We need a storage of 256
 	 * characters but that should not be the big deal
-	 * Solution: 
+	 * StaticInnerClassDemo:
 	 * a) Define an int array of size 256. It can be 128 if pure ascii is contained by strings 
-	 * b) Add -1 to index 0 of this array, so anything less than 0 will mean no character matches that element
+	 * b) Initialize each elements of this array by -1, so anything less than 0 will mean no character matches that
+	 * 	  element
 	 * c) loop through each chars of str1 and store their indices in array. Index of array will
 	 *    be ascii values of str1 chars 
 	 * d) Loop through str2 chars, check if a char is present in str1, if not continue checking
@@ -93,7 +94,7 @@ public class LongestCommonSubstring {
 
 		for (int j = 0; j < len2; j++) {
 			int beginIndex = -1;
-			if (arr[str2.charAt(j)] < 0) {	// empty elements will be either -1 (at index 0) or 0 (default)
+			if (arr[str2.charAt(j)] < 0) {	// empty elements will be -1 since we initialized arr that way
 				continue;
 			} else {
 				beginIndex = j;

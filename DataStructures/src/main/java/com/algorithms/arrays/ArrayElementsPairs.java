@@ -4,6 +4,16 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Check for pairs of elements such that their sum is X
+ * Note*** Try improvising this method to return all set of 3 elements with sum as given sum. This is google question.
+ * Clue**
+ * Take another variable as k which can start somewhere from mid point between i and j and always check sum of
+ * elements at i, k and j. Keep i and j fixed, move k to left or right depending on sum coming higher or lower than
+ * given sum. If k becomes equal to i, decrement j by 1 and reset k to new mid point between i and j. If k touches j,
+ * increment i and reset the position of k. Return data structure will then can not map and may be return 2 dimensional
+ * array or list of lists.
+ */
 public class ArrayElementsPairs {
 
 	public static void main(String[] args) {
@@ -28,19 +38,6 @@ public class ArrayElementsPairs {
 		});
 	}
 
-	/*
-	 * Check for pairs of elements such that their sum is X Note*** Try
-	 * improvising this method to return all set of 3 elements with sum as given
-	 * sum. This is google question. 
-	 * Clue** Take another variable as k which can
-	 * start somewhere from mid point between i and j and always check sum of
-	 * elements at i, k and j. Keep i and j fixed, move k to left or right
-	 * depending on sum coming higher or lower than given sum. If k becomes
-	 * equal to i, decrement j by 1 and reset k to new mid point between i and
-	 * j. If k touches j, increment i and reset the position of k. Return data
-	 * structure will then can not map and may be return 2 dimensional array or
-	 * list of lists.
-	 */
 	public Map<Integer, Integer> findPairsWithGivenSum(int[] array, int sum) {
 
 		Map<Integer, Integer> pairs = new HashMap<Integer, Integer>();

@@ -1,6 +1,6 @@
-package com.algorithms.hackerrank.strings.regex;
+package com.practice.regex;
 
-/*
+/**From Hackerank challenge.
 
 From an XML like file, given a line, extract the content between valid tags, if invalid tag, print invalid.
 

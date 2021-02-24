@@ -11,7 +11,7 @@ public class ArrayElementsTripletsSum {
 	 * Sum = 2 Output: 2 
 	 * Explanation: (-2, 0, 1) and (-2, 0, 3)
 	 * 
-	 * Solution:
+	 * StaticInnerClassDemo:
 	 * A) Brute Force: You have 3 nested loops and compare arr[i] + arr[j] + arr[k] to given sum, when less, increment the count
 	 *    Time Complexity will be O(n^3) but we need O(n^2) here
 	 * B) Implemented method below "triplets":

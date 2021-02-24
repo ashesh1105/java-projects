@@ -6,7 +6,7 @@ public class SearchInSortedMatrix {
 	 * Write an algorithm to find a number from an n*n metrics of numbers which is
 	 * sorted row-wise and column-wise?
 	 * 
-	 * Solution:
+	 * StaticInnerClassDemo:
 	 * We can solve it via 3 ways:
 	 * A) Brute Force, i.e., iterate each row and in it, each column and find the number. Time Complexity O(n^2), so bad!
 	 * B) Binary search the number in each row. Here, time complexity will be O(nlogn) since n times binary search involved.

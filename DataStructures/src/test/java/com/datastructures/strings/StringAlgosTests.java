@@ -1,8 +1,9 @@
 package com.datastructures.strings;
 
 import com.algorithms.hackerrank.strings.LargestSmallestSubstringLexographicalOrder;
-import com.algorithms.hackerrank.strings.regex.RegexIPValidation;
-import org.junit.*;
+import com.practice.regex.RegexIPValidation;
+import org.junit.Assert;
+import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;

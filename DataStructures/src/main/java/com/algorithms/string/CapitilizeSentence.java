@@ -18,7 +18,7 @@ public class CapitilizeSentence {
 		String str = "this is a great weather over here!     ";
 		CapitilizeSentence capitilizeSentence = new CapitilizeSentence();
 		System.out.println("Original String: " + str);
-		System.out.println("Resulting String: " + capitilizeSentence.capitalizeMeAlternate3(str));
+		System.out.println("Resulting String: " + capitilizeSentence.capitalizeMeAlternate4(str));
 	}
 	
 	/**

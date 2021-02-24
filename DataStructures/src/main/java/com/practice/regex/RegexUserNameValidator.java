@@ -1,6 +1,7 @@
-package com.algorithms.hackerrank.strings.regex;
+package com.practice.regex;
 
-/*
+/**
+ * From Hackerank challenge.
 Write a regex expression to validate username.
 
 The username consists of 8 to 30 characters inclusive. If the username consists of less than 8 or greater than 30

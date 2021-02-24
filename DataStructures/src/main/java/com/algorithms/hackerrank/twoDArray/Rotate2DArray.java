@@ -3,7 +3,7 @@ package main.java.com.algorithms.hackerrank.twoDArray;
 /**
  Rotate n x n 2D Matrix clockwise
  * 
- Solution: Check this video: https://www.youtube.com/watch?v=Jtu6dJ0Cb94
+ StaticInnerClassDemo: Check this video: https://www.youtube.com/watch?v=Jtu6dJ0Cb94
  
  1) Start with a 2 x 2 array and see how you need to swap elements to rotate it clockwise.
  2) Once you can generalize it, apply with 3 x 3 and then with 4 x 4 matrix to test that you don't have a bug.

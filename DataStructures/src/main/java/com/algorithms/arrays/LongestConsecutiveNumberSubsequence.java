@@ -14,7 +14,7 @@ Output: 5
 The subsequence 36, 35, 33, 34, 32 is the longest subsequence
 of consecutive elements. Element order is not important here as log as it can be rearranged as 32, 33, 34, 35, 36
 
-Solution:
+StaticInnerClassDemo:
 1) Create an empty hash.
 2) Insert all array elements to hash.
 3) Do following for every element arr[i]

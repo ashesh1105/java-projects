@@ -7,7 +7,7 @@ import java.util.List;
  * Find common elements in 3 sorted arrays
  * Time Complexity of this solution: O(n).
  * 
- * Solution:
+ * StaticInnerClassDemo:
  * 1) Do one while loop with condition as no array should not go out of bounds.
  * 2) Grab elements from 3 arrays at their corresponding indices as e1 = arr1[i], e2 = arr2[j], etc.
  * 3) We now have following cases here:

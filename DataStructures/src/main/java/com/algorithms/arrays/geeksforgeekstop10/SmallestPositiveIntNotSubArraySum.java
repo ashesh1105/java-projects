@@ -26,7 +26,7 @@ Output: 4
 Input:  arr[] = {1, 2, 3, 4, 5, 6};
 Output: 22
 
-Solution:
+StaticInnerClassDemo:
 Approach 1: Brute force: look for every possible sub arrays and check sum for min positive integer. Very expensive!
 Approach 2:
 1) Iterate through array from i=0 to length-1. Let's assume result is res.

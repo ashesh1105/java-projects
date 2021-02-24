@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  Remove duplicates from an int array without using any extra storage (map, etc). The algorithm needs to be very efficient.
  * 
- Solution:
+ StaticInnerClassDemo:
  This is same approach as "tail based duplicate removal for Strings", check StringManipulations.removeDuplicatesWithTail(String word)
  for it. Approach:
  1) Define j and tail, initialize them to 0 and 1 respectively.

@@ -1,6 +1,6 @@
 package com.algorithms.arrays;
 
-/*
+/**
  * Find how many times a circular array is rotated
  * Hint** it will be the index of pivot point, i.e., min element
  * 

@@ -15,7 +15,7 @@ public class HowManyJumps {
 	 * Shortest number of jumps: 3
 	 * Jumps (indices): 0 -> 1 -> 2 -> 7
 	 * 
-	 * Solution described at: https://www.youtube.com/watch?v=cETfFsSTGJI
+	 * StaticInnerClassDemo described at: https://www.youtube.com/watch?v=cETfFsSTGJI
 	 */
 
 	public void findJumps(int [] arr) {

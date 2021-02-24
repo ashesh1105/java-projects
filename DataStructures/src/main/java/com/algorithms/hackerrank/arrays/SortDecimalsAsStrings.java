@@ -37,7 +37,7 @@ public class SortDecimalsAsStrings {
 
     public void sortDecimalsAsString(String [] strArr) {
 
-        // Solution 1)
+        // StaticInnerClassDemo 1)
 //        Arrays.sort(strArr, Comparator.comparing((String str) -> {
 //            // We can use BigDecimal or Double here to compare strings
 //            // BigDecimal decimal = new BigDecimal(str);
@@ -45,10 +45,10 @@ public class SortDecimalsAsStrings {
 //            return decimal;
 //        }).reversed());
 
-        // Solution 2)
+        // StaticInnerClassDemo 2)
         Arrays.sort(strArr, 0, strArr.length, (a, b) -> -(new Double(a).compareTo(new Double(b))));
 
-        // Solution 3)
+        // StaticInnerClassDemo 3)
 //        Arrays.sort(strArr, 0, strArr.length, (a, b) -> new BigDecimal(b).compareTo(new BigDecimal(a)));
 
     }

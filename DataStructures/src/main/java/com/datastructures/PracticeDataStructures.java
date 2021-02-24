@@ -16,6 +16,8 @@ public class PracticeDataStructures {
 		animals.add("elephant");
 		animals.add("monkey");
 		animals.add("dog");
+
+//		Collections.sort(animals, Comparator.comparing(e -> e.length()));
 		
 		// Java8 Lambda - sort() is part of List interface itself
 		animals.sort(Comparator.comparing(e -> e.length()));
@@ -24,8 +26,14 @@ public class PracticeDataStructures {
 		System.out.println("Printing animals sorted by their length of name:");
 		animals.forEach(System.out::println);
 
-		// Sort the list by reverse alphabetical order by inner class
-		// implementing comparator
+		// Now sort it in reverse order of their lengths. Just add a minus on e.length()
+		animals.sort(Comparator.comparing(e -> -e.length()));
+
+		// Print the list by reverse order of length of their names
+		System.out.println("\nPrinting animals sorted by length of their names in descending order:");
+		animals.forEach(System.out::println);
+
+		// Sort the list by reverse alphabetical order by inner class implementing comparator
 //		animals.sort((animal1, animal2) -> (-1) * animal1.compareTo(animal2));	// -1 x since reverse alphabetical needed
 		animals.sort(Comparator.reverseOrder());
 

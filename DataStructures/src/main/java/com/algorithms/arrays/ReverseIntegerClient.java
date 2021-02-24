@@ -4,10 +4,11 @@ import com.algorithms.interfaces.ReverseIntegerAlgo;
 
 public class ReverseIntegerClient {
 
-	/*
-	 * Notice Strategy pattern being used here where we are managing various algorithm implementations of reversing an integer and client
-	 * has the flexibility of choosing one implementation and can plug in any more optimized one once ready. This is ideal for gaming algos
-	 * as well where algos can be changed at run time based on difficultly levels one needs.
+	/**
+	 * Notice Strategy pattern being used here where we are managing various algorithm implementations of reversing an
+	 * integer and client has the flexibility of choosing one implementation and can plug in any more optimized one
+	 * once ready. This is ideal for gaming algos as well where algos can be changed at run time based on difficultly
+	 * levels one needs.
 	 */
 
 	ReverseIntegerAlgo reverseIntegerAlgo;
@@ -82,11 +83,9 @@ class ReverseInteger2 implements ReverseIntegerAlgo {
 		boolean isNegative = num < 0 ? true : false;
 		if (isNegative)
 			num *= -1;
-		int lastDigit = 0;
 
 		while (num != 0) {
-			lastDigit = num % 10;
-			result = result * 10 + lastDigit;
+			result = result * 10 + num % 10;
 			num /= 10;
 		}
 

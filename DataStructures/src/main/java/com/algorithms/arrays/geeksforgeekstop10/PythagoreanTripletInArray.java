@@ -15,11 +15,11 @@ Input: arr[] = {3, 1, 4, 6, 5}
 Output: True
 There is a Pythagorean triplet (3, 4, 5).
 
-Solution:
-Brute Force Solution can be to iterate through array in 3 nested loops, check if A[i]*A[i] + A[j]*A[j] = A[k]*A[k]
+StaticInnerClassDemo:
+Brute Force StaticInnerClassDemo can be to iterate through array in 3 nested loops, check if A[i]*A[i] + A[j]*A[j] = A[k]*A[k]
 Time complexity here will be O(n^3) which is not a desired one.
 
-Optimized Solution:
+Optimized StaticInnerClassDemo:
 1) Iterate through array and get square of array elements. Takes O(n) time.
 2) Sort the array. Takes nlog(n) time.
 3) Start with last element in the array and find the pair of other two elements whose sum will be that element.

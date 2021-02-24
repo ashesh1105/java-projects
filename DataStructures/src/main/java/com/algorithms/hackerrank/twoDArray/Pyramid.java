@@ -30,7 +30,7 @@ public class Pyramid {
 	/**
 	 * 
 	 * @param i -> height of pyramid you need
-	 * Solution:
+	 * StaticInnerClassDemo:
 	 * (Please check the class HourGlass before this one)
 	 * a) Iterate n times equal to how many pyramids you need. Start with 1 for first pyramid.
 	 * b) For each pyramid, height, h = h(n), iterate row times, r -> 0 to h (not inclusive).
